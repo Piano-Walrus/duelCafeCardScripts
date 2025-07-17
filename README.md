@@ -32,6 +32,7 @@ Each script must be named after the passcode of the card it's for. For example, 
 Each script is one JSON object, and should begin with the "id" property, its value being that same card passcode mentioned above. Note that you must always omit any leading zeros in card passcodes. For example, Labrynth Cooclock's passcode must always be "2511" NOT "00002511".
 
 The next property should always be "commands", which expects a list of objects. Each object can have the following properties:
+
 **1. "message" - Type: String**
 > The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.
 **2. "options" - Type: String[]**
@@ -40,13 +41,14 @@ The next property should always be "commands", which expects a list of objects. 
 > This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string.
 
 Finally, each command must have a trigger condition. There are currently four ways to specify a command's trigger condition:
-> 1. "trigger" - Type: Integer
+
+**1. "trigger" - Type: Integer**
 > The simplest trigger condition; expects a zone index (as outlined above), and sets a command to be triggered whenever the script's associated card is snapped to the specified zone index.
-> 2. "trigger_range" - Type: Integer[]
+**2. "trigger_range" - Type: Integer[]**
 > This property takes an array of only two integers, and specifies a range of zone indexes rather than just one. So for example, if a card effect should trigger when a card is placed in any of the Main Monster Zones, then the command's trigger condition would be `"trigger_range":[10,14]`
-> 3. "trigger_list" - Type: Integer[]
+**3. "trigger_list" - Type: Integer[]**
 > This property takes an array of any number of integers, and specifies that a card can trigger in any one of the integers provided. For example, if a card should trigger ONLY when snapped to an Extra Monster Zone, then the command's trigger condition would be `"trigger_list":[8,108]`
-> 4. null
+**4. null**
 > If no trigger condition is provided for a given command, then that command will execute when a card is manually triggered by double-clicking/double-tapping the trigger while holding said card. 
 > **Note:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
