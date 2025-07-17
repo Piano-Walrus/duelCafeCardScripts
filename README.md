@@ -112,7 +112,7 @@ Each option in "options", or any given "execute" command string, can have multip
 > Sets a player's LP to QUANTITY. Note that the value provided ***cannot*** be negative
 
 **9. excavate_until=[TEXT]**
-> Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu<br/>
+> Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu<br />
 
 **Note:** Variables should always be declared BEFORE writing functions like "rand" or "add" in commands.
 > Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
