@@ -1,0 +1,12 @@
+{
+    "id":78420796,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "message":"Pay the cost for this card's effect?",
+            "options":[
+                "label=Pay half your LP¬div_lp=2"
+            ]
+        }
+    ]
+}
