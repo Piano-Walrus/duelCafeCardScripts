@@ -63,39 +63,54 @@ Each option in "options", or any given "execute" command string, can have multip
 ### Variables
 **1. label=[STRING]**
 > Can only be used in option button command strings. If used, must be FIRST in the command string. Specifies the text to display on the button that will run this command when clicked. Optional when using the "rand" function; if no title is specified for a "rand" command, the title defaults to the QUANTITY passed to it.
+
 **2. source=[INTEGER]**
 > Takes a zone index as an integer, and specifies the source that you intend to move cards from
+
 **3. dest=[INTEGER]**
 > Takes a zone index as an integer, and specifies the destination that you intend to move cards to
 > *(**Note:** When using "add", dest should be omitted)*
+
 **4. target=[STRING]**
 > Takes a card passcode as a string, and specifies the card passcode to search for at the source location
+
 **5. opp**
 > Specifies that your command should affect the opponent rather than the current player
+
 **6. opp_source**
 > Specifies that ONLY the designated source applies to your opponent, but NOT the destination
+
 **7. opp_destination**
 > As with "opp_source", this specifies that the designated destination applies to your opponent, but NOT the source
+
 **8. up_to**
 > Specifies that any number of cards less than, or equal to the quantity specified in a following function may be selected. If this keyword is not used, all functions will only work if a number of cards is found that either matches or exceeds the desired quantity (but the number of cards selected by any function will NEVER exceed the quantity specified regardless)
 
 ### Functions
 **1. search=[TAB_INDEX]**
 > Opens the "Search Deck Piles" menu, and switches to the tab corresponding to TAB_INDEX (in order from left to right, "Main" is 0, "Extra" is 1, etc. "Side" cannot be selected)
+
 **2. rand=[QUANTITY]**
 > Selects a number of random cards equal to QUANTITY, and moves them from "source" to "dest" (as such, those two variables MUST be set before calling "rand")
+
 **3. add=[QUANTITY]**
 > Selects a number of random cards equal to QUANTITY, and reveals them as if they were searched from the "Search Deck Piles" menu. This function requires the "source" variable to be set. HOWEVER this function can also be used with the "target" variable to only reveal a certain card passcode
+
 **4. place=[QUANTITY]**
 > Selects a number of random cards equal to QUANTITY, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the "target" variable to place a specific card
+
 **5. add_lp=[QUANTITY]**
 > Add QUANTITY to a player's current LP. Note that QUANTITY ***can*** be negative to subtract LP
+
 **6. add_exact_lp=[QUANTITY]**
 > Essentially the same as "add_lp", except that if you provide a negative number, it will only subtract LP if the player's current LP is greater than the absolute value of the value provided (in other words, use this when scripting costs that must be paid ***exactly***, i.e. with cards like "Solemn Strike")
+
 **7. div_lp=[QUANTITY]**
 > Divides a player's current LP by QUANTITY
+
 **8. set_lp=[QUANTITY]**
 > Sets a player's LP to QUANTITY. Note that the value provided ***cannot*** be negative
+
 **9. excavate_until=[TEXT]**
 > Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
 
