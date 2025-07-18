@@ -79,13 +79,13 @@ Each option in "options", or any given "execute" command string, can have multip
 > Specifies that your command should affect the opponent rather than the current player
 
 **2. opp_source**
-> Specifies that ONLY the designated source applies to your opponent, but NOT the destination
+> Specifies that ONLY the designated source applies to the opponent, but NOT the destination
 
 **3. opp_destination**
-> As with "opp_source", this specifies that the designated destination applies to your opponent, but NOT the source
+> As with "opp_source", this specifies that the designated destination applies to the opponent, but NOT the source
 
 **4. up_to**
-> Specifies that any number of cards less than, or equal to the quantity specified in a following function may be selected. If this keyword is not used, all functions will only work if a number of cards is found that either matches or exceeds the desired quantity (but the number of cards selected by any function will NEVER exceed the quantity specified regardless)
+> Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity)
 
 ### Functions
 **1. search=[TAB_INDEX]**
