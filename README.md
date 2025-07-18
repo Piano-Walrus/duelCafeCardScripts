@@ -74,16 +74,17 @@ Each option in "options", or any given "execute" command string, can have multip
 **4. target=[STRING]**
 > Takes a card passcode as a string, and specifies the card passcode to search for at the source location
 
-**5. opp**
+### Flags
+**1. opp**
 > Specifies that your command should affect the opponent rather than the current player
 
-**6. opp_source**
+**2. opp_source**
 > Specifies that ONLY the designated source applies to your opponent, but NOT the destination
 
-**7. opp_destination**
+**3. opp_destination**
 > As with "opp_source", this specifies that the designated destination applies to your opponent, but NOT the source
 
-**8. up_to**
+**4. up_to**
 > Specifies that any number of cards less than, or equal to the quantity specified in a following function may be selected. If this keyword is not used, all functions will only work if a number of cards is found that either matches or exceeds the desired quantity (but the number of cards selected by any function will NEVER exceed the quantity specified regardless)
 
 ### Functions
