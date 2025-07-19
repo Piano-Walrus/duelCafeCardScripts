@@ -33,14 +33,14 @@ Each script is one JSON object, and should begin with the "id" property, its val
 
 The next property should always be "commands", which expects a list of objects. Each object can have the following properties:
 
-**1. "message" - Type: String**
+**1. "msg" - Type: String**
 > The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.
 
 **2. "options" - Type: String[]**
 > An array of strings that specify what to label each button in the options menu, AND what commands to run once each button is clicked
 
 **3. "execute" - Type: String**
-> This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string.
+> This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string. Cannot be used alongside any other command properties.
 
 Finally, each command must have a trigger condition. There are currently four ways to specify a command's trigger condition:
 
