@@ -4,7 +4,14 @@
         {
             "conditions":{
                 "NOT":[
-                    {"control_self":0}
+                    {
+                        "control_self":0,
+                        "zone_range":[10,14]
+                    },
+                    {
+                        "control_self":0,
+                        "zone_list":[8,108]
+                    }
                 ]
             },
             "trigger_zone":[10,14],
