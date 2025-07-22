@@ -1,0 +1,12 @@
+{
+    "id":84968490,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Resolve this card's effect?",
+            "options":[
+                "label=Send the top 5 cards of your Deck to the GY¬source=0¬dest=2¬rand=5"
+            ]
+        }
+    ]
+}
