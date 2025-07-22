@@ -1,18 +1,19 @@
 {
     "id":3048768,
+    "$pref":"label=Scale \"Dimonno Vaalmonica\" in your other Pendulum Zone¬source=0¬dest=",
+    "$suff":"¬target=30432463¬place=1",
+    "msg":"Resolve $name's effect?",
     "commands":[
         {
             "trigger":23,
-            "message":"Resolve this card's effect?",
             "options":[
-                "label=Scale \"Dimonno Vaalmonica\" in your other Pendulum Zone¬source=0¬dest=24¬target=30432463¬place=1"
+                "$pref24$suff"
             ]
         },
         {
             "trigger":24,
-            "message":"Resolve this card's effect?",
             "options":[
-                "label=Scale \"Dimonno Vaalmonica\" in your other Pendulum Zone¬source=0¬dest=23¬target=30432463¬place=1"
+                "$pref23$suff"
             ]
         }
     ]
