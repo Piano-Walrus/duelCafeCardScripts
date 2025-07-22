@@ -115,8 +115,11 @@ Each option in "options", or any given "execute" command string, can have multip
 **9. excavate_until=[TEXT]**
 > Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
 
+## Conditions
+
+
 ## Placeholders
-In any given command string, pop-up message, or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
+In any given command string, pop-up message, custom property (explained below), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 
 **1. $trigger - Type: Integer**
 > Represents the index of the zone from which triggered card was triggered.
@@ -129,6 +132,14 @@ In any given command string, pop-up message, or LP value string, the system will
 
 **4. $lp_opp - Type: Integer**
 > Represents the LP of the opponent of the player who owns the triggered card.
+
+**5. Custom Properties**
+> You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the same message for all 3 commands, you can create a property called "$msg" right under the script's "id" property, then you can set each command's `"msg"` property to `"$msg"` and the system will replace each instance of `"$msg"` with the value you gave that property earlier. Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$name"` in `"$msg"`, but you cannot reference `"$msg"` while declaring a custom `"$archetype"` property.
+
+## Basic Two-Operand Math
+You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
+
+To use this feature, in any appropriate string, simply use the syntax ``{[OPERAND1][OPERATOR][OPERAND2]}``. For example, to add both players' LP, you can use ``{$lp_self+$lp_opp}``, and to subtract 1 from the zone index from which a card was triggered, you can use ``{$trigger-1}``.
 
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like "rand" or "add" in commands.
