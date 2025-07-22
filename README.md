@@ -115,11 +115,22 @@ Each option in "options", or any given "execute" command string, can have multip
 **9. excavate_until=[TEXT]**
 > Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
 
+##Placeholders & Variables
+In any given command string, pop-up message, or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
+**1. $trigger - Type: Integer**
+> Represents the index of the zone from which triggered card was triggered.
+
+**2. $name - Type: String**
+> Represents the name of the triggered card.
+
+**3. $lp_self - Type: Integer**
+> Represents the LP of the player who owns the triggered card.
+
+**4. $lp_opp - Type: Integer**
+> Represents the LP of the opponent of the player who owns the triggered card.
+
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like "rand" or "add" in commands.
 > Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
 
-2. You can use "$trigger" anywhere in a command string as a placeholder for the zone index that the card was triggered in.
-> Example: If you wanted a card to mill up to 3 cards from whatever pile you snapped it to, you could write `source=$trigger¬dest=2¬up_to¬rand=3`
-
-3. If you plan to script more than just a couple cards from scratch, I'd recommend installing "AutoHotKey v2" on your computer and using the script in this repository called "RazerSynapseAtHome.ahk" (I use this script daily since Razer Synapse is the worst software ever created, lol; it essentially just allows you to type `¬` by holding SHIFT+ALT then pressing the `L` key, and a couple other symbols that would otherwise be more cumbersome to type frequently)
+2. If you plan to script more than just a couple cards from scratch, I'd recommend installing "AutoHotKey v2" on your computer and using the script in this repository called "RazerSynapseAtHome.ahk" (I use this script daily since Razer Synapse is the worst software ever created, lol; it essentially just allows you to type `¬` by holding SHIFT+ALT then pressing the `L` key, and a couple other symbols that would otherwise be more cumbersome to type frequently)
