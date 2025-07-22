@@ -117,6 +117,7 @@ Each option in "options", or any given "execute" command string, can have multip
 
 ## Placeholders
 In any given command string, pop-up message, or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
+
 **1. $trigger - Type: Integer**
 > Represents the index of the zone from which triggered card was triggered.
 
