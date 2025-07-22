@@ -118,7 +118,28 @@ Each option in "options", or any given "execute" command string, can have multip
 > Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
 
 ## Conditions
+Aside from specifying trigger zones for each command, you can also specify certain conditions to prevent any given command from being triggered if its conditions are not met. There are two ways to specify conditions: either as one object, or an array of objects.
 
+When providing a single object to a command's `"conditions"` property, the system will check each condition property in that object, and if any given property evaluates to "false", the condition is not met (you can think of a conditions object as one big "IF" statement, with each of the object's properties joined by "AND" clauses). You can also assign arrays of conditions objects to "OR", "AND", or "NOT" properties, and the system will evaluate each condition in each array accordingly (so, a condition evaluating to false in an "AND" array will cause the entire "conditions" object to return false, a condition evaluating to true in an "OR" array will cause the entire "conditions" object to return true, and a condition evaluating to true in a "NOT" array will cause the entire "conditions" object to return false).
+
+Alternatively, when providing an array to the `"conditions"` property, each element of the array must be an object similar to what you would provide the `"conditions"` property as mentioned above. The results of each conditions object in the array will then be stored, allowing you to reference each condition individually in any given command string using "condition=[CONDITION_INDEX]". This allows you to only show certain pop-up menu options under certain conditions. A good showcase of this feature is the script for [Vaalmonica Invitare](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/38491852.json).
+
+Available properties for use inside any given "conditions" object:
+
+**1. prev_zone - Type: Integer**
+> Checks that the card was previously at the specified zone index.
+
+**2. prev_range - Type: Integer[]**
+> Similar to "prev_zone", except the system checks every zone index from the provided array's first index to its last index (inclusive). This property expects an array with only two values, signifying a "start index" and "end index."
+
+**3. prev_list - Type: Integer[]**
+> Similar to "prev_zone", except the system checks every zone index in the provided array.
+
+**4. lp_self - Type: Integer[]**
+> Checks that the card's owner's LP value is within the provided range (the range being handled similarly to the one provided for "prev_range").
+
+**4. lp_opp - Type: Integer[]**
+> The same as "lp_self", except it checks the other player's LP.
 
 ## Placeholders
 In any given command string, pop-up message, custom property (explained below), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
