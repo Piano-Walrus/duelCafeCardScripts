@@ -2,8 +2,8 @@
     "id":92731385,
     "commands":[
         {
-            "trigger":2,
-            "message":"Resolve this card's effect?",
+            "trigger_list":[2],
+            "msg":"Resolve $name's effect?",
             "options":[
                 "label=Send 5 cards from your Deck to the GY¬source=0¬dest=2¬rand=5"
             ]
