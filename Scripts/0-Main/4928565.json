@@ -1,0 +1,21 @@
+{
+    "id":4928565,
+    "$piles":"¬source=0¬dest=2¬",
+    "commands":[
+        {
+            "trigger_range":[10,14],
+            "msg":"Send cards from a player's Deck to the GY?",
+            "options":[
+                "label=Your Deck$pilesrand=3",
+                "label=Opponent's Deck¬opp$pilesrand=3"
+            ]
+        },
+        {
+            "trigger":2,
+            "msg":"Resolve $name's GY effect?",
+            "options":[
+                "label=Send the top 2 cards of your Deck to the GY$pilesrand=2"
+            ]
+        }
+    ]
+}
