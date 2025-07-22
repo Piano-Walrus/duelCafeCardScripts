@@ -1,0 +1,23 @@
+{
+    "id":73810864,
+    "commands":[
+        {
+            "conditions":{
+                "NOT":[
+                    "control_self":0
+                ]
+            },
+            "trigger_zone":[10,14],
+            "msg":"Resolve $name's on-summon effect?",
+            "options":[
+                "label=Special Summon 1 \"Ki-sikil\" monster from your hand or Deck¬search=0"
+            ]
+        },
+        {
+            "msg":"Resolve $name's first effect?",
+            "options":[
+                "label=Make your opponent pay 500 LP to declare an attack¬opp¬add_lp=-500"
+            ]
+        }
+    ]
+}
