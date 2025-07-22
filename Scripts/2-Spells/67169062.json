@@ -1,0 +1,12 @@
+{
+    "id":67169062,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Open the \"Graveyard\" tab of the Search Menu to pay the cost for this card's effect?",
+            "options":[
+                "label=Open Search Menu¬search=2"
+            ]
+        }
+    ]
+}
