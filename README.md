@@ -115,7 +115,7 @@ Each option in "options", or any given "execute" command string, can have multip
 **9. excavate_until=[TEXT]**
 > Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
 
-## Placeholders & Variables
+## Placeholders
 In any given command string, pop-up message, or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 **1. $trigger - Type: Integer**
 > Represents the index of the zone from which triggered card was triggered.
