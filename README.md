@@ -29,9 +29,11 @@ The cafe identifies each zone using integers. These were decided on back when I 
 ## Script Structure
 Each script must be named after the passcode of the card it's for. For example, the script for "Labrynth Cooclock" would be named "2511.json".
 
-Each script is one JSON object, and should begin with the "id" property, its value being that same passcode mentioned above. Note that any leading zeros in card passcodes must always be omitted, i.e. use `2511` **NOT** `00002511`.
+Each script is one JSON object, and should begin with the `"id"` property, its value being that same passcode mentioned above. Note that any leading zeros in card passcodes must always be omitted, i.e. use `2511` **NOT** `00002511`.
 
-The next property should always be "commands", which expects a list of objects. Each object can have the following properties:
+Next, you can declare and set any custom properties you deem appropriate and/or necessary (outlined in [this section](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#placeholders)). You can also set a global `"msg"` property after the `"id"` property, and it will be applied to every possible pop-up menu that each of the script's commands could theoretically generate, as opposed to setting a `"msg"` for each command individually.
+
+The next and final property should always be `"commands"`, which expects a list of objects. Each object can have the following properties:
 
 **1. "msg" - Type: String**
 > The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.
@@ -134,7 +136,7 @@ In any given command string, pop-up message, custom property (explained below), 
 > Represents the LP of the opponent of the player who owns the triggered card.
 
 **5. Custom Properties**
-> You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the same message for all 3 commands, you can create a property called "$msg" right under the script's "id" property, then you can set each command's `"msg"` property to `"$msg"` and the system will replace each instance of `"$msg"` with the value you gave that property earlier. Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$name"` in `"$msg"`, but you cannot reference `"$msg"` while declaring a custom `"$archetype"` property.
+> You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Pay 500 LP" in all 3 commands, you can create a property called `"$gainLP"` under the script's "id" property, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP". Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.
 
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
