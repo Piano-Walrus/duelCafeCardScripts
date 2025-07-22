@@ -3,7 +3,7 @@
     "commands":[
         {
             "trigger_range":[20,24],
-            "message":"Resolve this card's effect?",
+            "msg":"Resolve $name's effect?",
             "options":[
                 "label=Gain 400 LP¬add_lp=400"
             ]
