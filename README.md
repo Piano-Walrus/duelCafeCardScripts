@@ -143,6 +143,8 @@ You can also perform very basic mathematical expressions throughout card scripts
 
 To use this feature, in any appropriate string, simply use the syntax ``{[OPERAND1][OPERATOR][OPERAND2]}``. For example, to add both players' LP, you can use ``{$lp_self+$lp_opp}``, and to subtract 1 from the zone index from which a card was triggered, you can use ``{$trigger-1}``.
 
+A good showcase of this feature is the script for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json).
+
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like "rand" or "add" in commands.
 > Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
