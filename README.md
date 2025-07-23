@@ -174,6 +174,6 @@ A good showcase of this feature is the script for [Dried Winds](https://github.c
 
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like "rand" or "add" in commands.
-  - Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
+    - Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
 
 2. If you plan to script more than just a couple cards from scratch, I'd recommend installing "AutoHotKey v2" on your computer and using the script in this repository called "RazerSynapseAtHome.ahk" (I use this script daily since Razer Synapse is the worst software ever created, lol; it essentially just allows you to type `¬` by holding SHIFT+ALT then pressing the `L` key, and a couple other symbols that would otherwise be more cumbersome to type frequently)
