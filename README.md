@@ -6,25 +6,28 @@ You can find all existing card scripts in the "Scripts" folder of this repositor
 ## Zone Indexes
 The cafe identifies each zone using integers. These were decided on back when I didn't know what I was doing, so apologies in advance if some seem a bit unintuitive...
 
- - 0: Main Deck
- - 1: Extra Deck
- - 2: Graveyard
- - 3: Banished
- - 4: Face-Up Extra
- - 5: Face-Down Banished
- - 6: Floating/In-Hand
-
- - 7: Should not be used in any card scripts; used internally to mean "just recently drawn from a deck pile"
-
- - 8: The Extra Monster Zone closest to Player 1's Field Spell Zone
- - 108: The other Extra Monster Zone
+| Zone Index  | Description |
+| :--- | :--- |
+| 0  | Main Deck |
+| 1  |  Extra Deck |
+| 2  | Graveyard  |
+| 3  | Banished  |
+| 4  | Face-Up Extra  |
+| 5 | Face-Down Banished |
+| 6 | Floating/In-Hand |
+| 7 | Should not be used in any card scripts; internally represents "just recently drawn from a deck pile" |
+| 8 | The Extra Monster Zone closest to Player 1's Field Spell Zone |
+| 108 | The other Extra Monster Zone |
 
 **Note:** Add 100 to any of the following to specifically indicate Player 2's equivalent zone
- - 9: Player 1's Field Spell Zone
- - 10-14: Player 1's Monster Zones, from Left to Right
- - 20-22: Player 1's Spell/Trap Zones 2-4, starting from the 2nd from the left
- - 23: Player 1's Right Pendulum Zone
- - 24: Player 1's Left Pendulum Zone
+
+| Zone Index  | Description |
+| :--- | :--- |
+| 9  | Player 1's Field Spell Zone |
+| 10-14  |  Player 1's Monster Zones, from Left to Right |
+| 20-22  | Player 1's Spell/Trap Zones 2-4, starting from the 2nd from the left  |
+| 23  | Player 1's Right Pendulum Zone  |
+| 24  | Player 1's Left Pendulum Zone  |
 
 ## Script Structure
 Each script must be named after the passcode of the card it's for. For example, the script for "Labrynth Cooclock" would be named "2511.json".
