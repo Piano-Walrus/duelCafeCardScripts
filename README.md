@@ -19,7 +19,7 @@ The cafe identifies each zone using integers. These were decided back when I did
 | 8 | The Extra Monster Zone closest to Player 1's Field Spell Zone |
 | 108 | The other Extra Monster Zone |
 
-**NOTE:** Add 100 to any of the following to specifically indicate Player 2's equivalent zone
+Add 100 to any of the following to specifically indicate Player 2's equivalent zone:
 
 | Zone Index  | Description |
 | :--- | :--- |
