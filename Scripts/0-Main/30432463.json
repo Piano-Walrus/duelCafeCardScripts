@@ -2,18 +2,26 @@
     "id":30432463,
     "$pref":"label=Scale \"Angello Vaalmonica\" in your other Pendulum Zone¬source=0¬dest=",
     "$suff":"¬target=3048768¬place=1",
-    "msg":"Resolve $name's effect?",
+    "$msg":"Resolve $name's effect?",
     "commands":[
         {
+            "msg":"$msg",
             "trigger":24,
             "options":[
                 "$pref23$suff"
             ]
         },
         {
+            "msg":"$msg",
             "trigger":23,
             "options":[
                 "$pref24$suff"
+            ]
+        },
+        {
+            "msg":"Pay the cost for this card's ignition effect?",
+            "options":[
+                "label=Banish 1 \"Vaalmonica\" Normal Spell/Trap from your GY"
             ]
         }
     ]
