@@ -150,20 +150,15 @@ You can also use conditions to check whether or not a given player controls cert
 ## Placeholders
 In any given command string, pop-up message, custom property (explained below), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 
-**1. $trigger - Type: Integer**
-> Represents the index of the zone from which triggered card was triggered.
+| Placeholder Identifier | Type | Description |
+| :--- | :--- | :--- |
+| `$trigger`  |  int | Represents the index of the zone from which triggered card was triggered.  |
+| `$name`  | string  | Represents the name of the triggered card.  |
+| `$lp_self`  | int  | Represents the LP of the player who owns the triggered card.  |
+| `$lp_opp`  | int  | Represents the LP of the opponent of the player who owns the triggered card.  |
 
-**2. $name - Type: String**
-> Represents the name of the triggered card.
-
-**3. $lp_self - Type: Integer**
-> Represents the LP of the player who owns the triggered card.
-
-**4. $lp_opp - Type: Integer**
-> Represents the LP of the opponent of the player who owns the triggered card.
-
-**5. Custom Properties**
-> You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Pay 500 LP" in all 3 commands, you can create a property called `"$gainLP"` under the script's "id" property, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP". Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.
+### 5. Custom Properties
+You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Pay 500 LP" in all 3 commands, you can create a property called `"$gainLP"` under the script's "id" property, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP". Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.
 
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
