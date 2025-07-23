@@ -4,7 +4,7 @@ The cards in the cafe refer to the JSON files in this repository to determine th
 You can find all existing card scripts in the "Scripts" folder of this repository. You're free to reference these as examples, suggest edits through pull requests, or even submit new scripts to be reviewed and potentially added to the cafe!
 
 ## Zone Indexes
-The cafe identifies each zone using integers. These were decided on back when I didn't know what I was doing, so apologies in advance if some seem a bit unintuitive...
+The cafe identifies each zone using integers. These were decided back when I didn't really know what I was doing, so apologies in advance if some seem a bit unintuitive...
 
 | Zone Index  | Description |
 | :--- | :--- |
