@@ -147,7 +147,7 @@ To use this feature, in any appropriate string, simply use the syntax `{[OPERAND
 |`/`| Division |
 |`%`| Modulus |
 
-You can also surround a number with `|` to get its absolute value. Note, however, that if you intend to get the absolute value of an expression, you must surround those pipes with brackets.<br/>**Example:** `{|{$trigger-1]|}` would subtract 1 from the trigger location, then return the absolute value of that result.
+You can also surround a number with `|` to get its absolute value. Note, however, that if you intend to get the absolute value of an expression, you must surround those pipes with brackets.<br/>**Example:** `{|{$trigger-1}|}` would subtract 1 from the trigger location, then return the absolute value of that result.
 
 Two good examples of this feature would be the scripts for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json) and [Dimonno Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/30432463.json).
 
