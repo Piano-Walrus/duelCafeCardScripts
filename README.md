@@ -157,7 +157,7 @@ In any given command string, pop-up message, custom property (explained [below](
 | `$lp_self`  | int  | Represents the LP of the player who owns the triggered card.  |
 | `$lp_opp`  | int  | Represents the LP of the opponent of the player who owns the triggered card.  |
 
-### 5. Custom Properties
+### Custom Properties
 You can declare custom properties on each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Pay 500 LP" in all 3 commands, you can create a property called `"$gainLP"` under the script's "id" property, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP". Note, however, that you cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.
 
 ## Basic Two-Operand Math
