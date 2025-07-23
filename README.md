@@ -129,21 +129,6 @@ Alternatively, when providing an array to the `"conditions"` property, each elem
 
 Available properties for use inside any given "conditions" object:
 
-**1. prev_zone - Type: Integer**
-> Checks that the card was previously at the specified zone index.
-
-**2. prev_range - Type: Integer[]**
-> Similar to "prev_zone", except the system checks every zone index from the provided array's first index to its last index (inclusive). This property expects an array with only two values, signifying a "start index" and "end index."
-
-**3. prev_list - Type: Integer[]**
-> Similar to "prev_zone", except the system checks every zone index in the provided array.
-
-**4. lp_self - Type: Integer[]**
-> Checks that the card's owner's LP value is within the provided range (the range being handled similarly to the one provided for "prev_range").
-
-**4. lp_opp - Type: Integer[]**
-> The same as "lp_self", except it checks the other player's LP.
-
 | Property  | Expected Type | Description |
 | :--- | :--- | :--- |
 | `prev_zone`  |  int | Checks that the card was previously at the specified zone index.  |
