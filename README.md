@@ -148,7 +148,7 @@ You can also use conditions to check whether or not a given player controls cert
 | `zone_list`  | int[]  | Expects an array of any number of integers; `control_self` and `control_opp` will check every zone index specified in the array for cards matching the provided criteria.  |
 
 ## Placeholders
-In any given command string, pop-up message, custom property (explained [below](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#5-custom-properties)), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
+In any given command string, pop-up message, custom property (explained [below](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#custom-properties)), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 
 | Placeholder Identifier | Type | Description |
 | :--- | :--- | :--- |
