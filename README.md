@@ -138,7 +138,17 @@ You can also perform very basic mathematical expressions throughout card scripts
 
 To use this feature, in any appropriate string, simply use the syntax `{[OPERAND1][OPERATOR][OPERAND2]}`. For example, to add both players' LP, you can use `{$lp_self+$lp_opp}`, and to subtract 1 from the zone index from which a card was triggered, you can use `{$trigger-1}`. Note that nested brackets are supported, so `{10*{8%6}}` would also work and output 20.
 
-A good showcase of this feature is the script for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json).
+### Supported Operators
+- +
+- -
+- *
+- /
+- %
+
+You can also surround a number with `|` to get its absolute value. Note, however, that if you intend to get the absolute value of an expression, you must surround those pipes with brackets.<br/>Example: `{|{$trigger-1]|}` would subtract 1 from the trigger location, then return the absolute value of that result.
+Example: 
+
+Two good examples of this feature would be the scripts for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json) and [Dimonno Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/30432463.json).
 
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like `rand` or `add` in commands.
