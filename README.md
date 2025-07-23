@@ -56,7 +56,7 @@ Each command must have a trigger condition. There are currently four ways to spe
 | `trigger_list`  | int[]  | This property takes an array of any number of integers, and specifies that a card can trigger in any one of the integers provided. For example, if a card should trigger ONLY when snapped to an Extra Monster Zone, then the command's trigger condition would be `"trigger_list":[8,108]`  |
 
 If no trigger condition is provided for a given command, then that command will execute when a card is manually triggered by double-clicking/double-tapping the trigger while holding said card.<br/>
-**Note:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
+> **Note:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
 ## Option Buttons & Command Strings
 Each option in "options", or any given "execute" command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`)
