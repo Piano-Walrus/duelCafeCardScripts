@@ -141,7 +141,7 @@ Available properties for use inside any given "conditions" object:
 **4. lp_opp - Type: Integer[]**
 > The same as "lp_self", except it checks the other player's LP.
 
-### You can also use conditions to check whether or not a given player controls certain cards. In any given conditions object, only two control-checking properties may be present: one beginning with `"control_"`, and the other beginning with `"zone_"`. The "zone_" property specifies which locations to check, and the `"control_"` property checks whether or not there exist any cards at those locations that match the provided criteria. The available control-checking properties are as follows:
+You can also use conditions to check whether or not a given player controls certain cards. In any given conditions object, only two control-checking properties may be present: one beginning with `"control_"`, and the other beginning with `"zone_"`. The "zone_" property specifies which locations to check, and the `"control_"` property checks whether or not there exist any cards at those locations that match the provided criteria. The available control-checking properties are as follows:
 
 | Property  | Expected Type(s) | Description |
 | ------------- | ------------- |
