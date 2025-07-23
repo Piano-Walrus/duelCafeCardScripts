@@ -1,0 +1,13 @@
+{
+    "id":65496951,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Gain LP or take damage to resolve one of this card's effects?",
+            "options":[
+                "label=Gain 500 LP, then add 1 banished \"Vaalmonica\" card to your hand¬search=3¬add_lp=500",
+                "label=Take 500 damage, then add 1 \"Vaalmonica\" card from your GY to your hand¬search=2¬add_lp=-500"
+            ]
+        }
+    ]
+}
