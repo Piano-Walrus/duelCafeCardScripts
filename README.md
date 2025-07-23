@@ -15,7 +15,7 @@ The cafe identifies each zone using integers. These were decided on back when I 
 | 4  | Face-Up Extra  |
 | 5 | Face-Down Banished |
 | 6 | Floating/In-Hand |
-| 7 | Should not be used in any card scripts; internally represents "just recently drawn from a deck pile" |
+| 7 | Should not be used; internally represents "just recently drawn from a deck pile" |
 | 8 | The Extra Monster Zone closest to Player 1's Field Spell Zone |
 | 108 | The other Extra Monster Zone |
 
