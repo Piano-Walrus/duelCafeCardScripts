@@ -1,0 +1,12 @@
+{
+    "id":35261759,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Pay the cost for this card's effect?",
+            "options":[
+                "label=Banish the top 10 cards of your Deck face-down¬source=0¬dest=5¬rand=10"
+            ]
+        }
+    ]
+}
