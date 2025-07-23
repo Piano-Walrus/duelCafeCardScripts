@@ -87,7 +87,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `rand=INT`  | Selects a number of random cards equal to the provided integer, and moves them from "source" to "dest" (as such, those two variables MUST be set before calling "rand"). |
 | `add=INT`  | Selects a number of random cards equal to the provided integer, and reveals them as if they were searched from the "Search Deck Piles" menu. This function requires the "source" variable to be set.<br/>***NOTE:** This function can also be used with the `target` variable to only reveal a certain card passcode.* |
 | `place=INT`  | Selects a number of random cards equal to the provided integer, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the `target` variable to place a specific card |
-| `add_lp=INT`  | Add the provided integer to a player's current LP. <br/>***NOTE:** The provided integer *can* be negative to subtract LP.* |
+| `add_lp=INT`  | Add the provided integer to a player's current LP. <br/>***NOTE:** The provided integer* **can** *be negative to subtract LP.* |
 
 
 **6. add_exact_lp=[QUANTITY]**
