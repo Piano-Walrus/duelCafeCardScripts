@@ -39,7 +39,7 @@ Next, you can declare and set any custom properties you deem appropriate and/or 
 The next and final property should always be `commands`, which expects a list of objects. Each `commands` object can have the following properties:
 
 | Property  | Expected Type | Description |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | `msg`  |  string | The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.  |
 | `options`  | string[]  | An array of strings that specify what to label each button in the options menu, AND what commands to run once each button is clicked  |
 | `execute`  | string  | This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string. Cannot be used alongside any other command properties.  |
@@ -64,7 +64,7 @@ Each option in "options", or any given "execute" command string, can have multip
 ### Variables
 
 | Identifier=TYPE | Description |
-| :--- | :--- | :--- |
+| :---| :--- |
 | `label=STRING`  | Can only be used in option button command strings. If used, must be FIRST in the command string. Specifies the text to display on the button that will run this command when clicked. Optional when using the "rand" function; if no title is specified for a "rand" command, the title defaults to the QUANTITY passed to it. |
 | `source=INT`  | Takes a zone index as an integer, and specifies the source that you intend to move cards from. |
 | `dest=INT`  | Takes a zone index as an integer, and specifies the destination that you intend to move cards to.<br/>*(**NOTE:** When using "add", dest should be omitted)* |
