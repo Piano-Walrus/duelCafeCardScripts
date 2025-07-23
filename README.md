@@ -163,7 +163,7 @@ You can declare custom properties on each card script by starting their key name
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
 
-To use this feature, in any appropriate string, simply use the syntax ``{[OPERAND1][OPERATOR][OPERAND2]}``. For example, to add both players' LP, you can use ``{$lp_self+$lp_opp}``, and to subtract 1 from the zone index from which a card was triggered, you can use ``{$trigger-1}``.
+To use this feature, in any appropriate string, simply use the syntax `{[OPERAND1][OPERATOR][OPERAND2]}`. For example, to add both players' LP, you can use `{$lp_self+$lp_opp}`, and to subtract 1 from the zone index from which a card was triggered, you can use `{$trigger-1}`. Note that nested brackets are supported, so `{10*{8%6}}` would also work and output 20.
 
 A good showcase of this feature is the script for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json).
 
