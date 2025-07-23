@@ -141,6 +141,16 @@ Available properties for use inside any given "conditions" object:
 **4. lp_opp - Type: Integer[]**
 > The same as "lp_self", except it checks the other player's LP.
 
+### You can also use conditions to check whether or not a given player controls certain cards. In any given conditions object, only two control-checking properties may be present: one beginning with `"control_"`, and the other beginning with `"zone_"`. The "zone_" property specifies which locations to check, and the `"control_"` property checks whether or not there exist any cards at those locations that match the provided criteria. The available control-checking properties are as follows:
+
+| Property  | Expected Type(s) | Description |
+| ------------- | ------------- |
+| `control_self`  | long OR string  | Checks to see if the owner of the triggered card controls cards based on certain provided criteria. If a long is provided, checks the specified locations for cards whose passcodes equal the long provided. If a string is provided, checks the specified locations for cards whose names contain that string.  |
+| `control_opp`  |  long OR string | The same as `control_self`, except it checks the other player's zones/locations.  |
+| `zone`  | int  | Specifies the specific zone that `control_self` and `control_opp` are expected to check.  |
+| `zone_range`  | int[]  | Expects an array of two "start index" and "end index" integers; Specifies a range of locations for `control_self` and `control_opp` to check.  |
+| `zone_list`  | int[]  | Expects an array of any number of integers; `control_self` and `control_opp` will check every zone index specified in the array for cards matching the provided criteria.  |
+
 ## Placeholders
 In any given command string, pop-up message, custom property (explained below), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 
