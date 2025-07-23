@@ -43,7 +43,8 @@ The next and final property should always be `"commands"`, which expects a list 
 | `msg`  |  string | The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.  |
 | `options`  | string[]  | An array of strings that specify what to label each button in the options menu, AND what commands to run once each button is clicked  |
 | `execute`  | string  | This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string. Cannot be used alongside any other command properties.  |
-| `trigger`, `trigger_range`, and `trigger_list`  | int OR int[]  | ([see below](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#triggers))  |
+| `trigger`, `trigger_range`, and `trigger_list`  | int, int[], int[]  | See [Triggers](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#triggers) below.  |
+| **Conditions**  | Various  | See [Conditions](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#conditions) below.  |
 
 ## Triggers
 Each command must have a trigger condition. There are currently four ways to specify a command's trigger condition:
