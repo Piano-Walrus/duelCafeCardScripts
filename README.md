@@ -59,7 +59,7 @@ Each command must have a trigger condition. There are currently four ways to spe
 **NOTE:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
 ## Option Buttons & Command Strings
-Each option in an `options` object, or any given `execute` command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`). A good example this string format would be [Vaalmonica Invitare](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/38491852.json).
+Each option in an `options` object, or any given `execute` command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`). A good example this string format would be [Runick Tip](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/31562086.json).
 
 ### Variables
 
@@ -80,20 +80,15 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `up_to`  | Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity). |
 
 ### Functions
-**1. search=[TAB_INDEX]**
-> Opens the "Search Deck Piles" menu, and switches to the tab corresponding to TAB_INDEX (in order from left to right, "Main" is 0, "Extra" is 1, etc. "Side" cannot be selected)
 
-**2. rand=[QUANTITY]**
-> Selects a number of random cards equal to QUANTITY, and moves them from "source" to "dest" (as such, those two variables MUST be set before calling "rand")
+| Identifier=TYPE | Description |
+| :---| :--- |
+| `search=INT`  | Opens the "Search Deck Piles" menu, and switches to the tab corresponding to the provided integer (in order from left to right, "Main" is 0, "Extra" is 1, etc. "Side" cannot be selected). |
+| `rand=INT`  | Selects a number of random cards equal to the provided integer, and moves them from "source" to "dest" (as such, those two variables MUST be set before calling "rand"). |
+| `add=INT`  | Selects a number of random cards equal to the provided integer, and reveals them as if they were searched from the "Search Deck Piles" menu. This function requires the "source" variable to be set.<br/>***NOTE:** This function can also be used with the `target` variable to only reveal a certain card passcode.* |
+| `place=INT`  | Selects a number of random cards equal to the provided integer, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the `target` variable to place a specific card |
+| `add_lp=INT`  | Add the provided integer to a player's current LP. <br/>***NOTE:** The provided integer *can* be negative to subtract LP.* |
 
-**3. add=[QUANTITY]**
-> Selects a number of random cards equal to QUANTITY, and reveals them as if they were searched from the "Search Deck Piles" menu. This function requires the "source" variable to be set. HOWEVER this function can also be used with the "target" variable to only reveal a certain card passcode
-
-**4. place=[QUANTITY]**
-> Selects a number of random cards equal to QUANTITY, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the "target" variable to place a specific card
-
-**5. add_lp=[QUANTITY]**
-> Add QUANTITY to a player's current LP. Note that QUANTITY ***can*** be negative to subtract LP
 
 **6. add_exact_lp=[QUANTITY]**
 > Essentially the same as "add_lp", except that if you provide a negative number, it will only subtract LP if the player's current LP is greater than the absolute value of the value provided (in other words, use this when scripting costs that must be paid ***exactly***, i.e. with cards like "Solemn Strike")
