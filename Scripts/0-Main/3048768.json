@@ -1,21 +1,11 @@
 {
     "id":3048768,
-    "$pref":"label=Scale \"Dimonno Vaalmonica\" in your other Pendulum Zone¬source=0¬dest=",
-    "$suff":"¬target=30432463¬place=1",
-    "$msg":"Resolve $name's effect?",
     "commands":[
         {
-            "msg":"$msg",
-            "trigger":23,
+            "msg":"Resolve $name's effect?",
+            "trigger_range":[23,24],
             "options":[
-                "$pref24$suff"
-            ]
-        },
-        {
-            "msg":"$msg",
-            "trigger":24,
-            "options":[
-                "$pref23$suff"
+                "label=Scale \"Dimonno Vaalmonica\" in your other Pendulum Zone¬source=0¬dest={|{{$trigger-23}-1}|}¬target=30432463¬place=1"
             ]
         },
         {
