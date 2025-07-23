@@ -59,7 +59,7 @@ Each command must have a trigger condition. There are currently four ways to spe
 **NOTE:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
 ## Option Buttons & Command Strings
-Each option in "options", or any given "execute" command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`)
+Each option in an `options` object, or any given `execute` command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`). A good example this string format would be [Vaalmonica Invitare](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/38491852.json).
 
 ### Variables
 
@@ -71,17 +71,13 @@ Each option in "options", or any given "execute" command string, can have multip
 | `target=LONG`  | Takes a card passcode as a long, and specifies the card passcode to search for at the source location. |
 
 ### Flags
-**1. opp**
-> Specifies that your command should affect the opponent rather than the current player
 
-**2. opp_source**
-> Specifies that ONLY the designated source applies to the opponent, but NOT the destination
-
-**3. opp_destination**
-> As with "opp_source", this specifies that the designated destination applies to the opponent, but NOT the source
-
-**4. up_to**
-> Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity)
+| Flag Name | Description |
+| :---| :--- |
+| `opp`  | Specifies that a command string should affect the opponent rather than the current player. |
+| `opp_source`  | Specifies that ONLY the designated source applies to the opponent, but NOT the destination. |
+| `opp_destination`  | As with `opp_source`, this specifies that the designated destination applies to the opponent, but NOT the source. |
+| `up_to`  | Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity). |
 
 ### Functions
 **1. search=[TAB_INDEX]**
