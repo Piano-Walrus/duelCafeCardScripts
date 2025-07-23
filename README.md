@@ -89,19 +89,9 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `place=INT` | Selects a number of random cards equal to the provided integer, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the `target` variable to place a specific card |
 | `add_lp=INT` | Add the provided integer to a player's current LP. <br/>***NOTE:** The provided integer* ***can*** *be negative to subtract LP.* |
 | `add_exact_lp=INT` | Essentially the same as "add_lp", except that if you provide a negative number, it will only subtract LP if the player's current LP is greater than the absolute value of the value provided (in other words, use this when scripting costs that must be paid ***exactly***, i.e. with cards like [Solemn Strike](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/40605147.json)). |
-
-
-**6. add_exact_lp=[QUANTITY]**
-> Essentially the same as "add_lp", except that if you provide a negative number, it will only subtract LP if the player's current LP is greater than the absolute value of the value provided (in other words, use this when scripting costs that must be paid ***exactly***, i.e. with cards like "Solemn Strike")
-
-**7. div_lp=[QUANTITY]**
-> Divides a player's current LP by QUANTITY
-
-**8. set_lp=[QUANTITY]**
-> Sets a player's LP to QUANTITY. Note that the value provided ***cannot*** be negative
-
-**9. excavate_until=[TEXT]**
-> Starts from the top of the designated "source" pile, and looks for a card whose name contains "TEXT", then reveals that card as if it were searched from the "Search Deck Piles" menu
+| `div_lp=INT` | Divides a player's current LP by the provided integer. |
+| `set_lp=INT` | Sets a player's LP to the provided integer.<br/>***NOTE:** The provided value* ***cannot*** *be negative.* |
+| `excavate_until=STRING` | Starts from the top of the designated "source" pile, and looks for a card whose name contains the provided string, then reveals that card as if it were searched from the "Search Deck Piles" menu. |
 
 ## Conditions
 Aside from specifying trigger zones for each command, you can also specify certain conditions to prevent any given command from being triggered if its conditions are not met. There are two ways to specify conditions: either as one object, or an array of objects.
