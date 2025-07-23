@@ -34,7 +34,7 @@ Each script must be named after the passcode of the card it's for. For example, 
 
 Each script is one JSON object, and should begin with the `id` property, its value being that same passcode mentioned above. Note that any leading zeros in card passcodes must always be omitted, i.e. use `2511` **NOT** `00002511`.
 
-Next, you can declare and set any custom properties you deem appropriate and/or necessary (see [Placeholders](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#placeholders)). You can also set a global `msg` property after the `id` property, and it will be applied to every possible pop-up menu that each of the script's commands could theoretically generate, as opposed to setting a `msg` for each command individually.
+Next, you can declare and set any custom properties you deem appropriate and/or necessary (see [Custom Properties](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#custom-properties)). You can also set a global `msg` property after the `id` property, and it will be applied to every possible pop-up menu that each of the script's commands could theoretically generate, as opposed to setting a `msg` for each command individually.
 
 The next and final property should always be `commands`, which expects a list of objects. Each `commands` object can have the following properties:
 
