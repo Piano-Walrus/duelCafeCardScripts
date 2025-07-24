@@ -1,0 +1,12 @@
+{
+    "id":84211599,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Open Search Menu¬search=1"
+            ]
+        }
+    ]
+}
