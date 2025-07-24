@@ -1,0 +1,12 @@
+{
+    "id":74078255,
+    "commands":[
+        {
+            "trigger_range":[10,14],
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Send the top 3 cards of your Deck to the GY¬source=0¬dest=2¬rand=3"
+            ]
+        }
+    ]
+}
