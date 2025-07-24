@@ -15,7 +15,7 @@
                         "zone_range":[8,108]
                     }
                 ]
-            }
+            },
             "msg":"Pay the cost for $name's effect?",
             "trigger_range":[20,24],
             "options":[
