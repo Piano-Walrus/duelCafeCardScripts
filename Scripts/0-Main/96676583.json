@@ -1,0 +1,12 @@
+{
+    "id":96676583,
+    "commands":[
+        {
+            "trigger":3,
+            "msg":"Pay the cost for $name's effect?",
+            "options":[
+                "label=Pay 300 LP¬add_lp=-300"
+            ]
+        }
+    ]
+}
