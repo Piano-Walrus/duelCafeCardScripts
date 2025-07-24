@@ -1,0 +1,13 @@
+{
+    "id":99789342,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Pay the cost for, and resolve, $name's effect?",
+            "options":[
+                "label=Pay half your LP for cost (No Effect)¬div_lp=2",
+                "label=Pay half your LP; Special Summon 1 \"Dark Magician\" from your Deck¬div_lp=2¬source=0¬target=36996508¬add=1"
+            ]
+        }
+    ]
+}
