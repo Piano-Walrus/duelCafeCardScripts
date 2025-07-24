@@ -1,0 +1,12 @@
+{
+    "id":28803166,
+    "commands":[
+        {
+            "trigger_range":[10,14],
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Send 1 \"Fiendsmith\" card from your Deck to the GY¬search=0"
+            ]
+        }
+    ]
+}
