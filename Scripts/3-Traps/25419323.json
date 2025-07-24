@@ -1,0 +1,12 @@
+{
+    "id":25419323,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Pay the cost for $name's effect?",
+            "options":[
+                "label=Pay half your LP¬div_lp=2"
+            ]
+        }
+    ]
+}
