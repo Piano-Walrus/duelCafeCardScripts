@@ -17,7 +17,7 @@
             "trigger_range":[10,14],
             "msg":"Resolve $name's on-summon effect?",
             "options":[
-                "label=Special Summon 1 \"Lil-la\" monster from your hand or Deck¬search=0"
+                "label=Special Summon 1 \"Lil-la\" monster from your hand or Deck¬search(0, 255, [0], \"Lil-la\", 0, -1)"
             ]
         },
         {
