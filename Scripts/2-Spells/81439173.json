@@ -1,0 +1,12 @@
+{
+    "id":81439173,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Send 1 monster from your Deck to the GY¬search(0, 2, [0], \"\", -1, 2)"
+            ]
+        }
+    ]
+}
