@@ -1,12 +1,13 @@
 {
     "id":5605529,
+    "$arch":"\"Vaalmonica\"",
     "commands":[
         {
             "trigger_range":[20,24],
             "msg":"Gain LP or take damage to resolve one of this card's effects?",
             "options":[
                 "label=Gain 500 LP¬add_lp=500",
-                "label=Take 500 damage, then add 1 \"Vaalmonica\" Spell/Trap from your Deck to your hand¬search=0¬add_lp=-500"
+                "label=Take 500 damage, then add 1 $arch Spell/Trap from your Deck to your hand¬search(0, 255, [0], $arch, 0, -1)¬add_lp=-500"
             ]
         }
     ]
