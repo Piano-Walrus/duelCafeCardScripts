@@ -5,8 +5,8 @@
             "trigger_range":[20,24],
             "msg":"Resolve this card's effect?",
             "options":[
-                "label=Add 1 \"Runick\" card from your Deck, then Banish 1 card from your opponent's deck¬search=0¬opp¬source=0¬dest=3¬rand=1",
-                "label=Special Summon 1 \"Runick\" Monster from your Extra Deck¬search=1"
+                "label=Add 1 \"Runick\" card from your Deck, then Banish 1 card from your opponent's deck¬search(0, 255, [0], \"Runick\", 0, -1)¬opp¬source=0¬dest=3¬rand=1",
+                "label=Special Summon 1 \"Runick\" Monster from your Extra Deck¬search(1, 255, [1], \"Runick\", 0, -1)"
             ]
         }
     ]
