@@ -3,9 +3,9 @@
     "commands":[
         {
             "trigger_range":[20,24],
-            "msg":"Resolve $name's effect?",
+            "msg":"Pay the cost for $name's effect?",
             "options":[
-                "label=Open Search Menu¬search(1, 5, [1], \"\", 0, -1)"
+                "label=Banish 3 or 6 cards of your choice from your Extra Deck, face-down¬search(1, 5, [1], \"\", 0, -1)"
             ]
         }
     ]
