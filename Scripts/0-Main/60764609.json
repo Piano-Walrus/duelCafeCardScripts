@@ -1,0 +1,12 @@
+{
+    "id":60764609,
+    "commands":[
+        {
+            "trigger":2,
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Add 1 \"Fiendsmith\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"Fiendsmith\", 0, -1)"
+            ]
+        }
+    ]
+}
