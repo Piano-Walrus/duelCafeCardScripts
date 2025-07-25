@@ -1,0 +1,12 @@
+{
+    "id":85106525,
+    "commands":[
+        {
+            "trigger_range":[20,24],
+            "msg":"Resolve $name's effect?",
+            "options":[
+                "label=Add 1 Level 4 or lower Pyro monster from your Deck to your hand¬search(0, 255, [0], \"type:Pyro\", 0, -1)"
+            ]
+        }
+    ]
+}
