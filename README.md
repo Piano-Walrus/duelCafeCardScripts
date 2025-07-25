@@ -108,6 +108,8 @@ The parameters for this function are explained below:
 | PASSCODE | If a card's script should run after a single card is searched, provide this value with its passcode.<br/><br/>If you instead want the system to attempt to run the script for "whichever single card was searched", set this parameter to -1.<br/>If you do not wish to use this feature, set this parameter to 0. |
 | ZONE_INDEX | If you set PASSCODE to a value other than 0, then set this parameter to the zone index that you'd like the desired card script to trigger from. For example, if PASSCODE is the passcode of a spell card, or if you set PASSCODE to -1 and expect the player to only search spell cards, then you can set ZONE_INDEX to 22 to have the system run the desired cards "On-Snapped-To-Spell/Trap-Zone" effect.<br/><br/>If you do not wish to use this feature, set this parameter to -1, but if PASSCODE is also set to -1, note that the searched card may trigger if it would otherwise trigger at the location it is sent to. |
 
+Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
+
 ## Conditions
 Aside from specifying trigger zones for each command, you can also specify certain conditions to prevent any given command from being triggered if its conditions are not met. There are two ways to specify conditions: either as one object, or an array of objects.
 
