@@ -5,7 +5,7 @@
             "trigger_range":[20,24],
             "msg":"Resolve $name's effect?",
             "options":[
-                "label=Open Search Menu¬search(1, 5, [1], \"\", 0)"
+                "label=Open Search Menu¬search(1, 5, [1], \"\", 0, -1)"
             ]
         }
     ]
