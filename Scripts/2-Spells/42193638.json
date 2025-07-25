@@ -8,7 +8,7 @@
             "options":[
                 "$pref only¬add_lp=500",
                 "$pref, then excavate cards until you excavate a Vaalmonica card, then add that card to your hand¬source=0¬add_lp=500¬excavate_until=Vaalmonica",
-                "label=Take 500 damage & open Main Deck¬search=0¬add_lp=-500"
+                "label=Take 500 damage & open Main Deck¬search(0, 2, [0], \"Vaalmonica\", -1, -1)¬add_lp=-500"
             ]
         }
     ]
