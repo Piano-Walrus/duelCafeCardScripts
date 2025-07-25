@@ -3,7 +3,7 @@
     "commands":[
         {
             "trigger":2,
-            "msg":"Resolve this card's effect?",
+            "msg":"Resolve $name's effect?",
             "options":[
                 "label=Add 1 \"Mutiny in the Sky\" from your Deck to your hand¬source=0¬target=71593652¬add=1"
             ]
