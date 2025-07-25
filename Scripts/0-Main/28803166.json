@@ -1,11 +1,12 @@
 {
     "id":28803166,
+    "$arch":"\"Fiendsmith\"",
     "commands":[
         {
             "trigger_range":[10,14],
             "msg":"Resolve $name's effect?",
             "options":[
-                "label=Send 1 \"Fiendsmith\" card from your Deck to the GY¬search=0"
+                "label=Send 1 $arch card from your Deck to the GY¬search(0, 2, [0], $arch, -1, -1)"
             ]
         }
     ]
