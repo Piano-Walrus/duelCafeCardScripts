@@ -6,7 +6,7 @@
             "msg":"Pay the cost for, and resolve, $name's effect?",
             "options":[
                 "label=Send the top 3 cards of your Deck to the GY for cost (No Effect)¬source=0¬dest=2¬rand=3",
-                "label=Send the top 3 cards of your Deck to the GY; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬source=0¬dest=2¬search=0¬rand=3"
+                "label=Send the top 3 cards of your Deck to the GY; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬source=0¬dest=2¬search(0, 255, [0], \"Lightsworn\", 0, -1)¬rand=3"
             ]
         }
     ]
