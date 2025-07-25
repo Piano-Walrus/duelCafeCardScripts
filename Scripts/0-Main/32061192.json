@@ -4,7 +4,7 @@
         {
             "msg":"Resolve $name's ignition effect?",
             "options":[
-                "label=Banish 1 \"Maliss\" monster from your deck¬search=0"
+                "label=Banish 1 \"Maliss\" monster from your deck¬search(0, 3, [0], \"Maliss\", -1, 3)"
             ]
         },
         {
