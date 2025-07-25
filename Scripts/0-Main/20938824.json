@@ -6,7 +6,7 @@
             "msg":"Pay the cost for, and resolve $name's effect?",
             "options":[
                 "label=Pay 300 LP for cost (No Effect)¬add_lp=-300",
-                "label=Pay 300 LP, then add 1 of your banished \"Maliss\" monsters to your hand¬add_lp=-300¬search=3"
+                "label=Pay 300 LP, then add 1 of your banished \"Maliss\" monsters to your hand¬add_lp=-300¬search(3, 255, [3], \"Maliss\", 0, -1)"
             ]
         }
     ]
