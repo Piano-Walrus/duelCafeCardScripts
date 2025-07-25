@@ -9,7 +9,7 @@
             },
             "msg":"Pay the cost for this card's Quick Effect?",
             "options":[
-                "label=Pay half your LP and banish 1 $arch Normal Trap from your GY¬search(2, 3, [2], $arch, -1, 20)¬div_lp=2"
+                "label=Pay half your LP and banish 1 $arch Normal Trap from your GY¬search(2, 3, [2], $arch, 0, -1)¬div_lp=2"
             ]
         },
         {
