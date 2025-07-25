@@ -11,7 +11,7 @@
         {
             "msg":"Resolve $name's ignition effect?",
             "options":[
-                "label=Banish 1 \"Vaalmonica\" Normal Spell/Trap from your GY¬search(2, 3, [2], \"Vaalmonica\", -1)"
+                "label=Banish 1 \"Vaalmonica\" Normal Spell/Trap from your GY¬search(2, 3, [2], \"Vaalmonica\", -1, 20)"
             ]
         }
     ]
