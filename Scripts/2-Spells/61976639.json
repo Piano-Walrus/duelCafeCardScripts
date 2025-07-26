@@ -3,20 +3,18 @@
     "commands":[
         {
             "conditions":[
-                [
-                    {
-                        "AND":[
-                            {
-                                "control_self":"NAME == '%Ki-sikil%' || NAME == '%Lil-la%'",
-                                "zone_list":[10,11,12,13,14,8,108]
-                            },
-                            {
-                                "control_self":"Evil★Twin",
-                                "zone":0
-                            }
-                        ]
-                    }
-                ]
+                {
+                    "AND":[
+                        {
+                            "control_self":"NAME == '%Ki-sikil%' || NAME == '%Lil-la%'",
+                            "zone_list":[10,11,12,13,14,8,108]
+                        },
+                        {
+                            "control_self":"Evil★Twin",
+                            "zone":0
+                        }
+                    ]
+                }
             ],
             "trigger_range":[20,24],
             "msg":"Resolve one of $name's effects?",
