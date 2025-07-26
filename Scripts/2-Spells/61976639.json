@@ -7,11 +7,7 @@
                     {
                         "AND":[
                             {
-                                "control_self":"Ki-sikil",
-                                "zone_list":[10,11,12,13,14,8,108]
-                            },
-                            {
-                                "control_self":"Lil-la",
+                                "control_self":"NAME == '%Ki-sikil%' || NAME == '%Lil-la%'",
                                 "zone_list":[10,11,12,13,14,8,108]
                             },
                             {
