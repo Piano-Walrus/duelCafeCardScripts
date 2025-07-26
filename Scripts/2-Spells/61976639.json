@@ -10,7 +10,7 @@
                             "zone_list":[10,11,12,13,14,8,108]
                         },
                         {
-                            "control_self":"Evil★Twin",
+                            "control_self":"NAME == 'Evil★Twin%'",
                             "zone":0
                         }
                     ]
@@ -19,7 +19,7 @@
             "trigger_range":[20,24],
             "msg":"Resolve one of $name's effects?",
             "options":[
-                "label=Add 1 \"Live☆Twin\" or \"Evil★Twin\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == '%Live☆Twin%' || NAME == '%Evil★Twin%'\", 0, -1)",
+                "label=Add 1 \"Live☆Twin\" or \"Evil★Twin\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"(NAME == '%Live☆Twin%' || NAME == '%Evil★Twin%') && (ATTR == 'spell' || ATTR == 'trap')\", 0, -1)",
                 "label=Add 1 \"Evil★Twin\" monster from your Deck to your hand¬condition=0¬target=62098216¬add=1"
             ]
         }
