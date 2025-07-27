@@ -5,7 +5,7 @@
             "trigger_range":[20,24],
             "msg":"Pay the cost for this card's effect?",
             "options":[
-                "label=Pay half your LP¬div_lp=2"
+                "label=Pay half your LP¬pays_cost¬div_lp=2"
             ]
         }
     ]
