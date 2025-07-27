@@ -5,8 +5,8 @@
             "trigger_range":[20,24],
             "msg":"Banish 3 or 6 cards from your Extra Deck?",
             "options":[
-                "source=1¬dest=5¬rand=3",
-                "source=1¬dest=5¬rand=6"
+                "is_cost¬source=1¬dest=5¬rand=3",
+                "is_cost¬source=1¬dest=5¬rand=6"
             ]
         }
     ]
