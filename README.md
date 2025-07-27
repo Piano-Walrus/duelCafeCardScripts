@@ -130,11 +130,11 @@ The card properties you're able to check in any given logical expression are as 
 | NAME | The name of the current card. |
 | DESC | The effect text of the current card. For pendulum monsters, this represents the card's monster effect text. |
 | TYPES | The entire typeline of the card as a string. For example, checking this property of "Junk Synchron" would return `[Warrior / Tuner / Effect]`. |
-| LVL | The level of the current monster.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
+| LVL | The level of the current monster as an integer.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
 | ATTR | The name of the current card's attribute. This value will ***ALWAYS*** be all lowercase, so "FIRE" becomes "fire", etc.<br/>This property also allows you to filter for ONLY "spell" or ONLY "trap" (i.e. `ATTR == spell`). |
-| FRAME | The name of the current card's frame file in Unity (See Below). This is helpful for determining spell/trap types like "Counter" or "Field". Note that this value will ***ALWAYS*** be lowercase. |
-| ATK | The current monster's ATK stat. |
-| DEF | The current monster's DEF stat. |
+| FRAME | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
+| ATK | The current monster's ATK stat as an integer. |
+| DEF | The current monster's DEF stat as an integer. |
 
 ***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
 
