@@ -11,7 +11,7 @@
         {
             "msg":"Resolve $name's ignition effect?",
             "options":[
-                "label=Banish 1 \"Vaalmonica\" Normal Spell/Trap from your GY¬search(2, 3, [2], \"NAME == %Vaalmonica% && FRAME == %normal% && spell_trap == %ATTR%\", -1, 20)"
+                "label=Banish 1 \"Vaalmonica\" Normal Spell/Trap from your GY¬search(2, 3, [2], \"NAME == %Vaalmonica% && FRAME == %normal% && spell_trap == %ATTR%\", -1, 20, false)"
             ]
         }
     ]
