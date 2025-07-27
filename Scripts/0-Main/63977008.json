@@ -5,7 +5,7 @@
             "trigger_range":[10,14],
             "msg":"Resolve $name's effect?",
             "options":[
-                "label=Special Summon 1 Level 2 or lower monster in your Graveyard in Defense Position, but negate its effects¬search(2,255,[2],\"LVL <= 2\",0, -1)"
+                "label=Special Summon 1 Level 2 or lower monster in your Graveyard in Defense Position, but negate its effects¬search(2,255,[2],\"LVL <= 2\")"
             ]
         }
     ]
