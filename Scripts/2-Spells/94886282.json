@@ -1,12 +1,13 @@
 {
     "id":94886282,
+    "$cost":"Send the top 3 cards of your Deck to the GY",
     "commands":[
         {
             "trigger_range":[20,24],
             "msg":"Pay the cost for, and resolve, $name's effect?",
             "options":[
-                "label=Send the top 3 cards of your Deck to the GY for cost (No Effect)¬source=0¬dest=2¬rand=3",
-                "label=Send the top 3 cards of your Deck to the GY; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬search(0, 255, [0], \"Lightsworn\", 0, -1)¬source=0¬dest=2¬rand=3"
+                "label=$cost for cost (No Effect)¬source=0¬dest=2¬rand=3",
+                "label=$cost; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Lightsworn% && LVL <= 4\", 0, -1)¬source=0¬dest=2¬rand=3"
             ]
         }
     ]
