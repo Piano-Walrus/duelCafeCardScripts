@@ -1,15 +1,15 @@
 {
     "id":48832775,
-    "$arch":"\"Dinomorphia\"",
+    "$arch":"Dinomorphia",
     "commands":[
         {
             "conditions":{
-                "control_self":"Dinomorphia",
+                "control_self":"NAME == '%Dinomorphia%'",
                 "zone":2
             },
-            "msg":"Pay the cost for this card's Quick Effect?",
+            "msg":"Pay the cost for $name's Quick Effect?",
             "options":[
-                "label=Pay half your LP and banish 1 $arch Normal Trap from your GY¬search(2, 3, [2], $arch, 0, -1)¬div_lp=2"
+                "label=Pay half your LP and banish 1 \"$arch\" Normal Trap from your GY¬search(2, 3, [2], \"NAME == '%$arch%' && ATTR == 'trap' && FRAME == '%normal%'\", 0, -1)¬div_lp=2"
             ]
         },
         {
@@ -20,9 +20,9 @@
                 ]
             },
             "trigger":2,
-            "msg":"Activate this card's GY effect?",
+            "msg":"Activate $name's GY effect?",
             "options":[
-                "label=Special Summon 1 Level 4 or lower $arch monster from your GY¬search(2, 255, [2], $arch, 0, -1)"
+                "label=Special Summon 1 Level 4 or lower \"$arch\" monster from your GY¬search(2, 255, [2], \"NAME == '%$arch%' && LVL <= 4\", 0, -1)"
             ]
         }
     ]
