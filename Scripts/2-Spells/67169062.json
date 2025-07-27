@@ -5,7 +5,7 @@
             "trigger_range":[20,24],
             "msg":"Resolve the first part of $name's effect?",
             "options":[
-                "label=Shuffle 5 monsters from your GY into your Deck¬search(2, 0, [2], \"LVL >= 0\", 0, -1)"
+                "label=Shuffle 5 monsters from your GY into your Deck¬search(2, 0, [2], \"LVL >= 0\")"
             ]
         }
     ]
