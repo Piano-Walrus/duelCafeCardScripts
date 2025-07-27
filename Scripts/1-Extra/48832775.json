@@ -9,7 +9,7 @@
             },
             "msg":"Pay the cost for $name's Quick Effect?",
             "options":[
-                "label=Pay half your LP and banish 1 \"$arch\" Normal Trap from your GY¬search(2, 3, [2], \"NAME == '%$arch%' && ATTR == 'trap' && FRAME == '%normal%'\", 0, -1)¬div_lp=2"
+                "label=Pay half your LP and banish 1 \"$arch\" Normal Trap from your GY¬is_cost¬search(2, 3, [2], \"NAME == '%$arch%' && ATTR == 'trap' && FRAME == '%normal%'\")¬div_lp=2"
             ]
         },
         {
@@ -22,7 +22,7 @@
             "trigger":2,
             "msg":"Activate $name's GY effect?",
             "options":[
-                "label=Special Summon 1 Level 4 or lower \"$arch\" monster from your GY¬search(2, 255, [2], \"NAME == '%$arch%' && LVL <= 4\", 0, -1)"
+                "label=Special Summon 1 Level 4 or lower \"$arch\" monster from your GY¬search(2, 255, [2], \"NAME == '%$arch%' && LVL <= 4\")"
             ]
         }
     ]
