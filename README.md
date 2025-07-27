@@ -119,7 +119,22 @@ The parameters for this function are explained below:
 Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
 
 ## Logical Expressions
-placeholder text
+In `control_` condition properties, or in CRITERIA parameters as described above, you can — and should — write out logical expressions when applicable. These allow you to filter cards more specifically, like checking if a name starts with a value rather than simply containing it, or if a card has a specific level. These expressions use essentially the same syntax as most other programming languages; `&&` represents "AND", `\|\|` represents "OR", `<=` represents "less than or equal to", expressions can be grouped using parenthesis, etc. However, quotation marks are not required for any strings in logical expressions; to check if a card name is ***exactly*** "Kuriboh" for example, you would just write `NAME == Kuriboh`.
+
+When comparing string properties, you can also use `%` to represent a wildcard, but note that these can only appear on the right side of any given condition (i.e. `NAME == %Runick%` is valid, but NOT `%NAME% == Runick`). Also, note that wildcard symbols can only appear at the beginning, and/or end of any given string.
+
+The card properties you're able to check in any given logical expression are as follows:
+
+| Property | Description |
+| :-- | :-- |
+| NAME | The name of the current card. |
+| DESC | The effect text of the current card. For pendulum monsters, this represents the card's monster effect text. |
+| TYPES | The entire typeline of the card as a string. For example, checking this property of "Junk Synchron" would return `[Warrior / Tuner / Effect]`. |
+| LVL | The level of the current monster.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
+| ATTR | The name of the current card's attribute. This value will ***ALWAYS*** be all lowercase, so "FIRE" becomes "fire", etc.<br/>This property also allows you to filter for ONLY "spell" or ONLY "trap" (i.e. `ATTR == spell`). |
+| FRAME | The name of the current card's frame file in Unity (See Below). This is helpful for determining spell/trap types like "Counter" or "Field". Note that this value will ***ALWAYS*** be lowercase. |
+
+***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
 
 ## Conditions
 Aside from specifying trigger zones for each command, you can also specify certain conditions to prevent any given command from being triggered if its conditions are not met. There are two ways to specify conditions: either as one object, or an array of objects.
