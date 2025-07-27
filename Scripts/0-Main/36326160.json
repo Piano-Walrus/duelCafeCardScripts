@@ -17,7 +17,7 @@
             "trigger_range":[10,14],
             "msg":"Resolve $name's on-summon effect to summon from Deck?\n(Click \"Cancel\" to summon from hand instead)",
             "options":[
-                "label=Special Summon 1 \"Lil-la\" monster from your hand or Deck¬search(0, 255, [0], \"NAME == %Lil-la% && LVL >= 0 && NAME != Evil★Twins Ki-sikil & Lil-la\", 0, -1)"
+                "label=Special Summon 1 \"Lil-la\" monster from your hand or Deck¬search(0, 255, [0], \"NAME == %Lil-la% && LVL >= 0 && NAME != Evil★Twins Ki-sikil & Lil-la\")"
             ]
         },
         {
