@@ -17,7 +17,7 @@
             },
             "msg":"Pay the cost for this card's 2nd effect?",
             "options":[
-                "label=Pay LP so that your LP equal your opponent's¬set_lp=$lp_opp"
+                "label=Pay LP so that your LP equal your opponent's¬pays_cost¬set_lp=$lp_opp"
             ]
         }
     ]
