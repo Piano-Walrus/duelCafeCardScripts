@@ -4,14 +4,14 @@
         {
             "msg":"Resolve $name's ignition effect?",
             "options":[
-                "label=Banish 1 \"Maliss\" monster from your deck¬search(0, 3, [0], \"NAME == %Maliss% && LVL >= 0\", -1, 3)"
+                "label=Banish 1 \"Maliss\" monster from your deck¬search(0, 3, [0], \"NAME == %Maliss% && LVL >= 0\", -1, 3, true)"
             ]
         },
         {
             "trigger":3,
             "msg":"Pay the cost for $name's on-banish effect?",
             "options":[
-                "label=Pay 300 LP¬add_lp=-300"
+                "label=Pay 300 LP¬is_cost¬add_lp=-300"
             ]
         }
     ]
