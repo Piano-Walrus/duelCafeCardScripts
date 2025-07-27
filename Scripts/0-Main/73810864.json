@@ -15,9 +15,9 @@
                 ]
             },
             "trigger_range":[10,14],
-            "msg":"Resolve $name's on-summon effect?",
+            "msg":"Resolve $name's on-summon effect to summon from Deck?\n(Click \"Cancel\" to summon from hand instead)",
             "options":[
-                "label=Special Summon 1 \"Ki-sikil\" monster from your hand or Deck¬search(0, 255, [0], \"Ki-sikil\", 0, -1)"
+                "label=Special Summon 1 \"Ki-sikil\" monster from your hand or Deck¬search(0, 255, [0], \"NAME == %Ki-sikil% && LVL >= 0\", 0, -1)"
             ]
         },
         {
