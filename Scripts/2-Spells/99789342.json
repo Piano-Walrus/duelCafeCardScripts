@@ -6,8 +6,8 @@
             "trigger_range":[20,24],
             "msg":"Pay the cost for, and resolve, $name's effect?",
             "options":[
-                "$cost for cost (No Effect)¬div_lp=2",
-                "$cost; Special Summon 1 \"Dark Magician\" from your Deck¬div_lp=2¬source=0¬target=36996508¬add=1"
+                "$cost for cost (No Effect)¬is_cost¬div_lp=2",
+                "$cost; Special Summon 1 \"Dark Magician\" from your Deck¬is_cost¬div_lp=2¬is_eff¬source=0¬target=36996508¬add=1"
             ]
         }
     ]
