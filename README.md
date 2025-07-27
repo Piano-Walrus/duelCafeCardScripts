@@ -139,7 +139,7 @@ The card properties you're able to check in any given logical expression are as 
 ***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
 
 ### Frame File Names
-placeholder text
+![Unity screenshot of every possible frame file name that could be returned by the `FRAME` property mentioned in the above table](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Resources/Images/card_frame_file_names.png)
 
 ## Conditions
 Aside from specifying trigger zones for each command, you can also specify certain conditions to prevent any given command from being triggered if its conditions are not met. There are two ways to specify conditions: either as one object, or an array of objects.
