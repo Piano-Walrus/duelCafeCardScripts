@@ -6,7 +6,7 @@
             "msg":"Gain LP or take damage to resolve one of this card's effects?",
             "options":[
                 "label=Gain 500 LP¬add_lp=500",
-                "label=Take 500 damage, then add 1 \"Vaalmonica\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == %Vaalmonica% && spell_trap == %ATTR%\", 0, -1)¬add_lp=-500"
+                "label=Take 500 damage, then add 1 \"Vaalmonica\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == %Vaalmonica% && spell_trap == %ATTR%\")¬add_lp=-500"
             ]
         }
     ]
