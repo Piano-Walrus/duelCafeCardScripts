@@ -6,8 +6,8 @@
             "trigger_range":[20,24],
             "msg":"Pay the cost for, and resolve, $name's effect?",
             "options":[
-                "label=$cost for cost (No Effect)¬source=0¬dest=2¬rand=3",
-                "label=$cost; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Lightsworn% && LVL <= 4\", 0, -1)¬source=0¬dest=2¬rand=3"
+                "label=$cost for cost (No Effect)¬is_cost¬source=0¬dest=2¬rand=3",
+                "label=$cost; add 1 Level 4 or lower \"Lightsworn\" monster from your Deck to your hand¬is_cost¬source=0¬dest=2¬rand=3¬is_eff¬search(0, 255, [0], \"NAME == %Lightsworn% && LVL <= 4\")"
             ]
         }
     ]
