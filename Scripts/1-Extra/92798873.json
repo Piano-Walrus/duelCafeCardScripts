@@ -4,7 +4,7 @@
         {
             "msg":"Pay the cost for this card's Quick Effect?",
             "options":[
-                "label=Pay half your LP¬div_lp=2"
+                "label=Pay half your LP¬is_cost¬div_lp=2"
             ]
         },
         {
@@ -17,7 +17,7 @@
             "trigger":2,
             "msg":"Activate this card's GY effect?",
             "options":[
-                "label=Special Summon 1 Level 6 or lower \"Dinomorphia\" monster from your GY¬search(2, 255, [2], \"NAME == '%Dinomorphia%' && LVL <= 6\", 0, -1)"
+                "label=Special Summon 1 Level 6 or lower \"Dinomorphia\" monster from your GY¬search(2, 255, [2], \"NAME == '%Dinomorphia%' && LVL <= 6\")"
             ]
         }
     ]
