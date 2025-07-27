@@ -5,7 +5,7 @@
             "trigger_range":[20,24],
             "msg":"Pay the cost for $name's effect?",
             "options":[
-                "label=Banish the top 10 cards of your Deck face-down¬source=0¬dest=5¬rand=10"
+                "label=Banish the top 10 cards of your Deck face-down¬is_cost¬source=0¬dest=5¬rand=10"
             ]
         }
     ]
