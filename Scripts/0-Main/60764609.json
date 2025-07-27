@@ -5,7 +5,7 @@
             "trigger":2,
             "msg":"Resolve $name's effect?",
             "options":[
-                "label=Add 1 \"Fiendsmith\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == %Fiendsmith% && spell_trap == %ATTR%\", 0, -1)"
+                "label=Add 1 \"Fiendsmith\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == %Fiendsmith% && spell_trap == %ATTR%\")"
             ]
         }
     ]
