@@ -5,7 +5,7 @@
             "trigger_range":[10,14],
             "msg":"Resolve $name's effect?",
             "options":[
-                "label=Set 1 \"Maliss\" Trap from your Deck with a different name than the cards in your GY¬search(0, 255, [0], \"NAME == %Maliss% && ATTR == trap\", 0, -1)"
+                "label=Set 1 \"Maliss\" Trap from your Deck with a different name than the cards in your GY¬search(0, 255, [0], \"NAME == %Maliss% && ATTR == trap\")"
             ]
         },
         {
