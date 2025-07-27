@@ -77,7 +77,10 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `opp`  | Specifies that a command string should affect the opponent rather than the current player. |
 | `opp_source`  | Specifies that ONLY the designated source applies to the opponent, but NOT the destination. |
 | `opp_destination`  | As with `opp_source`, this specifies that the designated destination applies to the opponent, but NOT the source. |
+| `self`  | Sets all of the above flags to `false`.<br/>This flag is enabled by default, so it should only be used **AFTER** enabling any of the above flags. |
 | `up_to`  | Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity). |
+| `is_cost`  | Specifies that everything following this flag in any given command string is the effect's cost. |
+| `is_eff`  | Sets the above flag to `false`, therefore specifying that everything following this flag in any given command string is the card's effect, and NOT part of the cost.<br/>This flag is enabled by default, so it should only be used **AFTER** enabling `is_cost`. |
 
 ### Functions
 
@@ -95,7 +98,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 
 The following alternate syntax can also be used for the `search` function:
 
-`search(TAB_INDEX, DEST, SOURCES, CRITERIA, PASSCODE, ZONE_INDEX)`
+`search(TAB_INDEX, DEST, SOURCES, CRITERIA, PASSCODE, ZONE_INDEX, SHOULD_PAY_COST)`
 
 The parameters for this function are explained below:
 
@@ -107,6 +110,9 @@ The parameters for this function are explained below:
 | CRITERIA | A string representing criteria by which the menu should filter out certain cards. Start this string with "type:" to filter by monster type, or "attr:" to filter by attribute. Otherwise, the system will only show cards containing the string you provide.<br/><br/>If you provide an empty string (`\"\"`), the system will not filter the card list, and will instead just show all the cards at the selected location. |
 | PASSCODE | If a card's script should run after a single card is searched, provide this value with its passcode.<br/><br/>If you instead want the system to attempt to run the script for "whichever single card was searched", set this parameter to -1.<br/>If you do not wish to use this feature, set this parameter to 0. |
 | ZONE_INDEX | If you set PASSCODE to a value other than 0, then set this parameter to the zone index that you'd like the desired card script to trigger from. For example, if PASSCODE is the passcode of a spell card, or if you set PASSCODE to -1 and expect the player to only search spell cards, then you can set ZONE_INDEX to 22 to have the system run the desired cards "On-Snapped-To-Spell/Trap-Zone" effect.<br/><br/>If you do not wish to use this feature, set this parameter to -1, but if PASSCODE is also set to -1, note that the searched card may trigger if it would otherwise trigger at the location it is sent to. |
+| SHOULD_PAY_COST | Defaults to `true` if not specified. When set to `false`, and `PASSCODE` and `ZONE_INDEX` are set to trigger the searched card, the system will ignore any costs for any of the card's effects, and only allow for effects to be resolved. |
+<br/>
+***Note:** When using the above alternate `search` syntax, if you do not intend for the searched card to trigger, you can simply omit the `PASSCODE`, `ZONE_INDEX`, and `SHOULD_PAY_COST` parameters, and they will default to `0`, `-1`, `true` respectively. However, each function parameter must always be provided in the correct order, so if you omit `ZONE_INDEX`, you must also omit `SHOULD_PAY_COST`, etc.*
 
 Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
 
