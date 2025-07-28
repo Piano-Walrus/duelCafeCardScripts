@@ -54,7 +54,7 @@ Each command must have a trigger condition. There are currently four ways to spe
 | `trigger`  |  int | The simplest trigger condition; expects a zone index (as outlined above), and sets a command to be triggered whenever the script's associated card is snapped to the specified zone index.  |
 | `trigger_range`  | int[]  | This property takes an array of only two integers, and specifies a range of zone indexes rather than just one. So for example, if a card effect should trigger when a card is placed in any of the Main Monster Zones, then the command's trigger condition would be `"trigger_range":[10,14]`  |
 | `trigger_list`  | int[]  | This property takes an array of any number of integers, and specifies that a card can trigger in any one of the integers provided. For example, if a card should trigger ONLY when snapped to an Extra Monster Zone, then the command's trigger condition would be `"trigger_list":[8,108]`  |
-| `null`  | N/A  | If no trigger condition is provided for a given command, then that command will execute when a card is manually triggered by double-clicking/double-tapping the trigger while holding said card. |
+| `null`  | N/A  | If no trigger condition is provided for a given command, then that command will execute when a card is manually triggered by either double-clicking on desktop, or double-tapping the controller trigger in VR, while holding said card. |
 
 **NOTE:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
