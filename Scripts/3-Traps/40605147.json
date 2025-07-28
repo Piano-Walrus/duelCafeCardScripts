@@ -1,12 +1,9 @@
-{
-    "id":40605147,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Pay the cost for this card's effect?",
-            "options":[
-                "label=Pay 1500 LP¬is_cost¬add_exact_lp=-1500"
-            ]
-        }
-    ]
-}
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Pay the cost for this card's effect?",
+        "options":[
+            "label=Pay 1500 LP¬is_cost¬add_exact_lp=-1500"
+        ]
+    }
+]
