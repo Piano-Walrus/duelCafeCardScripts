@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_list":[8,108,10,11,12,13,14],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon as many \"Synchron\" Tuners as possible with different Levels from your Deck, in Defense Position¬search(0, 255, [0], \"TYPES == %Tuner% && NAME == %Synchron%\")"
+        ]
+    }
+]
