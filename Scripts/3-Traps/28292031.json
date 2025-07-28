@@ -17,7 +17,7 @@
         "msg":"Pay the cost for, and resolve, $name's effect?",
         "trigger_range":[20,24],
         "options":[
-            "label=Pay half your LP and banish 1 Counter Trap from your GY (No Effect)¬is_cost¬search(2, 3, [2], \"ATTR == trap && FRAME == %counter%\")¬div_lp=2",
+            "label=Pay half your LP and banish 1 Counter Trap from your GY\n(No Effect)¬is_cost¬search(2, 3, [2], \"ATTR == trap && FRAME == %counter%\")¬div_lp=2",
             "label=Pay half your LP and banish 1 Counter Trap from your GY; this effect becomes that Counter Trap's effect when that card is activated¬is_cost¬search(2, 3, [2], \"ATTR == trap && FRAME == %counter%\", -1, 20, false)¬div_lp=2"
         ]
     }
