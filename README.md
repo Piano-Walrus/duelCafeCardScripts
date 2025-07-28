@@ -1,7 +1,7 @@
 # Scripting Guide for Contributors
 The cards in the cafe refer to the JSON files in this repository to determine their effect actions under certain conditions. Contributors can code any card's effect using a series of condition keywords, trigger zone properties, and variable/function combos.
 
-You can find all existing card scripts in the "Scripts" folder of this repository. You're free to reference these as examples, suggest edits through pull requests, or even submit new scripts to be reviewed and potentially added to the cafe!
+You can find all existing card scripts in the [Scripts](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main/Scripts) folder of this repository. You're free to reference these as examples, suggest edits through pull requests, or even submit new scripts to be reviewed and potentially added to the cafe!
 
 ## Zone Indexes
 The cafe identifies each zone using integers:
