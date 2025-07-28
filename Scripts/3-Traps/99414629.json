@@ -1,12 +1,9 @@
-{
-    "id":99414629,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Pay the cost for $name's effect?",
-            "options":[
-                "label=Pay half your LP¬is_cost¬div_lp=2"
-            ]
-        }
-    ]
-}
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Pay the cost for $name's effect?",
+        "options":[
+            "label=Pay half your LP¬is_cost¬div_lp=2"
+        ]
+    }
+]
