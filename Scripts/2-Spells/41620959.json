@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Send 1 Dragon monster from your Deck to the GY¬search(0, 2, [0], \"LVL >= 0\", -1, 2)¬then¬{\"commands\":[{\"conditions\":{\"control_self\":\"TYPES == %Dragon% && FRAME == %normal%\",\"zone\":2},\"msg\":\"Since you sent a Dragon Normal Monster in your GY, send another Dragon monster to the GY?\",\"options\":[\"label=Send 1 monster from your Deck to the GY¬search(0, 2, [0], \"LVL >= 0\", -1, 2)\"]}]"
+        ]
+    }
+]
