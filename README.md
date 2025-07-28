@@ -30,15 +30,13 @@ Add 100 to any of the following to specifically indicate Player 2's equivalent z
 | 24  | Player 1's Left Pendulum Zone  |
 
 ## Script Structure
-Each script must be named after the passcode of the card it's for. For example, the script for "Labrynth Cooclock" would be named "2511.json".
-
-Each script is one JSON object, and should begin with the `id` property, its value being that same passcode mentioned above. If a given card has alternate artworks whose passcodes are all incremented from the original card's passcode (i.e. 25, 26, 27, 28), this parameter should be a list containing the passcodes for each alt art. However, if the card has any passcodes that are farther than 1 away from the original card's passcode (i.e. 25, 26, 35), then each of those outliers should also have their own separate scripts.
+Each script must be named after the passcode of the card it's for. For example, the script for "Labrynth Cooclock" would be named "2511.json". If any given card has alternate artworks that are in the cafe, these artworks also need their own scripts, named accordingly.
 
 ***NOTE:** Any leading zeros in card passcodes must always be omitted, i.e. use* `2511` **NOT** `00002511`.
 
-Next, you can declare and set any custom properties you deem appropriate and/or necessary (see [Custom Properties](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#custom-properties)). You can also set a global `msg` property after the `id` property, and it will be applied to every possible pop-up menu that each of the script's commands could theoretically generate, as opposed to setting a `msg` for each command individually.
+At the top of each script, you can declare and set any custom properties you deem appropriate and/or necessary (see [Custom Properties](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#custom-properties)). You can also set a global `msg` property after the `id` property, and it will be applied to every possible pop-up menu that each of the script's commands could theoretically generate, as opposed to setting a `msg` for each command individually.
 
-The next and final property should always be `commands`, which expects a list of objects. Each `commands` object can have the following properties:
+The next and final property should always be `commands`, which expects a list of objects. Each object in that list can have the following properties:
 
 | Property  | Expected Type | Description |
 | :--- | :--- | :--- |
