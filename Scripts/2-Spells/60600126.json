@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 LIGHT Machine monster that cannot be Normal Summoned/Set, or 1 \"Cyber Dragon\" monster, from your Deck to your hand¬search(0, 255, [0], \"((TYPES == %Machine% && ATTR == light && DESC != %annot be Normal Summoned/Set% && DESC != %annot be Normal Summoned or Set%) || NAME == %Cyber Dragon%) && LVL >= 0\")"
+            "label=Add 1 LIGHT Machine monster that cannot be Normal Summoned/Set, or 1 \"Cyber Dragon\" monster, from your Deck to your hand¬search(0, 255, [0], \"((TYPES == %Machine% && ATTR == light && (DESC == %annot be Normal Summoned/Set% || DESC == %annot be Normal Summoned or Set%)) || NAME == %Cyber Dragon%) && LVL >= 0\")"
         ]
     }
 ]
