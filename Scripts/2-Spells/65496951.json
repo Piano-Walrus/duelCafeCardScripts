@@ -1,14 +1,12 @@
-{
-    "id":65496951,
-    "$arch":"\"Vaalmonica\"",
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Gain LP or take damage to resolve one of this card's effects?",
-            "options":[
-                "label=Gain 500 LP, then add 1 banished $arch card to your hand¬search(3, 255, [3], $arch)¬add_lp=500",
-                "label=Take 500 damage, then add 1 $arch card from your GY to your hand¬search(2, 255, [2], $arch)¬add_lp=-500"
-            ]
-        }
-    ]
-}
+"id":65496951,
+"$arch":"\"Vaalmonica\"",
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Gain LP or take damage to resolve one of this card's effects?",
+        "options":[
+            "label=Gain 500 LP, then add 1 banished $arch card to your hand¬search(3, 255, [3], $arch)¬add_lp=500",
+            "label=Take 500 damage, then add 1 $arch card from your GY to your hand¬search(2, 255, [2], $arch)¬add_lp=-500"
+        ]
+    }
+]
