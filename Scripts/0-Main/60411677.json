@@ -1,15 +1,13 @@
-{
-    "id":60411677,
-    "commands":[
-        {
-            "conditions":{
-                "prev_zone":6
-            },
-            "trigger":2,
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Add 1 \"The Man with the Mark\" from your Deck to your hand¬source=0¬target=97522863¬add=1"
-            ]
-        }
-    ]
-}
+"id":60411677,
+"commands":[
+    {
+        "conditions":{
+            "prev_zone":6
+        },
+        "trigger":2,
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"The Man with the Mark\" from your Deck to your hand¬source=0¬target=97522863¬add=1"
+        ]
+    }
+]
