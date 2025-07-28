@@ -1,12 +1,10 @@
-{
-    "id":32807846,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Add 1 Level 4 or lower Warrior monster from your Deck to your hand¬search(0, 255, [0], \"TYPES == %Warrior% && LVL <= 4\")"
-            ]
-        }
-    ]
-}
+"id":32807846,
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 Level 4 or lower Warrior monster from your Deck to your hand¬search(0, 255, [0], \"TYPES == %Warrior% && LVL <= 4\")"
+        ]
+    }
+]
