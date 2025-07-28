@@ -67,7 +67,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 | :---| :--- |
 | `label=STRING`  | Can only be used in option button command strings. If used, must be FIRST in the command string. Specifies the text to display on the button that will run this command when clicked. Optional when using the "rand" function; if no title is specified for a "rand" command, the title defaults to the QUANTITY passed to it. |
 | `source=INT`  | Takes a zone index as an integer, and specifies the source that you intend to move cards from. |
-| `dest=INT`  | Takes a zone index as an integer, and specifies the destination that you intend to move cards to.<br/>*(**NOTE:** When using "add", dest should be omitted)* |
+| `dest=INT`  | Takes a zone index as an integer, and specifies the destination that you intend to move cards to.<br/>*(**NOTE:** When using "add", `dest` should be omitted)* |
 | `target=LONG`  | Takes a card passcode as a long, and specifies the card passcode to search for at the source location. |
 
 ### Flags
