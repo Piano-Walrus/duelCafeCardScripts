@@ -1,12 +1,10 @@
-{
-    "id":39210885,
-    "commands":[
-        {
-            "trigger_list":[9,109],
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Add 1 \"Vaalmonica\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Vaalmonica% && LVL >= 0\")"
-            ]
-        }
-    ]
-}
+"id":39210885,
+"commands":[
+    {
+        "trigger_list":[9,109],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"Vaalmonica\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Vaalmonica% && LVL >= 0\")"
+        ]
+    }
+]
