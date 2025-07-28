@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 monster with 0 ATK from your Deck to your hand, but halve your LP¬search(0, 255, [0], \"ATK == 0\")¬div_lp=2"
+        ]
+    }
+]
