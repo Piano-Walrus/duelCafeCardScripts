@@ -1,12 +1,10 @@
-{
-    "id":20871001,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Gain 400 LP¬add_lp=400"
-            ]
-        }
-    ]
-}
+"id":20871001,
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Gain 400 LP¬add_lp=400"
+        ]
+    }
+]
