@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Banish 1 card from your Deck, face-up¬search(0, 3, [0], \"\", -1, 3)"
+        ]
+    }
+]
