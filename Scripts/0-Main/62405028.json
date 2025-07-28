@@ -1,0 +1,16 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Send 1 Light Reptile from your Deck to the GY¬search(0, 2, [0], \"TYPES == %Reptile% && ATTR == light\")"
+		]
+	},
+	{
+		"trigger_range":[10,14],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Add 1 \"Ogdoadic\" Spell/Trap from your Deck to your Hand¬search(0, 255, [0], \"NAME == %Ogdoadic% && spell_trap == %ATTR% \")"
+		]
+	}
+]
