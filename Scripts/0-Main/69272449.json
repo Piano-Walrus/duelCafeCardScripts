@@ -1,19 +1,17 @@
-{
-    "id":69272449,
-    "commands":[
-        {
-            "trigger_range":[10,14],
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Set 1 \"Maliss\" Trap from your Deck with a different name than the cards in your GY¬search(0, 255, [0], \"NAME == %Maliss% && ATTR == trap\")"
-            ]
-        },
-        {
-            "trigger":3,
-            "msg":"Pay the cost for $name's effect?",
-            "options":[
-                "label=Pay 300 LP¬is_cost¬add_lp=-300"
-            ]
-        }
-    ]
-}
+"id":69272449,
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Set 1 \"Maliss\" Trap from your Deck with a different name than the cards in your GY¬search(0, 255, [0], \"NAME == %Maliss% && ATTR == trap\")"
+        ]
+    },
+    {
+        "trigger":3,
+        "msg":"Pay the cost for $name's effect?",
+        "options":[
+            "label=Pay 300 LP¬is_cost¬add_lp=-300"
+        ]
+    }
+]
