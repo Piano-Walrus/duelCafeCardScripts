@@ -1,29 +1,27 @@
-{
-    "id":48832775,
-    "$arch":"Dinomorphia",
-    "commands":[
-        {
-            "conditions":{
-                "control_self":"NAME == '%Dinomorphia%'",
-                "zone":2
-            },
-            "msg":"Pay the cost for $name's Quick Effect?",
-            "options":[
-                "label=Pay half your LP and banish 1 \"$arch\" Normal Trap from your GY¬is_cost¬search(2, 3, [2], \"NAME == '%$arch%' && ATTR == 'trap' && FRAME == '%normal%'\")¬div_lp=2"
+"id":48832775,
+"$arch":"Dinomorphia",
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == '%Dinomorphia%'",
+            "zone":2
+        },
+        "msg":"Pay the cost for $name's Quick Effect?",
+        "options":[
+            "label=Pay half your LP and banish 1 \"$arch\" Normal Trap from your GY¬is_cost¬search(2, 3, [2], \"NAME == '%$arch%' && ATTR == 'trap' && FRAME == '%normal%'\")¬div_lp=2"
+        ]
+    },
+    {
+        "conditions":{
+            "OR":[
+                {"prev_range":[10,14]},
+                {"prev_list":[8,108]}
             ]
         },
-        {
-            "conditions":{
-                "OR":[
-                    {"prev_range":[10,14]},
-                    {"prev_list":[8,108]}
-                ]
-            },
-            "trigger":2,
-            "msg":"Activate $name's GY effect?",
-            "options":[
-                "label=Special Summon 1 Level 4 or lower \"$arch\" monster from your GY¬search(2, 255, [2], \"NAME == '%$arch%' && LVL <= 4\")"
-            ]
-        }
-    ]
-}
+        "trigger":2,
+        "msg":"Activate $name's GY effect?",
+        "options":[
+            "label=Special Summon 1 Level 4 or lower \"$arch\" monster from your GY¬search(2, 255, [2], \"NAME == '%$arch%' && LVL <= 4\")"
+        ]
+    }
+]
