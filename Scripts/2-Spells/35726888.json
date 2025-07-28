@@ -1,12 +1,10 @@
-{
-    "id":35726888,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Resolve $name's effect?",
-            "options":[
-                "label=Send 1 Spell/Trap from your Deck to the GY¬search(0, 2, [0], \"spell_trap == %ATTR%\", -1, 2, true)"
-            ]
-        }
-    ]
-}
+"id":35726888,
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Send 1 Spell/Trap from your Deck to the GY¬search(0, 2, [0], \"spell_trap == %ATTR%\", -1, 2, true)"
+        ]
+    }
+]
