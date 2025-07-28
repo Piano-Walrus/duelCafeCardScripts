@@ -59,7 +59,7 @@ Each command must have a trigger condition. There are currently four ways to spe
 **NOTE:** Each card can only have ONE manually-triggered command. If you need a script to have multiple manual effects, you can simply include all of those effects in the manual command's "options" array, and set the "message" property to something generic like "Resolve one of this card's manually-triggered effects?"
 
 ## Option Buttons & Command Strings
-Each option in an `options` object, or any given `execute` command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`). A good example of this string format would be [Runick Tip](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/31562086.json).
+Each option in an `options` object, or any given `execute` command string, can have multiple variable declarations, and functional parameters. Each part of a command string must be delimited by a negation symbol (`¬`), and will be executed in order from left to right. A good example of this string format would be [Runick Tip](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/31562086.json).
 
 ### Variables
 
