@@ -1,0 +1,10 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve one of $name's effects?",
+        "options":[
+            "label=Gain 1200 LP¬add_lp=1200",
+            "label=Inflict 800 damage to your opponent¬opp¬add_lp=-800"
+        ]
+    }
+]
