@@ -1,18 +1,16 @@
-{
-    "id":42193638,
-    "$arch":"Vaalmonica",
-    "$gain":"label=Gain 500 LP",
-    "$take":"label=Take 500 damage",
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Gain LP or take damage to resolve one of $name's effects?",
-            "options":[
-                "$gain, then excavate cards until you excavate a \"$arch\" card, then add that card to your hand¬source=0¬add_lp=500¬excavate_until=$arch",
-                "$take, then send 1 \"$arch\" card from your Deck to your GY¬search(0, 2, [0], \"$arch\", -1, 2, true)¬add_lp=-500",
-                "$gain only (No Effect)¬add_lp=500",
-                "$take only (No Effect)¬add_lp=-500"
-            ]
-        }
-    ]
-}
+"id":42193638,
+"$arch":"Vaalmonica",
+"$gain":"label=Gain 500 LP",
+"$take":"label=Take 500 damage",
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Gain LP or take damage to resolve one of $name's effects?",
+        "options":[
+            "$gain, then excavate cards until you excavate a \"$arch\" card, then add that card to your hand¬source=0¬add_lp=500¬excavate_until=$arch",
+            "$take, then send 1 \"$arch\" card from your Deck to your GY¬search(0, 2, [0], \"$arch\", -1, 2, true)¬add_lp=-500",
+            "$gain only (No Effect)¬add_lp=500",
+            "$take only (No Effect)¬add_lp=-500"
+        ]
+    }
+]
