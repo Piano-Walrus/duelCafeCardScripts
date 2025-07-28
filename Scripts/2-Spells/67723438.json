@@ -1,12 +1,10 @@
-{
-    "id":67723438,
-    "commands":[
-        {
-            "trigger_range":[20,24],
-            "msg":"Resolve $name's effect to summon from Deck?\n(Click \"Cancel\" to summon from hand instead)",
-            "options":[
-                "label=Special Summon 1 Level 3 or lower Psychic-Type monster from your Deck¬search(0, 255, [0], \"TYPES == '%Psychic%' && LVL <= 3\")"
-            ]
-        }
-    ]
-}
+"id":67723438,
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect to summon from Deck?\n(Click \"Cancel\" to summon from hand instead)",
+        "options":[
+            "label=Special Summon 1 Level 3 or lower Psychic-Type monster from your Deck¬search(0, 255, [0], \"TYPES == '%Psychic%' && LVL <= 3\")"
+        ]
+    }
+]
