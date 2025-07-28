@@ -10,7 +10,7 @@
                 },
                 {
                     "control_self":"NAME == %Dinomorphia% && TYPES == %Fusion%",
-                    "zone_range":[8,108]
+                    "zone_list":[8,108]
                 }
             ]
         },
