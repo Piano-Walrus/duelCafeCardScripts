@@ -1,13 +1,11 @@
-{
-    "id":20938824,
-    "commands":[
-        {
-            "trigger":3,
-            "msg":"Pay the cost for, and resolve $name's effect?",
-            "options":[
-                "label=Pay 300 LP for cost (No Effect)¬is_cost¬add_lp=-300",
-                "label=Pay 300 LP, then add 1 of your banished \"Maliss\" monsters to your hand¬is_cost¬add_lp=-300¬is_eff¬search(3, 255, [3], \"NAME == '%Maliss%' && LVL >= 0\")"
-            ]
-        }
-    ]
-}
+"id":20938824,
+"commands":[
+    {
+        "trigger":3,
+        "msg":"Pay the cost for, and resolve $name's effect?",
+        "options":[
+            "label=Pay 300 LP for cost (No Effect)¬is_cost¬add_lp=-300",
+            "label=Pay 300 LP, then add 1 of your banished \"Maliss\" monsters to your hand¬is_cost¬add_lp=-300¬is_eff¬search(3, 255, [3], \"NAME == '%Maliss%' && LVL >= 0\")"
+        ]
+    }
+]
