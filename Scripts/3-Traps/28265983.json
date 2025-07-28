@@ -1,24 +1,21 @@
-{
-    "id":28265983,
-    "commands":[
-        {
-            "conditions":{
-                "lp_opp":[0,"{$lp_self-3000}"],
-                "OR":[
-                    {
-                        "control_self":"Aroma",
-                        "zone_range":[10,14]
-                    },
-                    {
-                        "control_self":"Aroma",
-                        "zone_list":[8,108]
-                    }
-                ]
-            },
-            "msg":"Pay the cost for this card's 2nd effect?",
-            "options":[
-                "label=Pay LP so that your LP equal your opponent's¬is_cost¬set_lp=$lp_opp"
+"commands":[
+    {
+        "conditions":{
+            "lp_opp":[0,"{$lp_self-3000}"],
+            "OR":[
+                {
+                    "control_self":"Aroma",
+                    "zone_range":[10,14]
+                },
+                {
+                    "control_self":"Aroma",
+                    "zone_list":[8,108]
+                }
             ]
-        }
-    ]
-}
+        },
+        "msg":"Pay the cost for this card's 2nd effect?",
+        "options":[
+            "label=Pay LP so that your LP equal your opponent's¬is_cost¬set_lp=$lp_opp"
+        ]
+    }
+]
