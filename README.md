@@ -86,7 +86,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 
 | Identifier=TYPE | Description |
 | :---| :--- |
-| `search=INT` | Opens the "Search Deck Piles" menu, and switches to the tab corresponding to the provided integer (in order from left to right, "Main" is 0, "Extra" is 1, etc. "Side" cannot be selected). |
+| `search=INT` | Opens the "Search Deck Piles" menu, and switches to the tab corresponding to the provided integer (in order from left to right, "Main" is 0, "Extra" is 1, etc. "Side" cannot be selected).<br/><br/>***NOTE:** This function also has an alternate syntax outlined [below](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#post-search-actions) that provides more functionality.*|
 | `rand=INT` | Selects a number of random cards equal to the provided integer, and moves them from "source" to "dest" (as such, those two variables MUST be set before calling "rand"). |
 | `add=INT` | Selects a number of random cards equal to the provided integer, and reveals them as if they were searched from the "Search Deck Piles" menu. This function requires the "source" variable to be set.<br/>***NOTE:** This function can also be used with the `target` variable to only reveal a certain card passcode.* |
 | `place=INT` | Selects a number of random cards equal to the provided integer, and places them in a field zone in Face-Up Attack Position. This function requires the "source" and "dest" variables, and can also be used with the `target` variable to place a specific card |
