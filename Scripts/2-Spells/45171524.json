@@ -1,0 +1,11 @@
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Apply 1 or both effects of $name?",
+		"options":[
+			"label=Add 1 \"Mitsurugi\" Monster from your Deck to your Hand¬search(0, 255, [0] \"NAME == %Mitsurugi% && LVL >= 0\")",
+			"label=Take 800 damage, then you can Summon a Mitsurugi Monster from GY\n(Click \"Cancel\" to summon from hand instead)¬is_cost¬add_lp=-800¬search(2, 255, [2], \"NAME == %Mitsurugi% && LVL >= 0\")"
+			"label=Both effects¬search(0, 255, [0] \"NAME == %Mitsurugi% && LVL >= 0\")¬then¬is_cost¬add_lp=-800¬search(2, 255, [2], \"NAME == %Mitsurugi% && LVL >= 0\"",
+		]
+	}
+]
