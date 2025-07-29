@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Fusion summon using Monsters from your Deck as Material¬search(0, 2, [0] \"LVL >= 0\")¬then¬search(1, 255, [1], \"NAME == %Gem-Knight%\")",
+		]
+	}
+]
