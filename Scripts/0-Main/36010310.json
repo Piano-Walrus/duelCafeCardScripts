@@ -1,7 +1,10 @@
 "commands":[
 	{
+		"conditions":{
+		    "prev_zone":6
+		},
 		"trigger":2,
-		"msg":"Resolve $name's effect?",
+		"msg":"Resolve $name's GY effect?",
 		"options":[
 			"label=Send 1 Dark Reptile from your Deck to the GY¬search(0, 2, [0], \"TYPES == %Reptile% && ATTR == dark\")"
 		]
