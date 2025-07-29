@@ -116,8 +116,8 @@ The parameters for this function are explained below:
 
 Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
 
-### Sequential Actions
-After using the `search` function, you may want to perform other actions that must specifically occur AFTER a card is searched. To accomplish this, you can use the `then` keyword immediately after using `search` to halt the command until the search is completed, then continue afterwards. A good example of this feature would be [Tuning](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/96363153.json).
+### Post-Search Actions
+After using the `search` function, you may want a command to perform other actions that must specifically occur AFTER a card is searched. To accomplish this, you can use the `then` keyword immediately after using `search` to halt the command's execution, then resume once the search is completed. A good example of this feature would be [Tuning](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/96363153.json).
 
 ## Logical Expressions
 In `control_` condition properties (Outlined [Below](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#conditions)), or in CRITERIA parameters as described above, you can — and should — write out logical expressions when applicable. These allow you to filter cards more specifically, like checking if a name starts with a value rather than simply containing it, or if a card has a specific level. These expressions use essentially the same syntax as most other programming languages; `&&` represents "AND", `||` represents "OR", `<=` represents "less than or equal to", expressions can be grouped using parenthesis, etc. However, quotation marks are not required for any strings in logical expressions; to check if a card name is ***exactly*** "Kuriboh" for example, you would just write `NAME == Kuriboh`.
