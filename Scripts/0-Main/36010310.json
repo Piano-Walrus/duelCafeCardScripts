@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Send 1 Dark Reptile from your Deck to the GY¬search(0, 2, [0], \"TYPES == %Reptile% && ATTR == dark\")"
+		]
+	}
+]
