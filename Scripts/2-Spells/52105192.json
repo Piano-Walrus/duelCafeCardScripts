@@ -1,0 +1,10 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Pay the cost for, and resolve, $name's effect?",
+        "options":[
+            "label=Send the top card of your Deck to the GY for cost (No Effect)¬is_cost¬source=0¬dest=2¬rand=1",
+            "label=Send the top card of your Deck to the GY; add 1 Equip Spell from your Deck or GY to your hand¬is_cost¬source=0¬dest=2¬rand=1¬is_eff¬search(0, 255, [0, 2], \"FRAME == %equip%\")"
+        ]
+    }
+]
