@@ -4,13 +4,13 @@
         "conditions":[
           {
               "control_self":"$condition",
-              "zone":2
+              "zone_list":[10,11,12,13,14,8,108]
           },
           {
               "NOT":[
                   {
                       "control_self":"$condition",
-                      "zone":2
+                      "zone_list":[10,11,12,13,14,8,108]
                   }
               ]
           }
