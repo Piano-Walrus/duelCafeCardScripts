@@ -3,9 +3,9 @@
 		"trigger_range":[20,24],
 		"msg":"Apply 1 or both effects of $name?\n\n<b>Note:</b> When using the Special Summon effect, click \"Cancel\" or close the search menu if you'd like to summon from hand instead",
 		"options":[
-			"label=Add 1 \"Mitsurugi\" Monster from your Deck to your Hand¬search(0, 255, [0] \"NAME == %Mitsurugi% && LVL >= 0\")",
+			"label=Add 1 \"Mitsurugi\" Monster from your Deck to your Hand¬search(0, 255, [0], \"NAME == %Mitsurugi% && LVL >= 0\")",
 			"label=Take 800 damage, then you can Summon a Mitsurugi Monster from your GY¬add_lp=-800¬search(2, 255, [2], \"NAME == %Mitsurugi% && LVL >= 0\")",
-			"label=Both effects¬search(0, 255, [0] \"NAME == %Mitsurugi% && LVL >= 0\")¬then¬add_lp=-800¬search(2, 255, [2], \"NAME == %Mitsurugi% && LVL >= 0\")"
+			"label=Both effects¬search(0, 255, [0], \"NAME == %Mitsurugi% && LVL >= 0\")¬then¬add_lp=-800¬search(2, 255, [2], \"NAME == %Mitsurugi% && LVL >= 0\")"
 		]
 	}
 ]
