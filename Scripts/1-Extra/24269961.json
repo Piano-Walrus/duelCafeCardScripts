@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_list":[8,108,10,11,12,13,14],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Add 1 \"Unchained\" monster from your Deck or GY to your hand¬search(0, 2, [0, 2], \"NAME == %Unchained% && LVL >= 0\")"
+		]
+	}
+]

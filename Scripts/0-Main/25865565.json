@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[10,14],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Send up to 2 \"Crystron\" cards with different names from your Deck to the GY¬search(0, 2, [0], \"NAME == %Crystron%\")"
+		]
+	}
+]
