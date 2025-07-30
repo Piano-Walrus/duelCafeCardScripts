@@ -1,0 +1,24 @@
+"$condition":"NAME == %Sunavalon% && TYPES == %Link%",
+"commands":[
+    {
+        "conditions":[
+          {
+              "control_self":"$condition",
+              "zone":2
+          },
+          {
+              "NOT":[
+                  {
+                      "control_self":"$condition",
+                      "zone":2
+                  }
+              ]
+        ],
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 \"Sunseed\" monster from your Deck, and if you do, take 1000 damage¬condition=0¬search(0, 255, [0], \"NAME == %Sunseed% && LVL >= 0\")¬then¬add_lp=-1000",
+            "label=Special Summon 1 \"Sunseed Genius Loci\" your Deck, then take 1000 damage¬condition=1¬add_lp=-1000¬target=27520594¬add=1"
+        ]
+    }
+]
