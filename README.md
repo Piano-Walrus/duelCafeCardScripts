@@ -170,6 +170,8 @@ You can also use conditions to check whether or not a given player controls cert
 | `zone_range`  | int[]  | Expects an array of two "start index" and "end index" integers; Specifies a range of locations for `control_self` and `control_opp` to check.  |
 | `zone_list`  | int[]  | Expects an array of any number of integers; `control_self` and `control_opp` will check every zone index specified in the array for cards matching the provided criteria.  |
 
+***NOTE:** To check if a player controls ANY cards whatsoever (other than the activated card) in a given set of zones, you can set the `control_self` or `control_opp` properties to 0. Alternatively, to confirm that a player controls NO cards in a given set of zones, you can put this same condition in a `NOT` property array instead.*
+
 ## Placeholders
 In any given command string, pop-up message, `control_` property, custom property (explained [below](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#custom-properties)), or LP value string, the system will replace each of the following placeholders with their corresponding value as outlined below:
 
