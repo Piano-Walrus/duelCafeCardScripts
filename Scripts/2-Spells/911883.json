@@ -1,0 +1,17 @@
+"commands":[
+    {
+        "conditions":{
+            "NOT":[
+                {
+                    "control_self":0,
+                    "zone_list":[10, 11, 12, 13, 14, 8, 108]
+                }
+            ]
+        },
+        "trigger_range":[20, 24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 Level 4 or lower Normal Monster from your Deck¬search(0, 255, [0], \"TYPES == %Normal% && LVL <= 4\")"
+        ]
+    }
+]
