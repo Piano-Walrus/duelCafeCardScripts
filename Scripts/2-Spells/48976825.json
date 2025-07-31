@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Return up to 3 banished monsters to the GY¬search(3, 2, [3], \"LVL >= 0\")"
+        ]
+    }
+]
