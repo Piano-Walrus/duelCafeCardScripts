@@ -20,7 +20,7 @@
           }
         ]
       }
-    },
+    ],
     "trigger_range":[20,24],
     "msg":"Resolve $name's effect?",
     "options":[
