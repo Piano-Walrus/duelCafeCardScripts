@@ -95,6 +95,8 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `div_lp=INT` | Divides a player's current LP by the provided integer. |
 | `set_lp=INT` | Sets a player's LP to the provided integer.<br/>***NOTE:** The provided value* ***cannot*** *be negative.* |
 | `excavate_until=STRING` | Starts from the top of the designated "source" pile, and looks for a card whose name contains the provided string, then reveals that card as if it were searched from the "Search Deck Piles" menu. |
+| `draw(INT)` | Draws a number of cards from the target player's main deck equal to the provided integer. |
+| `break_if(STRING)` | Completely stops execution of the current command if the logical expression provided returns true when evaluated. |
 
 ### Alternate Search Syntax
 The following alternate syntax can also be used for the `search` function:
@@ -191,6 +193,8 @@ You can declare custom properties at the top of each card script by starting the
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
 
 To use this feature, in any appropriate string, simply use the syntax `{[OPERAND1][OPERATOR][OPERAND2]}`. For example, to add both players' LP, you can use `{$lp_self+$lp_opp}`, and to subtract 1 from the zone index from which a card was triggered, you can use `{$trigger-1}`. Note that nested brackets are supported, so `{10*{8%6}}` would also work and output 20.
+
+***NOTE:** You can also use `count(INT, STRING)` in any given mathematical expression to count the number of cards present at the provided zone index that match the provided logical expression. For example, `{count(2, \"ATTR == spell\")}` counts the number of spell cards in the target player's Graveyard.*
 
 ### Supported Operators
 | Operator | Description |
