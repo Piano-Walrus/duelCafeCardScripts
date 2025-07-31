@@ -13,7 +13,7 @@
     "msg":"Resolve $name's effect?",
     "options":[
       "label=Add 1 \"Sky Striker\" card from your Deck to your hand ONLY¬$search",
-      "label=Add 1 \"Sky Striker\" card from your Deck to your hand, then, if you have 3 or more Spells in your GY, draw 1 card¬$search¬break_if({count(2, \"ATTR == spell\")} < 3)¬draw(1)"
+      "label=Add 1 \"Sky Striker\" card from your Deck to your hand, then, if you have 3 or more Spells in your GY, draw 1 card¬$search¬then¬break_if({count(2, \"ATTR == spell\")} < 3)¬draw(1)"
     ]
   }
 ]
