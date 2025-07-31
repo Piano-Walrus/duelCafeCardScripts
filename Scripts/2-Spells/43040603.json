@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Excavate cards from the top of your Deck until you excavate a monster that can be Normal Summoned/Set. Special Summon it, also send the other excavated cards to the GY¬debug¬excavate_until(\"LVL >= 0 && DESC != %annot be Normal Summoned/Set% && DESC != %annot be Normal Summoned or Set%\")¬source=0¬dest=2¬rand($num_excavated)"
+            "label=Excavate cards from the top of your Deck until you excavate a monster that can be Normal Summoned/Set. Special Summon it, also send the other excavated cards to the GY¬debug¬excavate_until=LVL >= 0 && DESC != %annot be Normal Summoned/Set% && DESC != %annot be Normal Summoned or Set%¬source=0¬dest=2¬rand($num_excavated)"
         ]
     }
 ]
