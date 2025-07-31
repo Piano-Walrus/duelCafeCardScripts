@@ -7,6 +7,10 @@
           {
             "control_self":0,
             "zone_range":[10,14]
+          },
+          {
+            "control_self":"{count(2, \"ATTR == spell\")} >= 3",
+            "zone":2
           }
         ]
       },
