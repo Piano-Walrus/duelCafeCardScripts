@@ -81,6 +81,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `up_to`  | Specifies that any number of cards less than or equal to the quantity specified in a following function may be selected. If this keyword is not used in a given command string, it will only be executed if a number of cards is found that either matches or exceeds the specified quantity (but the number of cards selected by any function will NEVER exceed that quantity). |
 | `is_cost`  | Specifies that everything following this flag in any given command string is the effect's cost. |
 | `is_eff`  | Disables the `is_cost` flag, therefore specifying that everything following this flag in any given command string is the card's effect, and NOT part of the cost.<br/>This flag is enabled by default, so it should only be used **AFTER** enabling `is_cost`. |
+| `debug` | Should not be used; stops execution of a command string if the activating player isn't me. Used for testing new features that the live version of the world doesn't yet support. |
 
 ### Functions
 
