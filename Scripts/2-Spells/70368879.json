@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Draw 1 card, then your opponent gains 1000 LP.¬draw(1)¬opp¬add_lp(1000)"
+        ]
+    }
+]
