@@ -1,0 +1,10 @@
+"commands":[
+	{
+		"trigger_list":[8,108,10,11,12,13,14],
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Add 1 \"Mausoleum of White\" from your Deck to your hand¬source=0¬target=24382602¬add=1"
+			"label=Send 1 \"Mausoleum of White\" from your Deck to your GY¬source=0¬dest=2¬target=24382602"
+		]
+	}
+]
