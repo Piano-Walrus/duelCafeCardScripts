@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Send cards from the top of your Deck to the GY so you have the same number of cards in your Deck as your opponent¬debug¬source=0¬dest=2¬rand({count(0)-count(0, true)})"
+            "label=Send cards from the top of your Deck to the GY so you have the same number of cards in your Deck as your opponent¬debug¬source=0¬dest=2¬rand={count(0)-count(0, true)}"
         ]
     }
 ]
