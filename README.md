@@ -194,7 +194,7 @@ You can also perform very basic mathematical expressions throughout card scripts
 
 To use this feature, in any appropriate string, simply use the syntax `{[OPERAND1][OPERATOR][OPERAND2]}`. For example, to add both players' LP, you can use `{$lp_self+$lp_opp}`, and to subtract 1 from the zone index from which a card was triggered, you can use `{$trigger-1}`. Note that nested brackets are supported, so `{10*{8%6}}` would also work and output 20.
 
-***NOTE:** You can also use `count(INT, STRING)` in any given mathematical expression to count the number of cards present at the provided zone index that match the provided logical expression. For example, `{count(2, \"ATTR == spell\")}` counts the number of spell cards in the target player's Graveyard.*
+***NOTE:** You can also use `count(INT, STRING)` in any given mathematical expression to count the number of cards present at the provided zone index that match the provided logical expression. For example, `{count(2, \"ATTR == spell\")}` counts the number of spell cards in the target player's Graveyard. A good example of this feature would be [Sky Striker Mobilize - Engage!](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/63166095.json).*
 
 ### Supported Operators
 | Operator | Description |
