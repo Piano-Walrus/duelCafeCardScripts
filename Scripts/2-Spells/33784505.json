@@ -7,7 +7,7 @@
     "trigger_range":[20,24],
     "msg":"Resolve $name's effect?",
     "options":[
-      "label=Draw 1 card¬debug¬break_if(\"{count(2, \"ATTR == spell\")} < 3\")¬draw(1)"
+      "label=Draw 1 card¬debug¬break_if({count(2, \"ATTR == spell\")} < 3)¬draw(1)"
     ]
   }
 ]
