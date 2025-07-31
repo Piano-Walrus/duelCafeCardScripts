@@ -29,7 +29,7 @@
     "msg":"Resolve $name's effect?",
     "options":[
       "label=Add 1 \"Sky Striker\" card from your Deck to your hand ONLY¬condition=0¬$search",
-      "label=Add 1 \"Sky Striker\" card from your Deck to your hand, then draw 1 card¬condition=1¬$search¬then¬draw(4)"
+      "label=Add 1 \"Sky Striker\" card from your Deck to your hand, then draw 1 card¬condition=1¬$search¬then¬draw(3)"
     ]
   }
 ]
