@@ -162,7 +162,7 @@ Available properties for use inside any given `conditions` object:
 | `prev_list`  | int[]  | Similar to `prev_zone`, except the system checks every zone index in the provided array.  |
 | `lp_self`  | int[]  | Checks that the card's owner's LP value is within the provided range (the range being handled similarly to the one provided for `prev_range`).  |
 | `lp_opp`  | int[]  | The same as `lp_self`, except it checks the other player's LP.  |
-| `bool` | string | Expects a logical expression as a string, and evaluates to its result. For example, adding the property `"bool":"2 < 3"` to a `conditions` object would cause that object to evaluate as true. |
+| `bool` | string | Expects a logical expression as a string, and evaluates to its result. For example, adding the property `"bool":"2 < 3"` to a `conditions` object would cause that object to evaluate as true.<br/>Note that identifiers like "NAME" or "FRAME" won't work here, since this expression appears outside of any command strings. |
 
 You can also use conditions to check whether or not a given player controls certain cards. In any given conditions object, only two control-checking properties may be present: one beginning with `"control_"`, and the other beginning with `"zone_"`. The property beginning with `"zone_"` specifies which locations to check, and the property beginning with `"control_"` checks whether or not there exist any cards at those locations that match the provided criteria. The available control-checking properties are as follows:
 
