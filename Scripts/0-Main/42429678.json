@@ -8,7 +8,7 @@
         },
         {
                 "trigger":2,
-                "msg":"Resolve $name's effect?",
+                "msg":"Resolve $name's effect after being used as Synchro material?",
                 "options":[
                         "label=Special Summon 1 \"@Ignister\" monster from your GY¬search(2,255,[2],\"NAME == %@Ignister% && LVL >= 0\")"
                 ]
