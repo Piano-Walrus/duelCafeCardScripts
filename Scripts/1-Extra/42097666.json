@@ -8,6 +8,9 @@
 		]
 	},
 	{
+		"conditions":{
+			"prev_list":[8,108,10,11,12,13,14]
+		},
 		"trigger":2,
 		"msg":"Resolve $name's effect after tributing for cost?",
 		"options":[
