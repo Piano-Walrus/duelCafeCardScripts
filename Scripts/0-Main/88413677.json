@@ -1,16 +1,16 @@
 "commands":[
         {
-        "trigger_range":[10,14],
-        "msg":"Resolve $name's effect?",
-        "options":[
-        "label=Add 1 \"@Ignister\" monster from your GY to your hand¬search(2,255,[2],\"NAME == %@Ignister% && LVL >= 0\")"
-        ]
+                "trigger_range":[10,14],
+                "msg":"Resolve $name's effect?",
+                "options":[
+                        "label=Add 1 \"@Ignister\" monster from your GY to your hand¬search(2,255,[2],\"NAME == %@Ignister% && LVL >= 0\")"
+                ]
         },
         {
-        "trigger":2,
-        "msg":"Resolve $name's effect?",
-        "options":[
-        "label=Add 1 \"A.I.\" Spell/Trap from your GY to your hand¬search(2,255,[2],\"NAME == %A.I.% && spell_trap == %ATTR%\")"
-        ]
+                "trigger":2,
+                "msg":"Resolve $name's effect after being used as material for the Link Summon of a Cyberse monster?",
+                "options":[
+                        "label=Add 1 \"A.I.\" Spell/Trap from your GY to your hand¬search(2,255,[2],\"NAME == %A.I.% && spell_trap == %ATTR%\")"
+                ]
         }
-        ]
+]
