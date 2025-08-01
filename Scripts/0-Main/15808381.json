@@ -1,9 +1,9 @@
 "commands":[
         {
-        "trigger_range":[10,14],
-        "msg":"Resolve $name's effect?",
-        "options":[
-        "label=Add 1 Level 4 or lower \"@Ignister\" monster from your Deck to your hand¬search(0,255,[0],\"NAME == %@Ignister% && LVL <= 4\")"
-        ]
+                "trigger_range":[10,14],
+                "msg":"Resolve $name's effect?",
+                "options":[
+                        "label=Add 1 Level 4 or lower \"@Ignister\" monster from your Deck to your hand¬search(0,255,[0],\"NAME == %@Ignister% && LVL <= 4\")"
+                ]
         }
-        ]
+]
