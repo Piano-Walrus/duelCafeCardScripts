@@ -140,6 +140,7 @@ The card properties you're able to check in any given logical expression are as 
 | FRAME | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
 | ATK | The current monster's ATK stat as an integer. |
 | DEF | The current monster's DEF stat as an integer. |
+| CAN_NORMAL_OR_SET | A boolean value that is essentially just a shortcut for checking if a card 1. is not a ritual monster, and 2. does not contain "Cannot be Normal Summoned/Set" (or a couple other varieties) in its effect text. Note that you should still use something like `LVL >= 0` alongside this property to specify that you'd only like to search for monsters, since this value will simply always evaluate to false for spells & traps. |
 
 ***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
 
