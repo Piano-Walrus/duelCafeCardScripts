@@ -1,16 +1,16 @@
 "commands":[
         {
-        "trigger_range":[10,14],
-        "msg":"Resolve $name's on summon effect?",
-        "options":[
-        "label=send 1 \"@Ignister\" monster from your deck to GY ¬search(0,2,[0],\"NAME == %@Ignister% && LVL >= 0\")"
-        ]
-        }
+                "trigger_range":[10,14],
+                "msg":"Resolve $name's on-summon effect?",
+                "options":[
+                        "label=Send 1 \"@Ignister\" monster from your deck to the GY¬search(0,2,[0],\"NAME == %@Ignister% && LVL >= 0\")"
+                ]
+        },
         {
-        "trigger":2,
-        "msg":"Resolve $name's Synchro material effect?",
-        "options":[
-        "label=Special 1 \"@Ignister\" monster from your GY ¬search(2,255,[2],\"NAME == %@Ignister% && LVL >= 0\")"
-        ]
+                "trigger":2,
+                "msg":"Resolve $name's effect?",
+                "options":[
+                        "label=Special Summon 1 \"@Ignister\" monster from your GY¬search(2,255,[2],\"NAME == %@Ignister% && LVL >= 0\")"
+                ]
         }
-        ]
+]
