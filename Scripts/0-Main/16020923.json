@@ -1,9 +1,9 @@
 "commands":[
         {
-        "trigger_range":[10,14],
-        "msg":"Resolve $name's effect?",
-        "options":[
-        "label=Add 1 \"A.I.\" Spell/Trap from your Deck to your hand¬search(0,255,[0],\"NAME == %A.I.% && spell_trap == %ATTR%\")"
-        ]
+                "trigger_range":[10,14],
+                "msg":"Resolve $name's effect?",
+                "options":[
+                        "label=Add 1 \"A.I.\" Spell/Trap from your Deck to your hand¬search(0,255,[0],\"NAME == %A.I.% && spell_trap == %ATTR%\")"
+                ]
         }
-        ]
+]
