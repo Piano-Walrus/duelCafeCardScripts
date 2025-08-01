@@ -16,7 +16,7 @@
       },
       {
         "control_self":"{count(2, \"ATTR == spell\")} >= 3",
-        "zone":2
+        "zone":2,
         "NOT":[
           {
             "control_self":0,
