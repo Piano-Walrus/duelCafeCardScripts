@@ -162,6 +162,7 @@ Available properties for use inside any given `conditions` object:
 | `prev_list`  | int[]  | Similar to `prev_zone`, except the system checks every zone index in the provided array.  |
 | `lp_self`  | int[]  | Checks that the card's owner's LP value is within the provided range (the range being handled similarly to the one provided for `prev_range`).  |
 | `lp_opp`  | int[]  | The same as `lp_self`, except it checks the other player's LP.  |
+| `bool` | string | Expects a logical expression as a string, and evaluates to its result. For example, adding the property `"bool":"2 < 3"` to a `conditions` object would cause that object to evaluate as true. |
 
 You can also use conditions to check whether or not a given player controls certain cards. In any given conditions object, only two control-checking properties may be present: one beginning with `"control_"`, and the other beginning with `"zone_"`. The property beginning with `"zone_"` specifies which locations to check, and the property beginning with `"control_"` checks whether or not there exist any cards at those locations that match the provided criteria. The available control-checking properties are as follows:
 
@@ -184,6 +185,7 @@ In any given command string, pop-up message, `control_` property, custom propert
 | `$name`  | string  | Represents the name of the triggered card.  |
 | `$lp_self`  | int  | Represents the LP of the player who owns the triggered card.  |
 | `$lp_opp`  | int  | Represents the LP of the opponent of the player who owns the triggered card.  |
+| `$num_excavated` | int | Should only be used after using `excavate_until`; Returns the number of cards excavated, excluding the card that was eventually added to hand by `excavate_until`. If no card is added, this placeholder evaluates to 255. If this placeholder is used without `excavate_until`, it will evaluate to 0. |
 
 ### Custom Properties
 You can declare custom properties at the top of each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Gain 500 LP" in all 3 commands, you can create a property called `"$gainLP"` with the syntax `"$gainLP":"Gain 500 LP"`, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP".
