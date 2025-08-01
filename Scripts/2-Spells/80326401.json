@@ -1,0 +1,10 @@
+"$arch":"Blue-Eyes White Dragon"
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Add 1 Level 1 LIGHT Tuner, and 1 Spell/Trap that mentions \"$arch\" from your Deck to your hand¬search(0, 255, [0], (LVL == 1 && ATTR == light && TYPES == %Tuner%) || (spell_trap == %ATTR% && DESC == %$arch%))"
+		]
+	}
+]
