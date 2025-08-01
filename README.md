@@ -106,15 +106,15 @@ The following alternate syntax can also be used for the `search` function:
 
 The parameters for this function are explained below:
 
-| Parameter | Description |
-| :-- | :-- |
-| TAB_INDEX | Just like with the default search syntax, this parameter takes an integer representing the index of the tab that should be shown first when the "Search Deck Piles" menu is opened. |
-| DEST | The zone index that searched cards should be moved to.<br/><br/>For standard behaviour (revealing cards upon clicking "Spawn" instead of sending them to any specific location), set this parameter to 255.|
-| SOURCES | An array of integers, representing all the available tab indexes that should be shown to the player after the "Search Deck Piles" menu is opened. |
-| CRITERIA | A string representing criteria by which the menu should filter out certain cards. This string is expected to be a logical expression (See [Logical Expressions](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#logical-expressions)). Otherwise, the system will only show cards containing the string you provide.<br/><br/>If you provide an empty string (`\"\"`), the system will not filter the card list, and will instead just show all the cards at the selected location. |
-| PASSCODE | If a card's script should run after a single card is searched, provide this value with its passcode.<br/><br/>If you instead want the system to attempt to run the script for "whichever single card was searched", set this parameter to -1.<br/>If you do not wish to use this feature, set this parameter to 0. |
-| ZONE_INDEX | If you set PASSCODE to a value other than 0, then set this parameter to the zone index that you'd like the desired card script to trigger from. For example, if PASSCODE is the passcode of a spell card, or if you set PASSCODE to -1 and expect the player to only search spell cards, then you can set ZONE_INDEX to 22 to have the system run the desired cards "On-Snapped-To-Spell/Trap-Zone" effect.<br/><br/>If you do not wish to use this feature, set this parameter to -1, but if PASSCODE is also set to -1, note that the searched card may trigger if it would otherwise trigger at the location it is sent to. |
-| SHOULD_PAY_COST | Defaults to `true` if not specified. When set to `false`, and `PASSCODE` and `ZONE_INDEX` are set to trigger the searched card, the system will ignore any costs for any of the card's effects, and only allow for effects to be resolved. |
+| Parameter | Type | Description |
+| :-- | :-- | :-- |
+| TAB_INDEX | int | Just like with the default search syntax, this parameter represents the index of the tab that should be shown first when the "Search Deck Piles" menu is opened. |
+| DEST | int | The zone index that searched cards should be moved to.<br/><br/>For standard behaviour (revealing cards upon clicking "Spawn" instead of sending them to any specific location), set this parameter to 255.|
+| SOURCES | int[] | Representing all the available tab indexes that should be shown to the player after the "Search Deck Piles" menu is opened. |
+| CRITERIA | string | A string representing criteria by which the menu should filter out certain cards. This string is expected to be a logical expression (See [Logical Expressions](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#logical-expressions)). Otherwise, the system will only show cards containing the string you provide.<br/><br/>If you provide an empty string (`\"\"`), the system will not filter the card list, and will instead just show all the cards at the selected location. |
+| PASSCODE | long | If a card's script should run after a single card is searched, provide this value with its passcode.<br/><br/>If you instead want the system to attempt to run the script for "whichever single card was searched", set this parameter to -1.<br/>If you do not wish to use this feature, set this parameter to 0. |
+| ZONE_INDEX | int | If you set PASSCODE to a value other than 0, then set this parameter to the zone index that you'd like the desired card script to trigger from. For example, if PASSCODE is the passcode of a spell card, or if you set PASSCODE to -1 and expect the player to only search spell cards, then you can set ZONE_INDEX to 22 to have the system run the desired cards "On-Snapped-To-Spell/Trap-Zone" effect.<br/><br/>If you do not wish to use this feature, set this parameter to -1, but if PASSCODE is also set to -1, note that the searched card may trigger if it would otherwise trigger at the location it is sent to. |
+| SHOULD_PAY_COST | boolean | Defaults to `true` if not specified. When set to `false`, and `PASSCODE` and `ZONE_INDEX` are set to trigger the searched card, the system will ignore any costs for any of the card's effects, and only allow for effects to be resolved. |
 
 ***Note:** When using the above alternate *`search`* syntax, if you do not intend for the searched card to trigger, you can simply omit the *`PASSCODE`*, *`ZONE_INDEX`*, and *`SHOULD_PAY_COST`* parameters, and they will default to *`0`*, *`-1`*, *`true`* respectively. However, each function parameter must always be provided in the correct order, so if you omit *`ZONE_INDEX`*, you must also omit *`SHOULD_PAY_COST`*, etc.* <br/>
 
@@ -211,6 +211,16 @@ To use this feature, in any appropriate string, simply use the syntax `{[OPERAND
 You can also surround a number with `|` to get its absolute value. Note, however, that if you intend to get the absolute value of an expression, you must surround those pipes with brackets.<br/>**Example:** `{|{$trigger-1}|}` would subtract 1 from the trigger location, then return the absolute value of that result.
 
 Two good examples of this feature would be the scripts for [Dried Winds](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/28265983.json) and [Dimonno Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/30432463.json).
+
+### The Count Function
+In any mathematical expression, you can also use `count(ZONE_INDEX, ?CRITERIA, ?SHOULD_TARGET_OPPONENT)` (optional fields preceded with `?`) to count the number of cards present at the provided zone index that match the provided logical expression. For example, `{count(2, \"ATTR == spell\")}` counts the number of spell cards in the target player's Graveyard. A good example of this feature would be [Sky Striker Mobilize - Engage!](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/63166095.json)*
+
+The expected parameters of this method are explained below:
+| Parameter | Type | Description |
+| :-- | :-- | :-- |
+| ZONE_INDEX | int | The index of the pile/zone to search. |
+| CRITERIA | string | A logical expression to be checked for each card in the specified pile. |
+| SHOULD_TARGET_OPPONENT | boolean | If set to true, the opponent's corresponding pile/zone will be checked rather than that of the activating player. |
 
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like `rand` or `add` in commands.
