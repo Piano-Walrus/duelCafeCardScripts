@@ -9,12 +9,14 @@
             "zone_range":[10,14]
           },
           {
-            "bool":"{count(2, \"ATTR == spell\")} >= 3"
+            "control_self":"{count(2, \"ATTR == spell\")} >= 3",
+            "zone":2
           }
         ]
       },
       {
-        "bool":"{count(2, \"ATTR == spell\")} >= 3"
+        "control_self":"{count(2, \"ATTR == spell\")} >= 3",
+        "zone":2
         "NOT":[
           {
             "control_self":0,
