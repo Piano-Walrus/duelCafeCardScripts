@@ -182,10 +182,11 @@ In any given command string, pop-up message, `control_` property, custom propert
 
 | Placeholder Identifier | Type | Description |
 | :--- | :--- | :--- |
-| `$trigger`  |  int | Represents the index of the zone from which triggered card was triggered.  |
-| `$name`  | string  | Represents the name of the triggered card.  |
-| `$lp_self`  | int  | Represents the LP of the player who owns the triggered card.  |
-| `$lp_opp`  | int  | Represents the LP of the opponent of the player who owns the triggered card.  |
+| `$trigger`  |  int | The index of the zone from which triggered card was triggered.  |
+| `$name`  | string  | The name of the triggered card.  |
+| `$lp_self`  | int  | The LP of the player who owns the triggered card.  |
+| `$lp_opp`  | int  | The LP of the opponent of the player who owns the triggered card.  |
+| `$prev_zone` | int | The index of the zone this card was in before it was moved to `$trigger`. |
 | `$num_excavated` | int | Should only be used after using `excavate_until`; Returns the number of cards excavated, excluding the card that was eventually added to hand by `excavate_until`. If no card is added, this placeholder evaluates to 255. If this placeholder is used without `excavate_until`, it will evaluate to 0. |
 
 ### Custom Properties
