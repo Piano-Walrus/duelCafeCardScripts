@@ -1,0 +1,9 @@
+"commands":[
+        {
+                "trigger":2,
+                "msg":"Resolve $name's GY effect after being destroyed by battle or card effect?",
+                "options":[
+                        "label=Add, from your Deck to your hand, 1 Level 9 monster with a different original Type and Attribute than this card¬search(0,255,[0],\"LVL == 9 && ATTR != earth && TYPES != %Insect%\")"
+                ]
+        }
+]
