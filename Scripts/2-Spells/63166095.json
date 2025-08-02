@@ -1,3 +1,4 @@
+"$add_label":"Add 1 \"Sky Striker\" card from your Deck to your hand",
 "$search":"search(0, 255, [0], \"NAME == %Sky Striker% && NAME != Sky Striker Mobilize - Engage!\")",
 "commands":[
   {
@@ -26,8 +27,8 @@
     "trigger_range":[20,24],
     "msg":"Resolve $name's effect?",
     "options":[
-      "label=Add 1 \"Sky Striker\" card from your Deck to your hand ONLY¬condition=0¬$search",
-      "label=Add 1 \"Sky Striker\" card from your Deck to your hand, then draw 1 card¬condition=1¬$search¬then¬draw(1)"
+      "label=$add_label ONLY¬condition=0¬$search",
+      "label=$add_label, then draw 1 card¬condition=1¬$search¬then¬draw(1)"
     ]
   }
 ]
