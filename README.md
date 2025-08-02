@@ -188,6 +188,7 @@ In any given command string, pop-up message, `control_` property, custom propert
 | `$lp_opp`  | int  | The LP of the opponent of the player who owns the triggered card.  |
 | `$prev_zone` | int | The index of the zone this card was in before it was moved to `$trigger`. |
 | `$num_excavated` | int | Should only be used after using `excavate_until`; Returns the number of cards excavated, excluding the card that was eventually added to hand by `excavate_until`. If no card is added, this placeholder evaluates to 255. If this placeholder is used without `excavate_until`, it will evaluate to 0. |
+| `$num_searched` | int | Should only be used after using `search()`; Returns the number of cards searched by the most recent `search()` call. If no cards were searched, this placeholder will evaluate to 0. |
 
 ### Custom Properties
 You can declare custom properties at the top of each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Gain 500 LP" in all 3 commands, you can create a property called `"$gainLP"` with the syntax `"$gainLP":"Gain 500 LP"`, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP".
