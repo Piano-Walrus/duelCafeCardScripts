@@ -3,7 +3,7 @@
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's effect?",
 		"options":[
-			"label=Add 1 \"Ignister A.I.Land\" from your Deck to your Hand¬source=0¬target=59054773¬add=1",
+			"label=Add 1 \"Ignister A.I.Land\" from your Deck to your hand¬source=0¬target=59054773¬add=1"
 		]
 	}
 ]
