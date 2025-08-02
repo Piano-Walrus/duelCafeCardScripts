@@ -14,7 +14,7 @@
         ]
       },
       {
-        "bool":"{count(2, \"ATTR == spell\")} >= 3"
+        "bool":"{count(2, \"ATTR == spell\")} >= 3",
         "NOT":[
           {
             "control_self":0,
