@@ -1,0 +1,15 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve the rest of $name's effect to Special Summon itself from hand?",
+        "options":[
+            "label=Special Summon 1 Level 5 non-Pyro \"K9\" monster from your GY¬search(2, 255, [2], \"LVL == 5 && TYPES != %Pyro% && NAME == %K9%\")"
+        ]
+    },
+    {
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Add 1 \"K9\" Spell/Trap from your Deck to your hand¬search(0, 255, [0], \"NAME == %K9% && spell_trap == %ATTR%\")"
+        ]
+    }
+]
