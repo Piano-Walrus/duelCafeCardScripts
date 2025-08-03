@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 Field Spell from your Deck to your hand¬search(0, 255, [0], \"FRAME == %field%\")"
+        ]
+    }
+]
