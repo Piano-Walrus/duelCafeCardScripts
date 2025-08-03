@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Set 1 \"Fabled\" Spell/Trap from your Deck¬search(0, 255, [0], \"NAME == %Fabled% && ATTR == spell_trap && NAME != Fabled Realm's Revival\")"
+		]
+	}
+]

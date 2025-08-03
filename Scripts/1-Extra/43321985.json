@@ -1,0 +1,41 @@
+"$controls":"NAME == World of Spirits"
+"commands":[
+	{
+		"conditions":[
+			{
+				"OR":[
+					{
+						"control_self":"$controls",
+						"zone_list":[9,109]
+					},
+					{
+						"control_opp":"$controls",
+						"zone_list":[9,109]
+					},
+				]
+			},
+			{
+				"NOT":[
+					{
+						"OR":[
+							{
+								"control_self":"$controls",
+								"zone_list":[9,109]
+							},
+							{
+								"control_opp":"$controls",
+								"zone_list":[9,109]
+							},
+						]
+					}
+				]
+			}
+		],
+		"trigger_list":[8,108,10,11,12,13,14],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Draw 1 card¬condition=0¬draw(1)",
+			"label=Add 1 LIGHT monster (Beast, Plant or Fairy) or 1 \"Eternal Sunshine\" from your Deck to your hand¬condition=1¬search(0, 255, [0], \"(ATTR == light && (TYPE == %Beast% || TYPE == %Plant% || TYPE == %Fairy%)) || NAME == Eternal Sunshine\")"
+		]
+	}
+]
