@@ -1,7 +1,7 @@
 "commands":[
     {
         "trigger_range":[20,24],
-        "msg":"Resolve the first part of $name's effect?",
+        "msg":"Resolve $name's effect?",
         "options":[
             "label=Add 1 \"Synchron\" Tuner from your Deck to your hand¬search(0, 255, [0], \"TYPES == %Tuner% && NAME == %Synchron%\")¬then¬source=0¬dest=2¬rand=1"
         ]
