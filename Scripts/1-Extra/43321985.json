@@ -34,8 +34,8 @@
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's effect?",
 		"options":[
-			"label=Draw 1 card¬debug¬condition=0¬draw(1)",
-			"label=Add 1 LIGHT monster (Beast, Plant or Fairy) or 1 \"Eternal Sunshine\" from your Deck to your hand¬debug¬condition=1¬search(0, 255, [0], \"(ATTR == light && (TYPES == %Beast% || TYPES == %Plant% || TYPES == %Fairy%)) || NAME == Eternal Sunshine\")"
+			"label=Draw 1 card¬debug¬condition=1¬draw(1)",
+			"label=Add 1 LIGHT monster (Beast, Plant or Fairy) or 1 \"Eternal Sunshine\" from your Deck to your hand¬debug¬condition=0¬search(0, 255, [0], \"(ATTR == light && (TYPES == %Beast% || TYPES == %Plant% || TYPES == %Fairy%)) || NAME == Eternal Sunshine\")"
 		]
 	}
 ]
