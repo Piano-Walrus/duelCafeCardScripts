@@ -9,7 +9,7 @@
 	{
 		"msg":"Resolve one of $name's ignition effects after discarding 1 \"Fabled\" card?",
 		"options":[
-			"label=Draw 1 card¬debug¬draw(1)",
+			"label=Draw 1 card¬draw(1)",
 			"label=Special Summon 1 \"Fabled\" monster from your GY or banishment¬search(2, 255, [2,3],\"IS_MONSTER && NAME == %Fabled%\")"
 		]
 	}
