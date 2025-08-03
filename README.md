@@ -182,6 +182,7 @@ In any given command string, pop-up message, `control_` property, custom propert
 
 | Placeholder Identifier | Type | Description |
 | :--- | :--- | :--- |
+| `$player_index` | int | The index of the player who activated the card that was triggered.<br/>This value is one less than the player's number, so Player 1 would be index 0, and Player 2 would be index 1. |
 | `$trigger`  |  int | The index of the zone from which triggered card was triggered.  |
 | `$name`  | string  | The name of the triggered card.  |
 | `$lp_self`  | int  | The LP of the player who owns the triggered card.  |
