@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Send 1 Fish monster from your Deck to the GY, except \"Lifeless Leaffish\"¬search(0, 2, [0], \"TYPES == %Fish% && NAME == %Lifeless Leaffish%\", -1, 2)"
+        ]
+    }
+]
