@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 card that mentions \"Black-Winged Dragon\" from your Deck to your hand, except \"Blackwing - Sudri the Phantom Glimmer\"¬search(0,255,[0],\"DESC == %Black-Winged Dragon% && NAME != Blackwing - Sudri the Phantom Glimmer\")"
+        ]
+    }
+]
