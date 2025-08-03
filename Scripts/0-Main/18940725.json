@@ -1,7 +1,7 @@
 "commands":[
     {
         "trigger_range":[10,14],
-        "msg":"Resolve the first part of $name's effect?",
+        "msg":"Resolve the first part of $name's on-summon effect?",
         "options":[
             "label=Add 1 Level 4 or lower Winged Beast monster from your Deck to your hand¬search(0,255,[0],\"TYPES == %Winged Beast% && LVL <= 4\")"
         ]
