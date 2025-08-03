@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":9,
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"Dual Avatar\" monster from your Deck to your hand¬search(0, 255, [0], \"LVL >= 0 && NAME == %Dual Avatar%\")"
+        ]
+    }
+]
