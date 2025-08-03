@@ -4,7 +4,7 @@
             "NOT":[
                 {
                     "control_self":0,
-                    "zone_range":[8,124]
+                    "zone_range":[8,24]
                 }
             ]
         },
