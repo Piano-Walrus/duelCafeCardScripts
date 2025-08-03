@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve the first part of $name's on-summon effect?",
+        "options":[
+            "label=Add 1 of your banished \"Floowandereeze\" cards to your hand¬search(3,255,[3],\"NAME == %Floowandereeze%\")"
+        ]
+    }
+]
