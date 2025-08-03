@@ -1,7 +1,7 @@
 "commands":[
     {
         "trigger_range":[10,14],
-        "msg":"Resolve $name's effect?",
+        "msg":"Resolve $name's on-summon effect?",
         "options":[
             "label=Add 1 \"Vaalmonica\" card from your Deck to your hand¬search(0,255,[0],\"Vaalmonica\")"
         ]
