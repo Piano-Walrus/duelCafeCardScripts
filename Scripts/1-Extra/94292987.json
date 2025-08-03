@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_list":[8,108,10,11,12,13,14],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Special Summon 1 \"Fabled\" monster from your Deck \n(Click \"Cancel\" to summon from hand instead)¬search(0, 255, [0], \"NAME == %Fabled% && LVL >= 0\")"
+		]
+	}
+]
