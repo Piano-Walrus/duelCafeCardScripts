@@ -1,0 +1,17 @@
+"commands":[
+    {
+        "conditions":{
+            "NOT":[
+                {
+                    "control_self":0,
+                    "zone_range":[8,124]
+                }
+            ]
+        },
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's on-activation effect?",
+        "options":[
+            "label=Add 1 \"Synchron\" monster from your Deck to your hand¬search(0,255,[0],\"LVL >= 0 && NAME == %Synchron%\")"
+        ]
+    }
+]
