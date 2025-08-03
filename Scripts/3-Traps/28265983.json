@@ -2,16 +2,8 @@
     {
         "conditions":{
             "lp_opp":[0,"{$lp_self-3000}"],
-            "OR":[
-                {
-                    "control_self":"Aroma",
-                    "zone_range":[10,14]
-                },
-                {
-                    "control_self":"Aroma",
-                    "zone_list":[8,108]
-                }
-            ]
+            "control_self":"NAME == %Aroma%",
+            "zone_list":[8,108,10,11,12,13,14]
         },
         "msg":"Pay the cost for this card's 2nd effect?",
         "options":[
