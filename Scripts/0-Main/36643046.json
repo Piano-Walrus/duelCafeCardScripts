@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 \"Synchron\" monster from your Graveyard, but negate its effects¬search(2,255,[2],\"LVL >= 0 && NAME == %Synchron%\")"
+        ]
+    }
+]
