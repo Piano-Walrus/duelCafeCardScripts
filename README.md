@@ -130,17 +130,19 @@ When comparing string properties, you can also use `%` to represent a wildcard, 
 
 The card properties you're able to check in any given logical expression are as follows:
 
-| Property | Description |
-| :-- | :-- |
-| NAME | The name of the current card. |
-| DESC | The effect text of the current card. For pendulum monsters, this represents the card's monster effect text. |
-| TYPES | The entire typeline of the card as a string. For example, checking this property of "Junk Synchron" would return `[Warrior / Tuner / Effect]`. |
-| LVL | The level of the current monster as an integer.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
-| ATTR | The name of the current card's attribute. This value will ***ALWAYS*** be all lowercase, so "FIRE" becomes "fire", etc.<br/>This property also allows you to filter for ONLY "spell" or ONLY "trap" (i.e. `ATTR == spell`). |
-| FRAME | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
-| ATK | The current monster's ATK stat as an integer. |
-| DEF | The current monster's DEF stat as an integer. |
-| CAN_NORMAL_OR_SET | A boolean value that is essentially just a shortcut for checking if a card 1. is not a ritual monster, and 2. does not contain "Cannot be Normal Summoned/Set" (or a couple other varieties) in its effect text. Note that you should still use something like `LVL >= 0` alongside this property to specify that you'd only like to search for monsters, since this value will simply always evaluate to false for spells & traps. |
+| Property | Type | Description |
+| :-- | :-- | :-- |
+| NAME | string | The name of the current card. |
+| DESC | string | The effect text of the current card. For pendulum monsters, this represents the card's monster effect text. |
+| TYPES | string | The entire typeline of the card as a string. For example, checking this property of "Junk Synchron" would return `[Warrior / Tuner / Effect]`. |
+| LVL | int | The level of the current monster as an integer.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
+| ATTR | string | The name of the current card's attribute. This value will ***ALWAYS*** be all lowercase, so "FIRE" becomes "fire", etc.<br/>This property also allows you to filter for ONLY "spell" or ONLY "trap" (i.e. `ATTR == spell`). |
+| FRAME | string | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
+| ATK | int | The current monster's ATK stat as an integer. |
+| DEF | int | The current monster's DEF stat as an integer. |
+| CAN_NORMAL_OR_SET | bool | A boolean value that is essentially just a shortcut for checking if a card 1. is not a ritual monster, and 2. does not contain "Cannot be Normal Summoned/Set" (or a couple other varieties) in its effect text. Note that you should still use something like `LVL >= 0` alongside this property to specify that you'd only like to search for monsters, since this value will simply always evaluate to false for spells & traps. |
+| IS_SPELL_OR_TRAP | bool | Whether or not a given card is a spell OR a trap. Essentially a shortcut for `spell_trap == %ATTR%`. |
+| IS_MONSTER | bool | Whether or not a given card is a monster. Essentially a shortcut for `LVL >= 0`. |
 
 ***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
 
