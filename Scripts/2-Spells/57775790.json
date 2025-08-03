@@ -1,9 +1,16 @@
 "commands":[
 	{
 		"trigger_range":[20,24],
-		"msg":"Resolve $name's effect?",
+		"msg":"Resolve $name's on-activation effect?",
 		"options":[
-			"label=Set 1 \"Fabled\" Spell/Trap from your Deck¬search(0, 255, [0], \"NAME == %Fabled% && ATTR == spell_trap && NAME != Fabled Realm's Revival\")"
+			"label=Set 1 \"Fabled\" Spell/Trap from your Deck¬debug¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Fabled% && NAME != Fabled Realm's Revival\")"
+		]
+	},
+	{
+		"msg":"Resolve one of $name's ignition effects after discarding 1 \"Fabled\" card?",
+		"options":[
+			"label=Draw 1 card¬debug¬draw(1)",
+			"label=Special Summon 1 \"Fabled\" monster from your GY or banishment¬debug¬search(2, 255, [2,3],\"IS_MONSTER && NAME == %Fabled%\")"
 		]
 	}
 ]
