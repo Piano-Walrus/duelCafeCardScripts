@@ -3,7 +3,7 @@
 		"trigger_range":[20,24],
 		"msg":"Resolve $name's effect?",
 		"options":[
-			"label=Add 1 \"Dragon Tail\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Dragon Tail% && LVL >= 0\")"
+			"label=Add 1 \"Dracotail\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Dracotail% && LVL >= 0\")"
 		]
 	}
 ]
