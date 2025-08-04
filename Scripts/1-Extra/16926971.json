@@ -3,7 +3,7 @@
         "trigger_range":[10,14],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 \"Cyberse\" monster from your GY to your hand¬search(2,255,[2,3],\"TYPES == %Cyberse% && IS_MONSTER\")"
+            "label=Add 1 \"Cyberse\" monster from your GY or Banishment to your hand¬search(2,255,[2,3],\"TYPES == %Cyberse% && IS_MONSTER\")"
         ]
      },
      {
