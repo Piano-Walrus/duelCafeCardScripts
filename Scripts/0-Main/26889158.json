@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=You can send 1 \"Salamangreat\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Salamangreat% && NAME != Salamangreat Gazelle\", -1, 2)"
+        ]
+    }
+]
