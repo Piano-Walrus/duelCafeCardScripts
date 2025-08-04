@@ -1,8 +1,0 @@
-"commands":[
-    { 
-        "msg":"Resolve the effect of $name's",
-        "options":[
-            "label=Special summon this card and 1 dark cyberse¬search(2,255,[2],\"TYPES == %cyberse% && %dark%\")"
-        ]
-    }
-]

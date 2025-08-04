@@ -1,0 +1,8 @@
+"commands":[
+    { 
+        "msg":"Resolve the other portion of $name's Special Summon effect?",
+        "options":[
+            "label=Special Summon 1 DARK Cyberse monster from your GY in Defense Position¬search(2,255,[2],\"TYPES == %Cyberse% && ATTR == dark\")"
+        ]
+    }
+]
