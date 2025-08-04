@@ -1,0 +1,16 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"Cyberse\" monster from your GY or Banishment to your hand¬search(2,255,[2,3],\"TYPES == %Cyberse% && IS_MONSTER\")"
+        ]
+     },
+     {
+        "trigger":2,
+        "msg":"Resolve $name's effect upon being used as Link material?",
+        "options":[
+            "label=Add 1 \"A.I.\" Spell from your Deck to your hand¬search(0,255,[0],\"NAME == %A.I.% && ATTR == spell\")"
+        ]
+    }
+]
