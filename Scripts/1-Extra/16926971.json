@@ -1,16 +1,16 @@
 "commands":[
     {
         "trigger_range":[10,14],
-        "msg":"Resolve $name's effect on summon?",
+        "msg":"Resolve $name's effect?",
         "options":[
-        "label=Add 1 \"cyberse\" monster from your GY to your hand¬search(2,3,255,[2,3],\"TYPES == %cyberse% && LVL >= 0\")"
+            "label=Add 1 \"Cyberse\" monster from your GY to your hand¬search(2,255,[2,3],\"TYPES == %Cyberse% && IS_MONSTER\")"
         ]
      },
      {
         "trigger":2,
-        "msg":"Resolve $name's effect when linked off?",
+        "msg":"Resolve $name's effect upon being used as Link material?",
         "options":[
-        "label=Add 1 \"A.I.\" Spell from your deck to your hand¬search(0,255,[0],\"NAME == %A.I.% && spell == %ATTR%\")"
+            "label=Add 1 \"A.I.\" Spell from your Deck to your hand¬search(0,255,[0],\"NAME == %A.I.% && ATTR == spell\")"
         ]
     }
 ]
