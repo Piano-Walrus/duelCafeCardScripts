@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve the rest of $name's Special Summon effect?",
+        "options":[
+            "label=Special Summon 1 \"Exosister Elis\" from your Deck¬source=0¬target=16474916¬add=1"
+        ]
+    }
+]
