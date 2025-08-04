@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve $name's effect after being used as material for a Fusion Summon?",
+		"options":[
+			"label=Set 1 \"Dragon Tail\" Spell/Trap from your Deck¬search(0,255,[0], \"NAME == %Dragon Tail% && spell_trap == %ATTR%\")"
+		]
+	}
+]
