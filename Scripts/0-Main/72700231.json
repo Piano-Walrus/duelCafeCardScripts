@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve the rest of $name's Special Summon effect?",
+        "options":[
+            "label=Send 1 Zombie monster from your Deck to the GY¬search(0, 2, [0], \"TYPES == %Zombie%\", -1, 2)"
+        ]
+    }
+]
