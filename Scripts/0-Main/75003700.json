@@ -3,14 +3,14 @@
 		"trigger_range":[10,14],
 		"msg":"Resolve $name's effect?",
 		"options":[
-			"label=Add 1 \"Dracotail\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %Dracotail% && LVL >= 0\")"
+			"label=Add 1 \"Dracotail\" monster from your Deck to your hand¬search(0,255,[0],\"IS_MONSTER && NAME == %Dracotail%\")"
 		]
 	},
 	{
 		"trigger":2,
 		"msg":"Resolve $name's effect after being used as material for a Fusion Summon?",
 		"options":[
-			"label=Set 1 \"Dracotail\" Spell/Trap from your Deck¬search(0,255,[0], \"NAME == %Dracotail% && spell_trap == %ATTR%\")"
+			"label=Set 1 \"Dracotail\" Spell/Trap from your Deck¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Dracotail%\")"
 		]
 	}
 ]
