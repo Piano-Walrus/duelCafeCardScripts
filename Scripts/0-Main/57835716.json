@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":3,
+        "msg":"Resolve $name's GY effect?",
+        "options":[
+            "label=Special Summon 1 "Orcust" monster from your Deck¬search(0,255,[0],\"NAME == %Orcust% && NAME != NAME\")"
+        ]
+    }
+]
