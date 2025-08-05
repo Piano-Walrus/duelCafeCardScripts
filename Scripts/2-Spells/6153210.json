@@ -1,7 +1,7 @@
 "commands":[
 	{
 		"trigger_range":[20,24],
-		"msg":"Resolve $name's effect?",
+		"msg":"Resolve the first part of $name's effect?",
 		"options":[
 			"label=Add 1 \"Dracotail\" monster from your Deck to your hand¬search(0,255,[0],\"IS_MONSTER && NAME == %Dracotail%\")"
 		]
