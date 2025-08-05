@@ -1,0 +1,10 @@
+#ALWAYS_AUTOMATE
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Pay the cost for $name's Special Summon effect?",
+        "options":[
+            "label=Banish 3 cards from your Extra Deck face-down¬search(1,5,[1],\"NAME != Dreaming Nemleria\")"
+        ]
+    }
+]
