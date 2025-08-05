@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve the first part of $name's effect after being used as material for a Fusion Summon?",
+		"options":[
+			"label=Set 1 \"Dracotail\" Spell/Trap from your Deck¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Dracotail%\")"
+		]
+	}
+]
