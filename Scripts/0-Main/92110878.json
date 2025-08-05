@@ -5,5 +5,12 @@
         "options":[
             "label=Add 1 \"Shining Sarcophagus\" or 1 Spell/Trap that mentions it from your Deck to your hand¬search(0,255,[0],\"IS_SPELL_OR_TRAP && DESC == %Shining Sarcophagus%\")"
         ]
+    },
+    {
+        "trigger":2,
+        "msg":"Resolve $name's GY effect after being destroyed by battle or card effect?",
+        "options":[
+            "label=Set 1 \"Stronghold the Hidden Fortress\" from your Deck¬search(0,255,[0],\"NAME == Stronghold the Hidden Fortress\")"
+        ]
     }
 ]
