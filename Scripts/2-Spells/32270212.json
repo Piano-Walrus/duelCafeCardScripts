@@ -1,0 +1,22 @@
+"$arch":"Shining Sarcophagus",
+"commands":[
+    {
+        "conditions":{
+            "AND":[
+                {
+                    "control_self":"IS_MONSTER && DESC == %$arch%",
+                    "zone_list":[8,108,10,11,12,13,14]
+                },
+                {
+                    "control_self":"NAME == %$arch%",
+                    "zone_list":[20,24]
+                }
+            ]
+        },
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon up to 2 Level 4 or lower monsters with different names that mention \"$arch\" from your hand and/or Deck¬search(0, 255, [0], \"LVL <= 4 && DESC == %$arch%\")"
+        ]
+    }
+]
