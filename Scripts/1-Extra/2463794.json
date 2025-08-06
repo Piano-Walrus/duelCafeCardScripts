@@ -3,7 +3,7 @@
                 "trigger":2,
                 "msg":"Resolve $name's Quick Effect?",
                 "options":[
-                        "label=Special Summon 1 \"Fiendsmith\" monster from your Deck\n(Click \"Cancel\" to summon from hand instead)¬search(0,255,[0],\"NAME == %Fiendsmith% && LVL >= 0\")"
+                        "label=Special Summon 1 \"Fiendsmith\" monster from your Deck\n(Click \"Cancel\" to summon from hand instead)¬search(0,255,[0],\"IS_MONSTER && (NAME == %Fiendsmith% || NAME == Lacrima the Crimson Tears)\")"
                 ]
         }
 ]
