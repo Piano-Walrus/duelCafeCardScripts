@@ -1,5 +1,8 @@
 "commands":[
     {
+        "conditions":{
+            "prev_zone":6
+        },
         "trigger":2,
         "msg":"Resolve $name's effect?",
         "options":[
