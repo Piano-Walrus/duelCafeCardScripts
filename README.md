@@ -120,7 +120,7 @@ The parameters for this function are explained below:
 
 ***NOTE pt. ii:** The `TAB_INDEX` and `SOURCES` parameters of this function are the only places in the entire automation system where zone indexes "102" and "103" are allowed to represent "Opponent's GY" and "Opponent's Banished" respectively.*
 
-Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
+Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json), [Dimonno Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/30432463.json), and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
 
 ### Post-Search Actions
 After using the `search` function, you may want a command to perform other actions that must specifically occur AFTER a card is searched. To accomplish this, you can use the `then` keyword immediately after using `search` to halt the command's execution, then resume once the search is completed. A good example of this feature would be [Tuning](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/96363153.json).
