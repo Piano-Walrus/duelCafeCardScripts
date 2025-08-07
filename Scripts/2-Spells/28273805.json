@@ -1,0 +1,16 @@
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Resolve $name's first effect?\n(Click \"Cancel\" to resolve the second effect manually instead)",
+		"options":[
+			"label=Summon 1 \"Six Samurai\" monster with 2000 or less ATK from your GY\n(Click \"Cancel\" to summon from hand instead)¬search(2, 255, [2], \"ATK <= 2000 && NAME == %Six Samurai%\")"
+		]
+	},
+	{
+		"trigger":3,
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Add 1 \"Six Samurai\" monster from your GY to your hand¬search(2, 255, [2], \"IS_MONSTER && NAME == %Six Samurai%\")"
+		]
+	}
+]
