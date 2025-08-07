@@ -1,9 +1,12 @@
 "commands":[
 	{
+		"conditions":{
+			"prev_list":[8,108,10,11,12,13,14]
+		},
 		"trigger":2,
 		"msg":"Resolve $name's GY effect?",
 		"options":[
-			"label=Send 1 \"Shaddoll\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Shaddoll% && NAME != Shaddoll Squamata\", -1, 2)"
+			"label=Send 1 \"Shaddoll\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Shaddoll% && NAME != $name\", -1, 2)"
 		]
 	}
 ]
