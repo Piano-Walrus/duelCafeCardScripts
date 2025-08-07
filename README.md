@@ -118,7 +118,7 @@ The parameters for this function are explained below:
 
 ***NOTE:** When using the above alternate *`search`* syntax, if you do not intend for the searched card to trigger, you can simply omit the *`PASSCODE`*, *`ZONE_INDEX`*, and *`SHOULD_PAY_COST`* parameters, and they will default to *`0`*, *`-1`*, *`true`* respectively. However, each function parameter must always be provided in the correct order, so if you omit *`ZONE_INDEX`*, you must also omit *`SHOULD_PAY_COST`*, etc.* <br/>
 
-***NOTE pt. ii:** The TAB_INDEX and SOURCES parameters of this function are the only places in the entire automation system where zone indexes "102" and "103" are allowed to represent "Opponent's GY" and "Opponent's Banished" respectively.*
+***NOTE pt. ii:** The `TAB_INDEX` and `SOURCES` parameters of this function are the only places in the entire automation system where zone indexes "102" and "103" are allowed to represent "Opponent's GY" and "Opponent's Banished" respectively.*
 
 Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/23093373.json) and [Pot of Prosperity](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/84211599.json).
 
