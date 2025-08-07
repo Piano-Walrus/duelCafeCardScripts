@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[20,24],
+		"msg":"Resolve $name's effect?",
+		"options":[
+			"label=Summon 1 \"Six Samurai\" monster with 2000 or less ATK from your GY\n(Click \"Cancel\" to summon from hand instead)¬search(2, 255, [2], \"NAME == %Six Samurai% && ATK <= 2000\")"
+		]
+	}
+]

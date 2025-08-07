@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[10,14],
+		"msg":"Resolve $name's on summon effect?",
+		"options":[
+			"label=Send 1 \"Orcust\" or \"World Legacy\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Orcust% || NAME == %World Legacy%\", -1, 2)"
+		]
+	}
+]

@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Send 1 \"Shaddoll\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Shaddoll%\" && NAME != Shaddoll Squamata, -1, 2)"
+		]
+	}
+]
