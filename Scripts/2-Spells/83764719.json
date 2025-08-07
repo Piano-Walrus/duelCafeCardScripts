@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Special Summon 1 monster from either GY¬debug¬search(2, 0, [2, 102], \"IS_MONSTER\")"
+            "label=Special Summon 1 monster from either GY¬search(2, 255, [2, 102], \"IS_MONSTER\")"
         ]
     }
 ]
