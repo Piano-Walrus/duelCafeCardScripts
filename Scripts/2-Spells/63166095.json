@@ -15,11 +15,17 @@
         ]
       },
       {
-        "bool":"{count(2, \"ATTR == spell\")} >= 3",
-        "NOT":[
+        "AND":[
           {
-            "control_self":0,
-            "zone_range":[10,14]
+            "bool":"{count(2, \"ATTR == spell\")} >= 3"
+          },
+          {
+            "NOT":[
+              {
+                "control_self":0,
+                "zone_range":[10,14]
+              }
+            ]
           }
         ]
       }
