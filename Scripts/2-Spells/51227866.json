@@ -13,7 +13,7 @@
       {
         "AND":[
           {
-            "bool":"{count(2, \"ATTR == spell\")} >= 3",
+            "bool":"{count(2, \"ATTR == spell\")} >= 3"
           },
           {
             "NOT":[
