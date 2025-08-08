@@ -1,9 +1,0 @@
-"commands":[
-    {
-        "trigger_range":[20,24],
-        "msg":"Resolve $name's effect?",
-        "options":[
-            "label=Add 1 Beast monster from your Deck to your hand¬debug¬search(0, 255, [0], \"TYPES == beast\")"
-        ]
-    }
-]
