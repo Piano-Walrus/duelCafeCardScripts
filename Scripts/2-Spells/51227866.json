@@ -1,0 +1,33 @@
+"$target":"1 monster in your opponent's GY",
+"commands":[
+  {
+    "conditions":[
+      {
+        "NOT":[
+          {
+            "control_self":0,
+            "zone_range":[10,14]
+          },
+          {
+            "bool":"{count(2, \"ATTR == spell\")} >= 3"
+          }
+        ]
+      },
+      {
+        "bool":"{count(2, \"ATTR == spell\")} >= 3",
+        "NOT":[
+          {
+            "control_self":0,
+            "zone_range":[10,14]
+          }
+        ]
+      }
+    ],
+    "trigger_range":[20,24],
+    "msg":"Resolve $name's effect?",
+    "options":[
+      "label=Banish $target¬condition=0¬debug¬search(102, 3, [102], \"IS_MONSTER\")",
+      "label=$target, then draw 1 card¬condition=1¬debug¬search(102, 255, [102], \"IS_MONSTER\")"
+    ]
+  }
+]
