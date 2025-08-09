@@ -3,14 +3,14 @@
         "trigger_range":[10,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Add 1 FIRE Beast, Beast-Warrior, or Winged Beast monster from your Deck to your hand¬search(0,255,[0], \"ATTR == fire && NAME != $name && (TYPES == %Beast% || TYPES == %Beast-Warrior% || TYPES == %Winged Beast%)\"",
+            "label=Add 1 FIRE Beast, Beast-Warrior, or Winged Beast monster from your Deck to your hand¬search(0,255,[0],\"ATTR == fire && NAME != $name && (TYPES == beast || TYPES == beast-warrior || TYPES == winged beast)\"",
         ]
     },
     {
         "trigger":2,
-        "msg":"Was this card destroyed and sent to the GY?",
+        "msg":"Resolve $name's GY effect after being destroyed?",
         "options":[
-            "label=If this card was destroyed and sent to the GY: You can Special Summon 1 \"Fire King High Avatar Garunix\" from your Deck. Resolve this effect?¬search(0,255,[0], \"NAME == Fire King High Avatar Garunix\")"
+            "label=Special Summon 1 \"Fire King High Avatar Garunix\" from your Deck¬source=0¬target=23015896¬add=1"
         ]
     }
 ]
