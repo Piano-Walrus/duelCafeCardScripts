@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's on-activation effect?",
+        "options":[
+            "label=Special Summon 1 FIRE monster from your GY¬search(2,255,[2], \"IS_MONSTER && ATTR == fire\")"
+        ]
+    }
+]
