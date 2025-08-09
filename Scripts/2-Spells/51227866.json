@@ -29,8 +29,8 @@
     "trigger_range":[20,24],
     "msg":"Resolve $name's effect?",
     "options":[
-      "label=Banish $target¬debug¬condition=0¬search(102, 3, [102], \"IS_MONSTER\")",
-      "label=Special Summon $target¬debug¬condition=1¬search(102, 255, [102], \"IS_MONSTER\")"
+      "label=Banish $target¬condition=0¬search(102, 3, [102], \"IS_MONSTER\")",
+      "label=Special Summon $target¬condition=1¬search(102, 255, [102], \"IS_MONSTER\")"
     ]
   }
 ]
