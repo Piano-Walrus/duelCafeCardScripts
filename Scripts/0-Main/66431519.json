@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigegr_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Destroy 1 FIRE Beast, Beast-Warrior, or Winged Beast from your hand, Deck, or face-up field¬search(0,2,[0], \"ATTR == fire && NAME != $name && (TYPES == %Beast% || TYPES == %Beast-Warrior% || TYPES == %Winged Beast%)\",-1, 2"
+        ]
+    }
+]
