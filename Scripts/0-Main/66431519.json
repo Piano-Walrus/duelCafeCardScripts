@@ -3,7 +3,7 @@
         "trigegr_range":[10,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Destroy 1 FIRE Beast, Beast-Warrior, or Winged Beast from your hand, Deck, or face-up field¬search(0,2,[0],\"ATTR == fire && NAME != $name && (TYPES == beast || TYPES == beast-warrior || TYPES == winged beast)\",-1,2)"
+            "label=Destroy 1 FIRE Beast, Beast-Warrior, or Winged Beast from your Deck\n(Click \"Cancel\" to destroy from hand or face-up field instead)¬search(0,2,[0],\"ATTR == fire && NAME != $name && (TYPES == beast || TYPES == beast-warrior || TYPES == winged beast)\",-1,2)"
         ]
     }
 ]
