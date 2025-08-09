@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's on-activation effect?",
         "options":[
-            "label=Place 1 \"Fire King Island\" from your Deck face-up in your Field Zone¬source=0¬target=57554544¬dest=9¬place=1"
+            "label=Place 1 \"Fire King Island\" from your Deck face-up in your Field Zone¬source=0¬target=57554544¬dest={{$player_index*100}+9}¬place=1"
         ]
     }
 ]
