@@ -1,9 +1,9 @@
 "commands":[
     {
         "trigger":2,
-        "msg":"Was $name destroyed and sent to the GY?",
+        "msg":"Resolve $name's GY effect after being destroyed?",
         "options":[
-            "Special Summon 1 \"Fire King\" monster from your hand or GY, except $name¬search(2,255,[2], \"NAME == Fire King && NAME != $name, \"IS_MONSTER\")"
+            "label=Special Summon 1 \"Fire King\" monster from your hand or GY, except $name¬search(2,255,[2], \"NAME == Fire King && NAME != $name, \"IS_MONSTER\")"
         ]
     }
 ]
