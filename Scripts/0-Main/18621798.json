@@ -1,9 +1,9 @@
 "commands":[
     {
         "trigger":2,
-        "msg":"Was $name destroyed and sent to the GY?",
+        "msg":"Resolve $name's GY effect upon being destroyed?",
         "options":[
-            "Special Summon 1 FIRE Beast, Beast-Warrior or Winged Beast monster from your hand or GY, except $name¬search(2,255,[2], \"ATTR == fire && NAME != $name && (TYPES == %Beast% || TYPES == %Beast-Warrior% || TYPES == %Winged Beast%)\")"
+            "Special Summon 1 FIRE Beast, Beast-Warrior or Winged Beast monster from your hand or GY¬search(2,255,[2], \"ATTR == fire && NAME != $name && TYPES == %beast%)\")"
         ]
     }
 ]
