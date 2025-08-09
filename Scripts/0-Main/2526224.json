@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":2,
+        "msg":"Resolve $name's GY effect after being destroyed?",
+        "options":[
+            "label=Special Summon 1 \"Fire King\" monster from your GY\n(Click \"Cancel\" to summon from hand)¬search(2,255,[2],\"IS_MONSTER && NAME == %Fire King% && NAME != $name\")"
+        ]
+    }
+]
