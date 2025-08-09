@@ -1,0 +1,10 @@
+"commands":[
+    {
+        "null"
+        "msg":"Resolve $name's first bulleted effect?",
+        "options":[
+            "label=Add 1 \"Fire King\" monster from your Deck to your hand¬search(0,255,[0], \"NAME == %Fire King% && IS_MONSTER\")"
+        ]
+            
+    }
+]
