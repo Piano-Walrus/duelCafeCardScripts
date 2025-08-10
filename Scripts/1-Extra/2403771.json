@@ -1,0 +1,8 @@
+"commands":[
+    {
+        "msg":"Resolve the first part of $name's ignition effect?",
+        "options":[
+            "label=Reveal 3 Equip Spell Cards from your Deck¬search(0,255,[0],\"FRAME == %equip%\")"
+        ]
+    }
+]
