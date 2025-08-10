@@ -1,0 +1,8 @@
+"commands":[
+    {
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Set up to 4 \"Rescue-ACE\" Quick-Play Spells / Normal Traps, with different names, directly from your Deck¬search(0,255,[0],\"NAME == %Rescue-ACE% && (FRAME == %quick% || (ATTR == trap && FRAME == %normal%))\")"
+        ]
+    }
+]
