@@ -1,4 +1,4 @@
-"$opp_field":"{|{{{$player_index*100}+9}-118}|}",
+"$opp_field":"{{{|{$playerIndex-1}|}*100}+9}"
 "commands":[
     {
         "trigger":9,
