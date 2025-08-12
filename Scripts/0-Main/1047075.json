@@ -1,0 +1,16 @@
+"commands":[
+	{
+		"trigger_range":[10,14],
+		"msg":"Resolve $name's on-summon effect?",
+		"options":[
+			"label=Add 1 Spell/Trap that mentions \"Flame Swordsman\" from your Deck to your hand¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && DESC == %Flame Swordsman%\")"
+		]
+	},
+	{
+		"trigger":2,
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Send 1 \"Flame Swordsman\" or 1 monster that mentions it from your Deck or Extra Deck to the GY¬search(0, 2, [0,1], \"(IS_MONSTER && DESC == %Flame Swordsman%) || NAME == Flame Swordsman\")"
+		]
+	}
+]

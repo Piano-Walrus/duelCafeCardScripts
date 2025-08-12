@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger":2,
+		"msg":"Resolve $name's GY effect?",
+		"options":[
+			"label=Add 1 \"Salamandra\" Spell/Trap from your deck to your hand¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && NAME == %Salamandra%\")"
+		]
+	}
+]
