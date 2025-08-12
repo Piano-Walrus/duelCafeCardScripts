@@ -1,0 +1,10 @@
+"$opp_field":"{|{$trigger-118}|}",
+"commands":[
+    {
+        "trigger_list":[9, 109],
+        "msg":"Resolve $name's on-activation effect?",
+        "options":[
+            "label=Place 1 \"Vaylantz\" Field Spell from your Deck face-up in your opponent's Field Zone¬debug¬break_if(\"{count(0, \"NAME == Vaylantz World - Konig Wissen\")} < 1\")¬source=0¬dest=$opp_field¬target=75952542¬place=1¬source=$opp_field¬dest=2¬rand={count($opp_field)}"
+        ]
+    }
+]
