@@ -1,0 +1,9 @@
+"commands":[
+	{
+		"trigger_range":[10,14],
+		"msg":"Resolve $name's on-summon effect?",
+		"options":[
+			"label=Send 1 \"Noble Arms\" Card, or 1 FIRE Warrior monster except $name, from your Deck to the GY¬search(0, 2, [0], \"NAME == %Noble Arms% || (ATTR == fire && TYPES == Warrior)\")"
+		]
+	}
+]
