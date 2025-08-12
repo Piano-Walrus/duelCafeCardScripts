@@ -4,7 +4,7 @@
         "trigger":9,
         "msg":"Resolve $name's on-activation effect?",
         "options":[
-            "label=Place 1 \"Vaylantz\" Field Spell from your Deck face-up in your opponent's Field Zone¬debug¬break_if(\"{count(0, \"NAME == Vaylantz World - Shinra Bansho\")} < 1\")¬source=0¬dest=9¬target=49568943¬place=1¬source=$opp_field¬dest=2¬up_to¬rand={count(9, \"ATTR == spell\", true) + count($opp_field)}"
+            "label=Place 1 \"Vaylantz\" Field Spell from your Deck face-up in your opponent's Field Zone¬debug¬break_if(\"{count(0, \\\"NAME == Vaylantz World - Shinra Bansho\\\")} < 1\")¬source=0¬dest=9¬target=49568943¬place=1¬source=$opp_field¬dest=2¬up_to¬rand={count(9, \"ATTR == spell\", true) + count($opp_field)}"
         ]
     }
 ]
