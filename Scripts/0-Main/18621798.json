@@ -3,7 +3,7 @@
         "trigger":2,
         "msg":"Resolve $name's GY effect upon being destroyed?",
         "options":[
-            "label=Special Summon 1 FIRE Beast, Beast-Warrior or Winged Beast monster from your GY\n(Click \"Cancel\" to summon from hand)¬search(2,255,[2], \"ATTR == fire && NAME != $name && (TYPES == beast || TYPES == winged beast || TYPES == beast-warrior)\")"
+            "label=Special Summon 1 FIRE Beast, Beast-Warrior or Winged Beast monster from your GY\n(Click \"Cancel\" to summon from hand)¬search(2,255,[2], \"ATTR == fire && NAME != $name && (TYPES == beast% || TYPES == winged beast)\")"
         ]
     }
 ]
