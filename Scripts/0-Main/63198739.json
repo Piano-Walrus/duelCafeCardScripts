@@ -1,0 +1,16 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Set 1 \"Primite\" Spell/Trap from your Deck¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Primite%\")"
+        ]
+    },
+    {
+        "trigger":2,
+        "msg":"Resolve $name's tribute effect?",
+        "options":[
+            "label=Send 1 Normal Monster from your Deck to the GY¬search(0, 2, [0], \"TYPES == normal\")"
+        ]
+    }
+]
