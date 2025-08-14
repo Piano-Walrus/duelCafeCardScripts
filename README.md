@@ -143,7 +143,7 @@ The card properties you're able to check in any given logical expression are as 
 | FRAME | string | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
 | ATK | int | The current monster's ATK stat. |
 | DEF | int | The current monster's DEF stat. |
-| CAN_NORMAL_OR_SET | bool | Essentially just a shortcut for checking if the card 1. is not a ritual monster, and 2. does not contain "Cannot be Normal Summoned/Set" (or a couple other varieties) in its effect text. Note that you should still use something like `IS_MONSTER` alongside this property to specify that you'd only like to search for monsters, since this value will simply always evaluate to false for spells & traps. |
+| CAN_NORMAL_OR_SET | bool | Essentially just a shortcut for checking if the card 1. is not a ritual monster, and 2. does not contain "Cannot be Normal Summoned/Set" (or a couple other varieties) in its effect text. Note that you should still use something like `IS_MONSTER` alongside this property to specify that you'd only like to search for monsters. |
 | IS_SPELL_OR_TRAP | bool | Whether or not the card is a spell OR a trap. |
 | IS_MONSTER | bool | Whether or not the card is a monster. |
 
