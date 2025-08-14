@@ -1,0 +1,12 @@
+"commands":[
+    {
+        "conditions":{
+          "prev_list":[8,108,10,11,12,13,14]
+        },
+        "trigger":2,
+        "msg":"Resolve $name's GY effect?",
+        "options":[
+            "label=Add 1 \"Black Dragon Collapserpent\" from your Deck to your hand¬source=0¬target=61901281¬add=1"
+        ]
+    }
+]
