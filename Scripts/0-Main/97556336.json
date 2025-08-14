@@ -3,7 +3,7 @@
         "trigger_range":[10,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Add to your hand, or Special Summon, 1 \"Power Patron\" monster from your Deck¬search(0,255,[0],\"NAME == %Power Patron%\")"
+            "label=Add to your hand, or Special Summon, 1 \"Power Patron\" monster from your Deck¬search(0,255,[0],\"IS_MONSTER && NAME == %Power Patron%\")"
         ]
     }
 ]
