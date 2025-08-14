@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_list":[8,108,10,11,12,13,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Set 1 Quick-Play Spell from your GY¬search(2,255,[2],\"FRAME == %quick%\")"
+        ]
+    }
+]
