@@ -147,7 +147,7 @@ The card properties you're able to check in any given logical expression are as 
 | IS_SPELL_OR_TRAP | bool | Whether or not the card is a spell OR a trap. Essentially a shortcut for `spell_trap == %ATTR%`. |
 | IS_MONSTER | bool | Whether or not the card is a monster. Essentially a shortcut for `LVL >= 0`. |
 
-***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. As a result, you can filter for ONLY monsters by simply writing `LVL >= 0`. Alternatively, to filter for ONLY Spells & Traps, the most performant way to do so is to write* `spell_trap == %ATTR%`*.*
+***NOTE:** When checking a property that is only available on monster cards, you're essentially also filtering out all Spells & Traps from your search results. For example, `LVL <= 2` will not return any spells or traps, and will only return monsters whose levels are 2 or lower.*
 
 ### Frame File Names
 ![Unity screenshot of every possible frame file name that could be returned by the `FRAME` property mentioned in the above table](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Resources/Images/card_frame_file_names.png)
