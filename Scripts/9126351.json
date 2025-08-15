@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Send 1 Level 2 or lower WATER Aqua monster from your Deck to the GY\n(Click \"Cancel\" to send from your field instead)¬search(0, 2, [0], \"LVL <= 2 && ATTR == water && TYPES == aqua\", -1, 2)"
+        ]
+    }
+]
