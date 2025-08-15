@@ -1,0 +1,8 @@
+"commands":[
+    {
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Add 1 \"Mimighoul\" monster from your Deck or GY to your hand¬search(0,255,[0,2],\"IS_MONSTER && NAME == %Mimighoul%\")"
+        ]
+    }
+]
