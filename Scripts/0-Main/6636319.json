@@ -1,0 +1,8 @@
+"commands":[
+    {
+        "msg":"Pay the cost for $name's ignition effect?",
+        "options":[
+            "label=Send 1 \"Lil-la\" monster from your Deck or Extra Deck to the GY¬search(0,2,[0,1],\"IS_MONSTER && NAME == %Lil-la%\",-1,2)"
+        ]
+    }
+]
