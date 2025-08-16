@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 \"Nouvelles\" or \"Recipe\" card from your Deck to your hand¬search(0,255,[0],\"NAME == %Nouvelles% || NAME == %Recipe%\")"
+        ]
+    }
+]
