@@ -1,0 +1,12 @@
+"commands":[
+    {
+        "conditions":{
+            "prev_list":[8,108,10,11,12,13,14]
+        },
+        "trigger":2,
+        "msg":"Resolve $name's GY effect?",
+        "options":[
+            "label=Add 1 monster with 1500 or less ATK from your Deck to your hand¬search(0,255,[0],\"ATK <= 1500\")"
+        ]
+    }
+]
