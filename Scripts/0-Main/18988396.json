@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":2,
+        "msg":"Resolve $name's effect upon being Tributed for a Ritual Summon?",
+        "options":[
+            "label=Add 1 Ritual Monster from your Deck to your hand¬search(0, 255, [0], \"IS_MONSTER && FRAME == %ritual%\")"
+        ]
+    }
+]
