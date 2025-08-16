@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_list":[2,8,108,10,11,12,13,14],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"Mitsurugi\" Spell/Trap from your Deck to your hand¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Mitsurugi%\")"
+        ]
+    }
+]
