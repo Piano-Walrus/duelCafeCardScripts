@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":2,
+        "msg":"Resolve $name's GY effect?",
+        "options":[
+            "label=Add 1 Ritual Monster or 1 Ritual Spell from your Deck to your hand¬search(0, 255, [0], \"FRAME == %ritual%\")"
+        ]
+    }
+]
