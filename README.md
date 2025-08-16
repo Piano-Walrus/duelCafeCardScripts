@@ -197,7 +197,7 @@ In any given command string, pop-up message, `control_` property, custom propert
 | `$num_searched` | int | Should only be used after using `search()`; Returns the number of cards searched by the most recent `search()` call. If no cards were searched, this placeholder will evaluate to 0. |
 
 ### Custom Properties
-You can declare custom properties at the top of each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase like "Gain 500 LP" in all 3 commands, you can create a property called `"$gainLP"` with the syntax `"$gainLP":"Gain 500 LP"`, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP".
+You can declare custom properties at the top of each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase "Gain 500 LP" in all 3 commands, then you can create a property called `"$gainLP"` with the syntax `"$gainLP":"Gain 500 LP"`, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP".
 
 ***NOTE:** You cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.*
 
