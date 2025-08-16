@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":9,
+        "msg":"Resolve $name's on-activation effect?",
+        "options":[
+            "label=Add 1 \"Recipe\" card from your Deck or GY to your hand¬search(0, 255, [0,2], \"NAME == %Recipe%\")"
+        ]
+    }
+]
