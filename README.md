@@ -126,6 +126,22 @@ Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://
 ### Post-Search Actions
 After using the `search` function, you may want a command to perform other actions that must specifically occur AFTER a card is searched. To accomplish this, you can use the `then` keyword immediately after using `search` to halt the command's execution, then resume once the search is completed. A good example of this feature would be [Tuning](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/96363153.json).
 
+If only one card is searched from the "Search Deck Piles" menu using the `search` function, then after the `then` keyword, you can use a few extra placeholders to get information about that searched card. Note that these work the same way as the card properties outlined in the [Logical Expressions](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file##logical-expressions) section:
+
+| Placeholder Identifier | Type | Description |
+| :-- | :-- | :-- |
+| `$name_searched` | string | The name of the searched card. |
+| `$desc_searched` | string | The effect text of the searched card. |
+| `$types_searched` | string | The typeline of the searched card if it is a monster. |
+| `$lvl_searched` | int | The level, rank, or link rating of the searched card if it is a monster. |
+| `$attr_searched` | string | The attribute of the searched card (lowercase). |
+| `$frame_searched` | string | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). |
+| `$atk_searched` | int | The ATK stat of the searched card if it is a monster. |
+| `$def_searched` | int | The DEF stat of the searched card if it is a monster. |
+| `$is_spell_or_trap_searched` | bool | Whether or not the searched card is a Spell or a Trap. |
+| `$is_monster_searched` | bool | Whether or not the searched card is a monster. |
+| `$can_normal_or_set_searched` | bool | If the searched card is a monster, this boolean returns true if the monster can be Normal ummoned or Set, and false otherwise. |
+
 ## Logical Expressions
 In `control_` condition properties (Outlined [Below](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#conditions)), or in CRITERIA parameters as described above, you can — and should — write out logical expressions when applicable. These allow you to filter cards more specifically, like checking if a name starts with a value rather than simply containing it, or if a card has a specific level. These expressions use essentially the same syntax as most other programming languages; `&&` represents "AND", `||` represents "OR", `<=` represents "less than or equal to", expressions can be grouped using parenthesis, etc. However, quotation marks are not required for any strings in logical expressions; to check if a card name is ***exactly*** "Kuriboh" for example, you would just write `NAME == Kuriboh`.
 
@@ -138,7 +154,7 @@ The card properties you're able to check in any given logical expression are as 
 | NAME | string | The name of the current card. |
 | DESC | string | The effect text of the current card. For pendulum monsters, this represents the card's monster effect text. |
 | TYPES | string | The entire typeline of the card, with some caveats. For example, when checking this property of "Junk Synchron", the system would return `[Warrior / Tuner / Effect]`, but it then goes through each type individually and compares your input to each type, case-insensitive. As a result, you can use `TYPES == beast` to filter for ONLY Beast monsters (excluding Beast-Warrior and Winged Beast), or you can use `TYPES == %Warrior%` to filter for Warrior monsters AND Beast-Warrior monsters.<br/>So when using wildcards with this parameter, you're not checking if the ***entire*** typeline contains a given string, but rather if any of a given monster's types each contain that string. |
-| LVL | int | The level of the current monster.<br/>Note that this will also check the ranks of Xyz monsters, and the link ratings of Link monsters. |
+| LVL | int | The level, rank, or link rating of the current monster. |
 | ATTR | string | The name of the current card's attribute. This value will ***ALWAYS*** be all lowercase, so "FIRE" becomes "fire", etc.<br/>This property also allows you to filter for ONLY "spell" or ONLY "trap" (i.e. `ATTR == spell`). |
 | FRAME | string | The name of the current card's frame file in Unity (See [Frame File Names](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#frame-file-names)). This is helpful for determining spell/trap types like "counter" or "field". Note that this value will ***ALWAYS*** be lowercase. |
 | ATK | int | The current monster's ATK stat. |
