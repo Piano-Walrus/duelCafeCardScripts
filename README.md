@@ -126,7 +126,7 @@ Good examples of this alternate syntax would be [Selettrice Vaalmonica](https://
 ### Post-Search Actions
 After using the `search` function, you may want a command to perform other actions that must specifically occur AFTER a card is searched. To accomplish this, you can use the `then` keyword immediately after using `search` to halt the command's execution, then resume once the search is completed. A good example of this feature would be [Tuning](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/96363153.json).
 
-If only one card is searched from the "Search Deck Piles" menu using the `search` function, then after the `then` keyword, you can use a few extra placeholders to get information about that searched card. Note that these work the same way as the card properties outlined in the [Logical Expressions](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file##logical-expressions) section:
+If only one card is searched from the "Search Deck Piles" menu using the `search` function, then after the `then` keyword, you can use a few extra placeholders to get information about that searched card. Note that these work the same way as the card properties outlined in the [Logical Expressions](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#logical-expressions) section:
 
 | Placeholder Identifier | Type | Description |
 | :-- | :-- | :-- |
@@ -141,6 +141,8 @@ If only one card is searched from the "Search Deck Piles" menu using the `search
 | `$is_spell_or_trap_searched` | bool | Whether or not the searched card is a Spell or a Trap. |
 | `$is_monster_searched` | bool | Whether or not the searched card is a monster. |
 | `$can_normal_or_set_searched` | bool | If the searched card is a monster, this boolean returns true if the monster can be Normal ummoned or Set, and false otherwise. |
+
+***Note:** Since these placeholders will only be evaluated properly after only one card is searched using the `search` function, you should follow your `then` keyword with `break_if(\"$num_searched != 1\")`. Good example scripts using these placeholders would be [Spright Smashers](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/15443125.json) and [Pre-Preparation of Rites](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/13048472.json).*
 
 ## Logical Expressions
 In `control_` condition properties (Outlined [Below](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#conditions)), or in CRITERIA parameters as described above, you can — and should — write out logical expressions when applicable. These allow you to filter cards more specifically, like checking if a name starts with a value rather than simply containing it, or if a card has a specific level. These expressions use essentially the same syntax as most other programming languages; `&&` represents "AND", `||` represents "OR", `<=` represents "less than or equal to", expressions can be grouped using parenthesis, etc. However, quotation marks are not required for any strings in logical expressions; to check if a card name is ***exactly*** "Kuriboh" for example, you would just write `NAME == Kuriboh`.
