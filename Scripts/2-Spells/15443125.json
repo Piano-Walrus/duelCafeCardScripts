@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 \"Spright\" monster from your Deck, but lose LP equal to its original ATK¬debug¬search(0, 255, [0], \"IS_MONSTER && NAME == %Spright%\")¬then¬add_lp=-$atk_searched"
+        ]
+    }
+]
