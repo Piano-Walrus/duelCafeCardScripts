@@ -4,7 +4,7 @@
         "trigger_range":[20,24],
         "msg":"Pay the cost for $name's effect?",
         "options":[
-            "label=Banish 3 or 6 cards of your choice from your Extra Deck, face-down¬debug¬is_cost¬search(1, 5, [1])"
+            "label=Banish 3 or 6 cards of your choice from your Extra Deck, face-down¬is_cost¬search(1, 5, [1])"
         ]
     }
 ]
