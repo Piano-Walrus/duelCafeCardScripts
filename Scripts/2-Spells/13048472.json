@@ -3,7 +3,7 @@
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 Ritual Spell from your Deck to your hand, then add 1 Ritual Monster from your Deck or GY to your hand whose name is listed on that Ritual Spell¬debug¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && FRAME == %ritual%\")¬then¬break_if(\"$num_searched != 1\")¬search(0,255,[0,2],\"IS_MONSTER && FRAME == %ritual% && $desc_searched == %NAME%\")"
+            "label=Add 1 Ritual Spell from your Deck to your hand, then add 1 Ritual Monster from your Deck or GY to your hand whose name is listed on that Ritual Spell¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && FRAME == %ritual%\")¬then¬break_if(\"$num_searched != 1\")¬search(0,255,[0,2],\"IS_MONSTER && FRAME == %ritual% && $desc_searched == %NAME%\")"
         ]
     }
 ]
