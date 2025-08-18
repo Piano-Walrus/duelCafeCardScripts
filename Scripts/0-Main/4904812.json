@@ -1,0 +1,14 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == Genex Controller",
+            "zone":0
+        },
+        "trigger_range":[10,14],
+        "msg":"Pay the cost for, and resolve $name's on-summon effect?",
+        "options":[
+            "label=Send 1 WATER monster from your Deck to the GY for cost ONLY¬search(0, 2, [0], \"ATTR == water\", -1, 2)",
+            "label=Send 1 WATER monster from your Deck to the GY, then add 1 \"Genex Controller\" from your Deck to your hand¬search(0, 2, [0], \"ATTR == water\", -1, 2)¬then¬source=0¬target=68505803¬add=1"
+        ]
+    }
+]
