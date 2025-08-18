@@ -1,6 +1,6 @@
 "commands":[
     {
-        "trigger_list":[20,24],
+        "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
             "label=Add 1 \"K9\" monster from your Deck to your hand¬search(0, 255, [0], \"NAME == %K9% && LVL >= 0\")"
