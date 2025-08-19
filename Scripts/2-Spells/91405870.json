@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 \"Fur Hire\" monster from your GY in Defense Position¬search(2, 255, [2], \"IS_MONSTER && NAME == %Fur Hire%\")"
+        ]
+    }
+]
