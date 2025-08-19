@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":9,
+        "msg":"Resolve $name's on-activation effect?",
+        "options":[
+            "label=Set 1 \"Eternal Soul\" from your Deck¬source=0¬target=48680970¬add=1"
+        ]
+    }
+]
