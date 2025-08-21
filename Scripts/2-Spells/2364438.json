@@ -1,0 +1,11 @@
+"$condition":"NAME == %Mayakashi% && NAME != $name",
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 \"Mayakashi\" card from your Deck to your hand¬search(0, 255, [0], \"$condition\")",
+            "label=Send 1 \"Mayakashi\" card from your Deck to the GY¬search(0, 2, [0], \"$condition\", -1, 2)"
+        ]
+    }
+]
