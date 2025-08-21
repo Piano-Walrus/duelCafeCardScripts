@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Special Summon 1 \"Mayakashi\" monster from your Deck¬search(0,255,[0],\"IS_MONSTER && NAME == %Mayakashi%\")"
+        ]
+    }
+]
