@@ -1,0 +1,14 @@
+"commands":[
+    {
+        "conditions":{
+          "control_opp":0,
+          "zone_list":8,108,10,11,12,13,14]
+        },
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Set 1 Normal Spell/Trap directly from your Deck¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && FRAME == %normal%\")",
+            "label=Add 1 Normal Spell/Trap from your Deck to your hand¬condition=0¬search(0, 255, [0], \"IS_SPELL_OR_TRAP && FRAME == %normal%\")"
+        ]
+    }
+]
