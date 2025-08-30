@@ -4,7 +4,7 @@
         "msg":"Pay the cost for, and resolve, $name's effect?",
         "options":[
             "label=Banish this card from your GY for cost ONLY¬is_cost¬source=2¬dest=3¬target=92964816¬place=1",
-            "label=Banish this card from your GY, then add 1 Level 5 or higher Zombie monster from your Deck to your hand (or Special Summon it if \"Zombie World\" is in a Field Zone)¬is_cost¬source=2¬dest=3¬target=92964816¬place=1¬is_eff¬search(0, 255, [0], \"TYPES == zombie && LVL >= 5\")"
+            "label=Banish this card from your GY, then add 1 Level 5 or higher Zombie monster from your Deck to your hand (or you can Special Summon it if \"Zombie World\" is in a Field Zone)¬is_cost¬source=2¬dest=3¬target=92964816¬place=1¬is_eff¬search(0, 255, [0], \"TYPES == zombie && LVL >= 5\")"
         ]
     }
 ]
