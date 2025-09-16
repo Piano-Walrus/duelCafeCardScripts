@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":2,
+        "msg":"Resolve $name's on-tribute effect?",
+        "options":[
+            "label=Add 1 Field Spell Card from your Deck to your hand¬search(0,255,[0],\"FRAME == %field%\")"
+        ]
+    }
+]
