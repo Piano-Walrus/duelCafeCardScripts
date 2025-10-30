@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger":3,
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Place up to 2 \"Argostars\" Continuous Traps with different names from your hand or Deck in your Spell/Trap zones¬search(0,255,[0],\"ATTR == trap && FRAME == %continuous% && NAME == %Argostars%\")"
+        ]
+    }
+]
