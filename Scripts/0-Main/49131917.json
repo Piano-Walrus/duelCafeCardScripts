@@ -4,9 +4,9 @@
             "bool":"{|{$prev_zone - $trigger}|} == 1"
         },
         "trigger_range":[10,14],
-        "msg":"Resolve $name's effect after moving to an adjacent Main Monster Zone?",
+        "msg":"Resolve $name's effect after moving to an adjacent Monster Zone?",
         "options":[
-            "label=Add 1 \"Vaylantz\" monster from your deck to your hand¬search(0, 255, [0], \"IS_MONSTER && NAME == %Vaylantz%\")"
+            "label=Add 1 \"Vaylantz\" monster from your Deck to your hand¬search(0, 255, [0], \"IS_MONSTER && NAME == %Vaylantz%\")"
         ]
     }
 ]
