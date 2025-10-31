@@ -1,8 +1,8 @@
-"conditions":{
-    "prev_list":[10,11,12,13,14,8,108]
-},
 "commands":[
     {
+        "conditions":{
+            "prev_list":[10,11,12,13,14,8,108]
+        },
         "trigger":3,
         "msg":"Resolve $name's ignition effect?",
         "options":[
