@@ -1,0 +1,40 @@
+"$add_label":"Add 1 \"Sky Striker\" card from your Deck to your hand",
+"$search":"search(0, 255, [0], \"NAME == %Sky Striker% && NAME != Sky Striker Mobilize - Engage!\")",
+"commands":[
+  {
+    "conditions":[
+      {
+        "NOT":[
+          {
+            "control_self":0,
+            "zone_range":[10,14]
+          },
+          {
+            "bool":"{count(2, \"ATTR == spell\")} >= 3"
+          }
+        ]
+      },
+      {
+        "AND":[
+          {
+            "bool":"{count(2, \"ATTR == spell\")} >= 3"
+          },
+          {
+            "NOT":[
+              {
+                "control_self":0,
+                "zone_range":[10,14]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "trigger_range":[20,24],
+    "msg":"Resolve $name's effect?",
+    "options":[
+      "label=$add_label ONLY¬condition=0¬$search",
+      "label=$add_label, then draw 1 card¬condition=1¬$search¬then¬draw(1)"
+    ]
+  }
+]
