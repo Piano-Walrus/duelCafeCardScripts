@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 non-LV2 \"Kewl Tune\" monster from your Deck or GY to your hand¬search(0,255,[0,2],\"NAME == %Kewl Tune% && LVL != 2\")"
+        ]
+    }
+]
