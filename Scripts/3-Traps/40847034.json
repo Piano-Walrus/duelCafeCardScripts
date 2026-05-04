@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Return 1 \"Kewl Tune\" monster from your GY to your hand¬search(0,255,[2],\"IS_MONSTER && NAME == %Kewl Tune%\")"
+        ]
+    }
+]
