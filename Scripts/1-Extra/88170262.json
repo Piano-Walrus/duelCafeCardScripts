@@ -6,7 +6,7 @@
         "trigger":2,
         "msg":"Resolve $name's effect after tributing for cost?",
         "options":[
-            "label=Add 1 non-synchro Tuner from your GY to your hand, then Special Summon 1 non-synchro Tuner from your GY¬search(2, 255, [2], \"TYPES == tuner && TYPES != synchro\")¬then¬break_if(\"$num_searched != 1\")¬search(2,255,[2],\"TYPES == tuner && TYPES != synchro\")"
+            "label=Add 1 non-Synchro Tuner from your GY to your hand, then Special Summon 1 non-Synchro Tuner from your GY¬search(2, 255, [2], \"TYPES == tuner && TYPES != synchro\")¬then¬break_if(\"$num_searched != 1\")¬search(2,255,[2],\"TYPES == tuner && TYPES != synchro\")"
         ]
     }
 ]
