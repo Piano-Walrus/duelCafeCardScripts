@@ -1,0 +1,24 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME = %R.B.% && IS_SPELL_OR_TRAP && FRAME != %trap%",
+            "zone":0
+        },
+        "trigger_list":[8,108,10,11,12,13,14],
+        "msg":"Resolve $name's effect when it's link summoned?",
+        "options":[
+            "label=Add 1 \"R.B.\" spell from your deck to your hand¬search(0,255,0,\"NAME == %R.B.% && IS_SPELL_OR_TRAP && FRAME != %trap%\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"NAME = %R.B.% && IS_MONSTER && FRAME != %link%",
+            "zone_list":[6,2]
+        },
+
+        "msg":"Resolve $name's effect to Special Summon 1 R.B. monster from hand or graveyard?",
+        "options":[
+            "label=Special Summon 1 \"R.B.\" monster from hand or graveyard¬search(2,255,[6,2],\"NAME = %R.B.% && IS_MONSTER && FRAME != %link%\")"
+        ]
+    },
+]

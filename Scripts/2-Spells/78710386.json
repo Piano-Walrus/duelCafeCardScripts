@@ -1,0 +1,24 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME = %R.B.%",
+            "zone": 0
+        },
+        "trigger":9,
+        "msg":"Resolve $name's effect when it is activated?",
+        "options":[
+            "label=Add 1 \"R.B.\" card from your deck to your hand¬search(0,255,0,\"NAME == %R.B.%\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"NAME = %R.B.% && IS_MONSTER",
+            "zone":0
+        },
+
+        "msg":"Resolve $name's effect to Special Summon 1 R.B. monster from hand or graveyard?",
+        "options":[
+            "label=Special Summon 1 \"R.B.\" monster from deck¬search(0,255,0,\"NAME = %R.B.% && IS_MONSTER\")"
+        ]
+    },
+]

@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME = %R.B.% && IS_SPELL_OR_TRAP && FRAME != %spell%",
+            "zone": 0
+        },
+
+        "msg":"Resolve $name's effect to set 1 R.B. trap from deck?",
+        "options":[
+            "label=Set 1 \"R.B.\" trap from deck¬search(0,255,0,\"NAME = %R.B.% && IS_SPELL_OR_TRAP && FRAME != %spell%\")"
+        ]
+    },
+]
