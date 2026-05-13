@@ -1,13 +1,13 @@
 "commands":[
     {
         "conditions":{
-            "control_self":"NAME = %R.B.% && IS_MONSTER",
+            "control_self":"IS_MONSTER && NAME == %R.B.%",
             "zone":2
         },
         "trigger_range":[10,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Add 1 \"R.B.\" monster from your GY to your hand, except $name¬search(2,255,2,\"NAME == %R.B.% && IS_MONSTER\")"
+            "label=Add 1 \"R.B.\" monster from your GY to your hand, except $name¬search(2,255,[2],\"IS_MONSTER && NAME == %R.B.% && NAME != $name\")"
         ]
     }
 ]
