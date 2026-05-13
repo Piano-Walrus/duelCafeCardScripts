@@ -1,13 +1,13 @@
 "commands":[
     {
         "conditions":{
-            "control_self":"NAME = %R.B.% && IS_MONSTER",
+            "control_self":"IS_MONSTER && NAME == %R.B.%",
             "zone_list": [0,1,2]
         },
         "trigger_range":[20,24],
-        "msg":"Resolve $name's effect to Special Summon 1 R.B. monster from deck, extra deck, or GY?",
+        "msg":"Resolve $name's effect?",
         "options":[
-            "label=Special Summon 1 \"R.B.\" monster from your deck, extra deck, or GY¬search(0,255,[0,1,2],\"NAME == %R.B.% && IS_MONSTER\")"
+            "label=Special Summon 1 \"R.B.\" monster from your Deck, Extra Deck, or GY¬search(0,255,[0,1,2],\"IS_MONSTER && NAME == %R.B.%\")"
         ]
     },
 ]
