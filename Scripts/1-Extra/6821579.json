@@ -1,0 +1,24 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"FRAME == %spell% && NAME == %R.B.%",
+            "zone":0
+        },
+        "trigger_list":[8,108,10,11,12,13,14],
+        "msg":"Resolve $name's effect upon being Link Summoned?",
+        "options":[
+            "label=Add 1 \"R.B.\" Spell from your Deck to your hand¬search(0,255,[0],\"FRAME == %spell% && NAME == %R.B.%\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"IS_MONSTER && NAME == %R.B.% && FRAME != %link%",
+            "zone":2
+        },
+
+        "msg":"Resolve $name's effect to Special Summon 1 R.B. monster from GY?\n(Click \"Cancel\" to summon from hand instead)",
+        "options":[
+            "label=Special Summon 1 \"R.B.\" monster from your GY¬search(2,255,[2],\"IS_MONSTER && NAME == %R.B.% && FRAME != %link%\")"
+        ]
+    },
+]

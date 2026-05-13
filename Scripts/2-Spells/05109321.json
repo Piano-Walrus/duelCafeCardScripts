@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"IS_MONSTER && NAME == %R.B.%",
+            "zone_list": [0,1]
+        },
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Special Summon 1 \"R.B.\" monster from your Deck or Extra Deck¬search(0,255,[0,1],\"IS_MONSTER && NAME == %R.B.%\")"
+        ]
+    },
+]

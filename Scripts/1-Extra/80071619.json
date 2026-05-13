@@ -1,0 +1,12 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"FRAME == %trap% && NAME == %R.B.%",
+            "zone": 0
+        },
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Set 1 \"R.B.\" Trap from your Deck or GY¬search(0,255,[0,2],\"FRAME == %trap% && NAME == %R.B.%\")"
+        ]
+    },
+]
