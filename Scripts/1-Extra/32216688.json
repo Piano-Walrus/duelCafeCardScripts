@@ -1,13 +1,12 @@
 "commands":[
     {
         "conditions":{
-            "control_self":"NAME = %R.B.%",
+            "control_self":"NAME == %R.B.%",
             "zone": 0
         },
-
-        "msg":"Resolve $name's effect to add 1 R.B. monster from deck to hand?",
+        "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 \"R.B.\" card from deck to hand¬search(0,255,0,\"NAME = %R.B.%\")"
+            "label=Add 1 \"R.B.\" card from your Deck to your hand¬search(0,255,[0],\"NAME == %R.B.%\")"
         ]
     },
 ]
