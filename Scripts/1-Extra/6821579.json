@@ -13,7 +13,7 @@
     {
         "conditions":{
             "control_self":"IS_MONSTER && NAME == %R.B.% && FRAME != %link%",
-            "zone_list":[6,2]
+            "zone":2
         },
 
         "msg":"Resolve $name's effect to Special Summon 1 R.B. monster from GY?\n(Click \"Cancel\" to summon from hand instead)",
