@@ -1,13 +1,13 @@
 "commands":[
     {
         "conditions":{
-            "control_self":"NAME == %R.B.% && LVL >= 3",
+            "control_self":"LVL >= 3 && NAME == %R.B.%",
             "zone": 2
         },
         "trigger_range":[20,24],
-        "msg":"Resolve $name's effect to Special Summon 1 level 3 or higher R.B. monster from your GY?",
+        "msg":"Resolve $name's effect?",
         "options":[
-            "label=Special Summon 1 level 3 or higher \"R.B.\" monster from your GY¬search(2,255,2,\"NAME == %R.B.% && LVL >= 3\")"
+            "label=Special Summon 1 Level 3 or higher \"R.B.\" monster from your GY¬search(2,255,[2],\"LVL >= 3 && NAME == %R.B.%\")"
         ]
     },
 ]
