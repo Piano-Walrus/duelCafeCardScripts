@@ -1,0 +1,25 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == Mementomictlan",
+            "zone":0
+        },
+        "trigger":3,
+        "msg":"Resolve $name's graveyard effect?",
+        "options":[
+            "label=Add 1 \"Mementomictlan\" from your Deck to your hand¬search(0,255,[0],\"NAME == Mementomictlan\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento%",
+            "zone_list":[0,1]
+        },
+
+        "trigger_list":[10,11,12,13,14,8,108],
+        "msg":"Resolve $name's effect upon being Fusion Summoned?",
+        "options":[
+            "label=Send 3 \"Memento\" cards from your Deck or Extra Deck to the GY¬search(0,255,[0,1],\"NAME == %Memento%\")"
+        ]
+    },
+]

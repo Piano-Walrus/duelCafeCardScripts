@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento%",
+            "zone_range":[2,3]
+        },
+        "trigger_range":[2,3],
+        "msg":"Resolve $name's upon its destruction?",
+        "options":[
+            "label=Add 1 \"Memento\" card from your GY or banishment to your hand¬search(2,255,[2,3],\"NAME == %Memento%\")"
+        ]
+    }
+]

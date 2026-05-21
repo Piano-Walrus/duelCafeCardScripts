@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento%",
+            "zone":2
+        },
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 \"Memento\" card from your GY to your hand, except \"$name\"¬search(2,255,[2],\"NAME == %Memento% && NAME != $name\")"
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"IS_MONSTER && NAME == %Memento%",
+            "zone":0
+        },
+        "trigger_list":[10,11,12,13,14,8,108],
+        "msg":"Resolve $name's effect upon being Fusion Summoned?",
+        "options":[
+            "label=Add 2 \"Memento\" monsters from your Deck to your hand¬search(0,255,[0],\"IS_MONSTER && NAME == %Memento%\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento% && LVL <= 6",
+            "zone":2
+        },
+
+        "trigger_range":[2,3],
+        "msg":"Resolve $name's effect upon being destroyed?",
+        "options":[
+            "label=Special Summon 1 Level 6 or lower \"Memento\" monster from your GY¬search(2,255,[2],\"NAME == %Memento% && LVL <= 6\")"
+        ]
+    },
+]

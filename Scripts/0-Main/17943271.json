@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento%",
+            "zone":2
+        },
+
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Send up to 2 \"Memento\" cards from your deck to the GY, except \"$name\"¬search(0,255,[0],\"NAME == %Memento% && NAME != $name\")"
+        ]
+    },
+]
