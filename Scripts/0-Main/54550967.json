@@ -15,10 +15,9 @@
             "control_self":"IS_MONSTER && NAME == %Memento% && LVL <= 2",
             "zone":2
         },
-
         "msg":"Resolve $name's ignition effect?",
         "options":[
             "label=Special Summon 1 Level 2 or lower \"Memento\" monster from your GY¬search(2,255,[2],\"IS_MONSTER && NAME == %Memento% && LVL <= 2\")"
         ]
-    },
+    }
 ]
