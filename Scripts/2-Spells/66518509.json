@@ -4,8 +4,8 @@
             "control_self":"IS_SPELL_OR_TRAP && NAME == %Memento%",
             "zone":0
         },
-        "trigger":3,
-        "msg":"Resolve $name's graveyard effect?",
+        "trigger":2,
+        "msg":"Resolve $name's effect?",
         "options":[
             "label=Add 1 \"Memento\" Spell/Trap Card from your Deck to your hand¬search(0,255,[0],\"IS_SPELL_OR_TRAP && NAME == %Memento%\")"
         ]
