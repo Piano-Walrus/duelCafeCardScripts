@@ -8,5 +8,5 @@
         "options":[
             "label=Set 1 \"Memento\" Spell/Trap Card from your GY¬search(2,255,[2],\"IS_SPELL_OR_TRAP && NAME == %Memento%\")"
         ]
-    },
+    }
 ]
