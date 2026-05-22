@@ -1,0 +1,13 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento%",
+            "zone":0
+        },
+        "trigger_range":[2],
+        "msg":"Resolve $name's effect upon being destroyed?",
+        "options":[
+            "label=Send 1 \"Memento\" card from you Deck to your GY, except \"$name\"¬search(0,2,[0],\"NAME == %Memento% && NAME != $name\")"
+        ]
+    }
+]

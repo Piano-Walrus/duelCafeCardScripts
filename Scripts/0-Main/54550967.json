@@ -1,0 +1,23 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"IS_MONSTER && NAME == %Memento%",
+            "zone":0
+        },
+        "trigger_range":[10,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 \"Memento\" monster from your Deck to your hand, except \"$name\"¬search(0,255,[0],\"IS_MONSTER && NAME == %Memento% && NAME != $name\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"IS_MONSTER && NAME == %Memento% && LVL <= 2",
+            "zone":2
+        },
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Special Summon 1 Level 2 or lower \"Memento\" monster from your GY¬search(2,255,[2],\"IS_MONSTER && NAME == %Memento% && LVL <= 2\")"
+        ]
+    }
+]

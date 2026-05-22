@@ -1,0 +1,12 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":" IS_SPELL_OR_TRAP && NAME == %Memento%",
+            "zone":2
+        },
+        "msg":"Resolve $name's End Phase effect?",
+        "options":[
+            "label=Set 1 \"Memento\" Spell/Trap Card from your GY¬search(2,255,[2],\"IS_SPELL_OR_TRAP && NAME == %Memento%\")"
+        ]
+    }
+]

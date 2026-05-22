@@ -1,0 +1,12 @@
+"commands":[
+    {
+        "conditions":{
+            "control_self":"NAME == %Memento% && LVL <= 3",
+            "zone":0
+        },
+        "msg":"Resolve $name's ignition effect?",
+        "options":[
+            "label=Special Summon 1 Level 3 or lower \"Memento\" monster from your Deck¬search(0,255,[0],\"NAME == %Memento% && LVL <= 3\")"
+        ]
+    }
+]
