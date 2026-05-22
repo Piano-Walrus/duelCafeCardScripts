@@ -4,10 +4,9 @@
             "control_self":"NAME == %Memento%",
             "zone":0
         },
-
         "msg":"Resolve $name's ignition effect?",
         "options":[
-            "label=Add 1 \"Memento\" card from you deck to your hand, except \"$name\"¬search(0,255,[0],\"NAME == %Memento% && NAME != $name\")"
+            "label=Add 1 \"Memento\" card from you Deck to your hand, except \"$name\"¬search(0,255,[0],\"NAME == %Memento% && NAME != $name\")"
         ]
-    },
+    }
 ]
