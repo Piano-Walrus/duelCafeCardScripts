@@ -4,7 +4,7 @@
             "control_self":"NAME == %Memento%",
             "zone_range":[2,3]
         },
-        "trigger_range":[2],
+        "trigger":2,
         "msg":"Resolve $name's effect upon being destroyed by card effect?",
         "options":[
             "label=Add 1 \"Memento\" card from your GY or banishment to your hand¬search(2,255,[2,3],\"NAME == %Memento%\")"
