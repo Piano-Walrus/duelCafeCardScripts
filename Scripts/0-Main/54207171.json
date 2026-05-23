@@ -1,8 +1,15 @@
 "commands":[
     {
         "conditions":{
-            "control_self":"NAME == %Memento%",
-            "zone_range":[2,3]
+            "AND":[
+                {
+                    "control_self":"NAME == %Memento%",
+                    "zone_range":[2,3]
+                },
+                {
+                    "prev_range":[10,14]
+                }
+            ]
         },
         "trigger":2,
         "msg":"Resolve $name's effect upon being destroyed by card effect?",
