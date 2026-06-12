@@ -1,9 +1,24 @@
+"$y":"Yummy",
 "commands":[
 	{
+		"conditions":{
+			"bool":"{count(2, \"IS_MONSTER && NAME == %$y%\")} > 1"
+        },
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's on-summon effect?",
 		"options":[
-			"label=Summon 2 \"Yummy\" monsters from your GY¬search(2, 255, [2], \"NAME == %Yummy% && LVL >= 0\")"
+			"label=Summon 2 \"$y\" monsters from your GY¬search(2, 255, [2], \"IS_MONSTER && NAME == %$y%\")"
+		]
+	},
+	{
+		"conditions":{
+			"control_self":"IS_MONSTER && NAME == %$y%",
+			"zone":2
+        },
+		"trigger":1,
+		"msg":"Resolve $name's Quick Effect?",
+		"options":[
+			"label=Special Summon up to 2 \"$y\" monsters from your GY¬search(2, 255, [2], \"IS_MONSTER && NAME == %$y%\")"
 		]
 	}
 ]
