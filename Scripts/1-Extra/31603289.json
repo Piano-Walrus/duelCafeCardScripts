@@ -1,9 +1,12 @@
 "commands":[
 	{
+		"conditions":{
+			"bool":"{count(2, \"IS_MONSTER && NAME == %Yummy%\"), false} > 1"
+        },
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's on-summon effect?",
 		"options":[
-			"label=Add 2 \"Yummy\" monsters from your Deck to your hand¬search(0, 255, [0], \"NAME == %Yummy% && LVL >= 0\")"
+			"label=Add 2 \"Yummy\" monsters from your Deck to your hand¬search(0, 255, [0], \"IS_MONSTER && NAME == %Yummy%\")"
 		]
 	}
 ]
