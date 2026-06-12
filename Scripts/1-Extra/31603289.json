@@ -1,12 +1,24 @@
+"$y":"Yummy",
 "commands":[
 	{
 		"conditions":{
-			"bool":"{count(0, \"IS_MONSTER && NAME == %Yummy%\"), false} > 1"
+			"bool":"{count(0, \"IS_MONSTER && NAME == %$y%\")} > 1"
         },
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's on-summon effect?",
 		"options":[
-			"label=Add 2 \"Yummy\" monsters from your Deck to your hand¬search(0, 255, [0], \"IS_MONSTER && NAME == %Yummy%\")"
+			"label=Add 2 \"$y\" monsters from your Deck to your hand¬search(0, 255, [0], \"IS_MONSTER && NAME == %$y%\")"
+		]
+	},
+	{
+		"conditions":{
+			"control_self":"IS_MONSTER && NAME == %$y%",
+			"zone":2
+        },
+		"trigger":1,
+		"msg":"Resolve $name's Quick Effect?",
+		"options":[
+			"label=Special Summon up to 2 \"$y\" monsters from your GY¬search(2, 255, [2], \"IS_MONSTER && NAME == %$y%\")"
 		]
 	}
 ]
