@@ -1,5 +1,4 @@
-"$rt":"Radiant Typhoon",
-"$cond":"(IS_MONSTER && NAME == %Radiant Typhoon%) || NAME == Mystical Space Typhoon",
+"$cond":"(IS_MONSTER && NAME == %Radiant Typhoon% && NAME != $name) || NAME == Mystical Space Typhoon",
 "commands":[
     {
         "conditions":{
@@ -9,7 +8,7 @@
         "trigger_range":[10,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Add 1 \"$rt\" monster (except \"$rt Eldam\") or 1 \"Mystical Space Typhoon\" from your Deck to your hand¬search(0,255,[0],\"$cond\")"
+            "label=Add 1 \"Radiant Typhoon\" monster (except \"$name\") or 1 \"Mystical Space Typhoon\" from your Deck to your hand¬search(0,255,[0],\"$cond\")"
         ]
     }
 ]
