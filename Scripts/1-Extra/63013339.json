@@ -1,0 +1,20 @@
+"commands":[
+	{
+		"conditions":{
+        "AND":[
+            {
+        			  "control_self":"NAME == %Sky Striker%",
+                "zone":0
+            },
+            {
+                "bool":"{count(2, \"ATTR == spell\")} < 4"
+            }
+        ]
+    },
+		"trigger_list":[8,108,10,11,12,13,14],
+		"msg":"Resolve $name's ignition effect?",
+		"options":[
+			  "label=Send 1 \"Sky Striker\" card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Sky Striker%\")"
+		]
+	}
+]
