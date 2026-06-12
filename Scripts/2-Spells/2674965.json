@@ -1,9 +1,15 @@
 "commands":[
     {
+        "conditions":[
+            {
+                "control_self":"FRAME == %continuous_trap%",
+                "zone_range":[10,14]
+            }
+        ],
         "msg":"Resolve one of $name's effects?",
         "options":[
             "label=Pay 1000 LP; add 1 \"Argostars\" card from your GY or banishment to your hand¬is_cost¬add_lp=-1000¬is_eff¬search(2,255,[2,3],\"NAME == %Argostars%\")",
-            "label=Inflict 500 damage to your opponent (after a Continuous Trap in the Spell & Trap Zone is Special Summoned to your field)¬opp¬add_lp=-500"
+            "label=Inflict 500 damage to your opponent¬condition=0¬opp¬add_lp=-500"
         ]
     }
 ]
