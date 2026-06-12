@@ -1,0 +1,21 @@
+"$c":"TYPES == beast && ATTR == wind && LVL <= 6",
+"commands":[
+    {
+        "conditions":{
+          "AND":[
+            {
+              "control_self":"$c",
+              "zone":0
+            },
+            {
+              "prev_list":[6,7,10,11,12,13,14]
+            }
+          ]
+        },
+        "trigger":3,
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Add 1 Level 6 or lower WIND Beast monster from your Deck to your hand¬search(0,255,[0],\"$c\")"
+        ]
+    }
+]
