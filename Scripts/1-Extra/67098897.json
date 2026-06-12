@@ -1,0 +1,14 @@
+"$y":"Yummy",
+"commands":[
+	{
+		"conditions":{
+			"control_self":"IS_MONSTER && NAME == %$y%",
+			"zone":2
+    },
+		"trigger":1,
+		"msg":"Resolve $name's Quick Effect?",
+		"options":[
+			"label=Special Summon up to 2 \"$y\" monsters from your GY¬search(2, 255, [2], \"IS_MONSTER && NAME == %$y%\")"
+		]
+	}
+]
