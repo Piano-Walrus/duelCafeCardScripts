@@ -1,7 +1,7 @@
 "commands":[
 	{
 		"conditions":{
-			"bool":"{count(2, \"IS_MONSTER && NAME == %Yummy%\"), false} > 1"
+			"bool":"{count(0, \"IS_MONSTER && NAME == %Yummy%\"), false} > 1"
         },
 		"trigger_list":[8,108,10,11,12,13,14],
 		"msg":"Resolve $name's on-summon effect?",
