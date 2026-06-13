@@ -1,0 +1,20 @@
+"$cond":"FRAME == %quick-play_spell%",
+"commands":[
+    {
+        "conditions":{
+            "AND":[
+                {
+                    "bool":"{count(2, $cond)} > 2"
+                },
+                {
+                    "control_self":"ATTR == spell && NAME == %Radiant Typhoon%",
+                    "zone":2
+                }
+            ]
+        },
+        "msg":"Resolve $name's effect?",
+        "options":[
+            "label=Shuffle 3 Quick-Play Spells from your GY into the Deck, including a \"Radiant Typhoon\" card, then draw 1 card¬search(2,0,[2],\"$cond\")¬then¬break_if(\"$num_searched != 3\")¬draw(1)"
+        ]
+    }
+]
