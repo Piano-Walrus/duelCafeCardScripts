@@ -16,7 +16,7 @@ var searchCondition = "NAME == %$archetype% && NAME != $name";
         },
         "trigger_range":[10,14],
         "options":[
-            "label=Add 1 \"$archetype\" card from your Deck to your hand, except $name¬search(0,255,[0],\"$searchCondition\")"
+            "label=Add 1 \"$archetype\" card from your Deck to your hand, except \"$name\"¬search(0,255,[0],\"$searchCondition\")"
         ]
     }
 ]
