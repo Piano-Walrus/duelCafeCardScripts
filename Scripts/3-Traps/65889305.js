@@ -11,6 +11,10 @@ var searchCondition = "NAME == %$archetype% && NAME != $name";
                 {
                     "control_self":"$searchCondition",
                     "zone":0
+                },
+                {
+                    "control_self":0,
+                    "zone_range":[2,3]
                 }
             ]
         },
