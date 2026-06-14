@@ -1,4 +1,5 @@
-"$cond":"NAME == %Argostars% && NAME != $name",
+var searchCondition = "NAME == %Argostars% && NAME != $name";
+
 "commands":[
     {
         "conditions":{
@@ -7,7 +8,7 @@
                     "prev_range":[20,24]
                 },
                 {
-                    "control_self":"$cond",
+                    "control_self":"$searchCondition",
                     "zone":0
                 },
                 {
@@ -19,7 +20,7 @@
         "trigger_range":[10,14],
         "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 \"Argostars\" card from your Deck to your hand, except \"Argostars - Lightning Tydeu\"¬search(0,255,[0],\"$cond\")"
+            "label=Add 1 \"Argostars\" card from your Deck to your hand, except \"Argostars - Lightning Tydeu\"¬search(0,255,[0],\"$searchCondition\")"
         ]
     }
 ]
