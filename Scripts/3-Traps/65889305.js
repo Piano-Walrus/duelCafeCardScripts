@@ -1,4 +1,5 @@
-var searchCondition = "NAME == %Argostars% && NAME != $name";
+var archetype = "Argostars";
+var searchCondition = "NAME == %$archetype% && NAME != $name";
 
 "commands":[
     {
@@ -18,9 +19,8 @@ var searchCondition = "NAME == %Argostars% && NAME != $name";
             ]
         },
         "trigger_range":[10,14],
-        "msg":"Resolve $name's effect?",
         "options":[
-            "label=Add 1 \"Argostars\" card from your Deck to your hand, except \"Argostars - Lightning Tydeu\"¬search(0,255,[0],\"$searchCondition\")"
+            "label=Add 1 \"$archetype\" card from your Deck to your hand, except \"$archetype - Lightning Tydeu\"¬search(0,255,[0],\"$searchCondition\")"
         ]
     }
 ]
