@@ -25,7 +25,7 @@ var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
         "trigger":2,
         "msg":"Resolve $name's Quick Effect?",
         "options":[
-            "label=Special Summon 1 \"$aceRaye\" and 1 \"$aceRoze\" from your Deck and/or GY¬search(0,255,[0,2],\"$bothConditions\")¬then¬break_if(\"$num_searched < 2\")¬search(0,255,[0,2],\"$bothConditions\")"
+            "label=Special Summon 1 \"$aceRaye\" and 1 \"$aceRoze\" from your Deck and/or GY¬search(0,255,[0,2],\"$bothConditions\")¬then¬break_if(\"$num_searched >= 2\")¬search(0,255,[0,2],\"$bothConditions\")"
         ]
     },
     {
