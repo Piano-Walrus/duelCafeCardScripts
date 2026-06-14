@@ -1,7 +1,7 @@
 var archetype = "Sky Striker";
 var addLabel = "Add 1 \"$archetype\" card from your Deck to your hand";
 var condition = "(NAME == %$archetype% || DESC == %This card is always treated as a \"$archetype\" card%) && NAME != $name";
-var search = "search(0, 255, [0], \"$condition\")";
+var search = "search(0,255,[0],\"$condition\")";
 
 "commands":[
   {
