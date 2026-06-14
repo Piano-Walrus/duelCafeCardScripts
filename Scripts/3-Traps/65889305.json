@@ -1,4 +1,5 @@
-"$cond":"NAME == %Argostars% && NAME != $name",
+var cond = "NAME == %Argostars% && NAME != $name";
+
 "commands":[
     {
         "conditions":{
