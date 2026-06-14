@@ -219,6 +219,8 @@ You can declare custom properties at the top of each card script by starting the
 
 Alternatively, you may also use JavaScript style variable declaration to declare custom properties by renaming a script file to end with the ".js" extension. A good example of this would be [Radiant Typhoon Eldam](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/54143349.js).
 
+While this feature can be used for organization, its main usage is to save on memory usage in-game. The shorter a script is, the less memory it takes up at runtime. So if a script must contain multiple instances of the same long string for whatever reason, it can sometimes be a good idea to store that long string in a custom property and reuse it to shorten the script. This is the case even if your variable names are long, since they each get parsed down to much shorter names before being downloaded by the Card Automation system in the world.
+
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
 
