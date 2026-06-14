@@ -33,7 +33,7 @@ var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
         "trigger_list":[8,108,10,11,12,13,14],
         "msg":"Resolve $name's on-summon effect?",
         "options":[
-            "label=Add 1 \"Sky Striker\" Spell from your Deck or GY to your hand¬search(0,255,[0,2],\"$hasSpellCondition\")"
+            "label=Add 1 \"$archetype\" Spell from your Deck or GY to your hand¬search(0,255,[0,2],\"$hasSpellCondition\")"
         ]
     }
 ]
