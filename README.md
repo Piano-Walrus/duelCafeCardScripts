@@ -40,8 +40,8 @@ The next and final property in every script should always be `commands`, which e
 
 | Property  | Expected Type | Description |
 | :--- | :--- | :--- |
-| `msg`  |  string | The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu.  |
-| `options`  | string[]  | An array of strings that specify what to label each button in the options menu, AND what commands to run once each button is clicked  |
+| `msg`  |  string | The use of this property in tandem with the "options" property below, causes the current command to show an options menu upon activation. This property specifies the message to display on that options menu. If this property is omitted from a given command object, the message will default to "Resolve $name's effect?" |
+| `options`  | string[]  | An array of strings that specify what to label each button in the options menu, AND what commands to run once each button is clicked.  |
 | `execute`  | string  | This property should realistically never be used, but if it's the only property in a given command object, then triggering that command will run this property's value as if it were a button's OnClick command string. Cannot be used alongside any other command properties.  |
 | `trigger`, `trigger_range`, and `trigger_list`  | int, int[], int[]  | See [Triggers](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#triggers) below.  |
 | **Conditions**  | Various  | See [Conditions](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main?tab=readme-ov-file#conditions) below.  |
@@ -217,7 +217,7 @@ In any given command string, pop-up message, `control_` property, custom propert
 ### Custom Properties
 You can declare custom properties at the top of each card script by starting their key names with "$", and these will behave exactly like any other placeholder mentioned above. For instance, if you have a script with 3 commands, and you intend to use the phrase "Gain 500 LP" in all 3 commands, then you can create a property called `"$gainLP"` with the syntax `"$gainLP":"Gain 500 LP"`, then in each command's `"msg"` property, you can reference `"$gainLP"` and the system will replace each instance of `"$gainLP"` with "Gain 500 LP".
 
-***NOTE:** You cannot reference a custom property in the declaration of another custom property. So for instance, you can reference `"$lp_opp"` in `"$gainLP"`, but you cannot reference `"$gainLP"` while declaring a custom `"$payLP"` property.*
+Alternatively, you may also use JavaScript style variable declaration to declare custom properties by renaming a script file to end with the ".js" extension. A good example of this would be [Radiant Typhoon Eldam](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/54143349.js).
 
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
