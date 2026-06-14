@@ -1,7 +1,9 @@
-var archetype = "Sky Striker Ace -";
-var rayeCondition = "NAME == $archetype Raye";
-var rozeCondition = "NAME == $archetype Roze";
-var bothConditions = "$rayeCondition || $rozeCondition"
+var archetype = "Sky Striker";
+var ace = "$archetype Ace - ";
+var rayeCondition = "NAME == $aceRaye";
+var rozeCondition = "NAME == $aceRoze";
+var bothConditions = "$rayeCondition || $rozeCondition";
+var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
 
 "commands":[
     {
@@ -20,7 +22,18 @@ var bothConditions = "$rayeCondition || $rozeCondition"
         "trigger":2,
         "msg":"Resolve $name's Quick Effect?",
         "options":[
-            "label=Special Summon 1 \"$archetype Raye\" and 1 \"$archetype Roze\" from your Deck and/or GY¬search(0,255,[0,2],\"$bothConditions\")¬then¬break_if(\"$num_searched < 2\")¬search(0,255,[0,2],\"$bothConditions\")"
+            "label=Special Summon 1 \"$aceRaye\" and 1 \"$aceRoze\" from your Deck and/or GY¬search(0,255,[0,2],\"$bothConditions\")¬then¬break_if(\"$num_searched < 2\")¬search(0,255,[0,2],\"$bothConditions\")"
+        ]
+    },
+    {
+        "conditions":{
+            "control_self":"$hasSpellCondition",
+            "zone_list":[0,2]
+        },
+        "trigger_list":[8,108,10,11,12,13,14],
+        "msg":"Resolve $name's on-summon effect?",
+        "options":[
+            "label=Add 1 \"Sky Striker\" Spell from your Deck or GY to your hand¬search(0,255,[0,2],\"$hasSpellCondition\")"
         ]
     }
 ]
