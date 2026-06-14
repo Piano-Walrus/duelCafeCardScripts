@@ -10,6 +10,9 @@ var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
         "conditions":{
             "AND":[
                 {
+                    "prev_list":[8,108,10,11,12,13,14]
+                },
+                {
                     "control_self":"$rayeCondition",
                     "zone_list":[0,2]
                 },
