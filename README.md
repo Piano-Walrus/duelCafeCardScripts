@@ -222,6 +222,13 @@ Alternatively, you may also use JavaScript-style variable declaration syntax to 
 
 While this feature can be used for organization, its main usage is to save on memory usage in-game. The shorter a script is, the less memory it takes up at runtime. So if a script must contain multiple instances of the same long string for whatever reason, it can sometimes be a good idea to store that long string in a custom property and reuse it to shorten the script. This is the case even if your variable names are long, since they each get parsed down to much shorter names before being downloaded by the Card Automation system in the world.
 
+### Command Variables
+You can declare custom variables during a command's execution using a similar syntax to that which is used to declare custom properties. These variables live until a command finishes executing, and can be updated any number of times throughout the command's lifecycle simply by reusing that syntax with the same variable name each time.
+
+For example, say a card should add 500 LP, then inflict 1000 damage to the opponent. If you wanted to initialize an "lp" variable to 500 for this command, then change its value to -1000 before inflicting damage to the opponent, you could write `$lp=500¬add_lp=$lp¬$lp=-1000¬opp¬add_lp=$lp`. Note that this particular example wouldn't be the optimal way to code such an effect since a variable wouldn't be necessary here, this is just to show how to use this feature.
+
+***NOTE:** All variables declared in commands are stored as strings, much like the Custom Properties mentioned above. When referenced, they will simply be replaced with their string values, then the command will be evaluated accordingly.*
+
 ## Basic Two-Operand Math
 You can also perform very basic mathematical expressions throughout card scripts. These behave very similarly to placeholders, and as such can only be used in places where placeholders can be used. Note that the placeholders mentioned above ***can*** be used within mathematical expressions. You can use these, for example, to perform simple LP-related calculations when checking card activation conditions.
 
