@@ -249,6 +249,9 @@ The expected parameters of this method are explained below:
 | CRITERIA | string | A logical expression to be checked for each card in the specified pile. |
 | SHOULD_TARGET_OPPONENT | bool | If set to true, the opponent's corresponding pile/zone will be checked rather than that of the activating player. |
 
+## Ternary Conditional Operators
+You can also use ternaries to evaluate certain conditions/values throughout your script. I haven't tested these everywhere yet, but for now they should work in boolean expression strings, and anywhere in a given command string. Similarly to the aforementioned arithmetic syntax, to use this feature, simply surround your ternary expression in curly brackets. One example of this feature would be [Sky Striker Ace = Zero](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/1-Extra/76072561.js), where the majority of a ternary with a fairly complicated condition is stored in a variable called "ternaryLeftHalf", then that ternary is evaluated a couple times in the first command object's second `search()` call.
+
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like `rand` or `add` in commands.
     - Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
