@@ -2,7 +2,7 @@ var archetype = "Radiant Typhoon";
 var mst = "Mystical Space Typhoon";
 var searchRtCondition = "NAME == %$archetype% && NAME != $name";
 var searchMstCondition = "NAME == $mst";
-var searchCondition = "($rtCondition) || $searchMstCondition";
+var searchCondition = "($searchRtCondition) || $searchMstCondition";
 
 "commands":[
     {
