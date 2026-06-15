@@ -141,6 +141,7 @@ If only one card is searched from the "Search Deck Piles" menu using the `search
 | `$is_spell_or_trap_searched` | bool | Whether or not the searched card is a Spell or a Trap. |
 | `$is_monster_searched` | bool | Whether or not the searched card is a monster. |
 | `$can_normal_or_set_searched` | bool | If the searched card is a monster, this boolean returns true if the monster can be Normal ummoned or Set, and false otherwise. |
+| `$location_searched` | int | The "Search Deck Piles" menu tab that was visible when the card was searched. |
 
 ***Note:** Since these placeholders will only be evaluated properly after only one card is searched using the `search` function, you should follow your `then` keyword with `break_if(\"$num_searched != 1\")`. Good example scripts using these placeholders would be [Spright Smashers](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/15443125.json) and [Pre-Preparation of Rites](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/13048472.json).*
 
