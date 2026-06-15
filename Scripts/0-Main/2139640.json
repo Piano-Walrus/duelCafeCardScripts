@@ -1,7 +1,7 @@
 "commands":[
     {
         "options":[
-            "label=Make each player gain 300 LP¬debug¬$addLp=add_lp=300¬$addLp¬opp¬$addLp"
+            "label=Make each player gain 300 LP¬add_lp=300¬opp¬add_lp=300"
         ]
     }
 ]
