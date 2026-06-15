@@ -99,6 +99,8 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `excavate_until=STRING` | Starts from the top of the designated "source" pile, and looks for a card whose name contains the provided string, then reveals that card as if it were searched from the "Search Deck Piles" menu. |
 | `draw(INT)` | Draws a number of cards from the target player's main deck equal to the provided integer. |
 | `break_if(STRING)` | Completely stops execution of the current command if the logical expression provided returns true when evaluated. |
+| `log(STRING)` | Outputs the provided string to the VRChat log. Literally just calls `Debug.Log(STRING);` in Udon. |
+| `error(STRING)` | Outputs the provided string to the VRChat log as an error. Literally just calls `Debug.LogError(STRING);` in Udon. |
 
 ### Alternate Search Syntax
 The following alternate syntax can also be used for the `search` function:
