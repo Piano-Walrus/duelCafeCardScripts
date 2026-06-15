@@ -4,7 +4,7 @@ var rayeCondition = "NAME == $aceRaye";
 var rozeCondition = "NAME == $aceRoze";
 var bothConditions = "$rayeCondition || $rozeCondition";
 var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
-var ternaryLeftHalf = "($name_searched == $aceRaye && {count($location_searched,\"$rozeCondition\")} < 1) || ($name_searched == $aceRoze && {count($location_searched,\"$rayeCondition\")} < 1) ? {|$location_searched-2|}";
+var ternaryLeftHalf = "($name_searched == $aceRaye && {count($location_searched,\"$rozeCondition\")} < 1) || ($name_searched == $aceRoze && {count($location_searched,\"$rayeCondition\")} < 1) ? {|{$location_searched-2}|}";
 
 "commands":[
     {
