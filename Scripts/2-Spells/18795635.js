@@ -6,7 +6,7 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
 "commands":[
     {
         "conditions":{
-            "control_self":"$monsterCondition && $gmxCondition && $dinoCondition",
+            "control_self":"$monsterCondition && ($gmxCondition || $dinoCondition)",
             "zone":0
         },
         "trigger_range":[20,24],
