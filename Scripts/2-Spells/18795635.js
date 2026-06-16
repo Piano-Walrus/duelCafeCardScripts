@@ -17,7 +17,6 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
                     source=0;
                     dest=2;
                     excavate_until("$monsterCondition && ($gmxCondition || $dinoCondition)");
-                    var excavateCount = "$num_excavated";
                     excavate_until("$monsterCondition && {$types_searched == %Dinosaur% ? $gmxCondition : $dinoCondition}");
                     add_lp=-{{$num_excavated + 1} * 400};
                     search(1,255,[1],"$fusionCondition");
