@@ -96,7 +96,7 @@ Each option in an `options` object, or any given `execute` command string, can h
 | `add_exact_lp=INT` | Essentially the same as "add_lp", except that if you provide a negative number, it will only subtract LP if the player's current LP is greater than the absolute value of the value provided (in other words, use this when scripting costs that must be paid ***exactly***, i.e. with cards like [Solemn Strike](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/3-Traps/40605147.json)). |
 | `div_lp=INT` | Divides a player's current LP by the provided integer. |
 | `set_lp=INT` | Sets a player's LP to the provided integer.<br/>***NOTE:** The provided value* ***cannot*** *be negative.* |
-| `excavate_until=STRING` | Starts from the top of the designated "source" pile, and looks for a card whose name contains the provided string, then reveals that card as if it were searched from the "Search Deck Piles" menu. |
+| `excavate_until(STRING)` | Starts from the top of the designated "source" pile, and looks for a card whose name contains the provided string, then reveals that card as if it were searched from the "Search Deck Piles" menu. |
 | `draw(INT)` | Draws a number of cards from the target player's main deck equal to the provided integer. |
 | `break_if(STRING)` | Completely stops execution of the current command if the logical expression provided returns true when evaluated. |
 | `log(STRING)` | Outputs the provided string to the VRChat log. Literally just calls `Debug.Log(STRING);` in Udon. |
