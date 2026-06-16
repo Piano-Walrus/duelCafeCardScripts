@@ -1,8 +1,8 @@
-var archetype = "Radiant Typhoon";
-var mst = "Mystical Space Typhoon";
-var searchRtCondition = "NAME == %$archetype% && NAME != $name";
-var searchMstCondition = "NAME == $mst";
-var searchCondition = "($searchRtCondition) || $searchMstCondition";
+const archetype = "Radiant Typhoon";
+const mst = "Mystical Space Typhoon";
+const searchRtCondition = "NAME == %$archetype% && NAME != $name";
+const searchMstCondition = "NAME == $mst";
+const searchCondition = "($searchRtCondition) || $searchMstCondition";
 
 "commands":[
     {
