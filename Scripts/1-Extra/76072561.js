@@ -1,10 +1,10 @@
-var archetype = "Sky Striker";
-var ace = "$archetype Ace - ";
-var rayeCondition = "NAME == $aceRaye";
-var rozeCondition = "NAME == $aceRoze";
-var bothConditions = "$rayeCondition || $rozeCondition";
-var hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
-var ternaryLeftHalf = "($name_searched == $aceRaye && {count($location_searched,\"$rozeCondition\")} < 1) || ($name_searched == $aceRoze && {count($location_searched,\"$rayeCondition\")} < 1) ? {|{$location_searched-2}|}";
+const archetype = "Sky Striker";
+const ace = "$archetype Ace - ";
+const rayeCondition = "NAME == $aceRaye";
+const rozeCondition = "NAME == $aceRoze";
+const bothConditions = "$rayeCondition || $rozeCondition";
+const hasSpellCondition = "ATTR == spell && NAME == %$archetype%";
+const ternaryLeftHalf = "($name_searched == $aceRaye && {count($location_searched,\"$rozeCondition\")} < 1) || ($name_searched == $aceRoze && {count($location_searched,\"$rayeCondition\")} < 1) ? {|{$location_searched-2}|}";
 
 "commands":[
     {
