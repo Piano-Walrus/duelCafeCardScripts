@@ -14,7 +14,6 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
             {
                 "label":"Excavate the top cards of your Deck until you have excavated a \"GMX\" monster and a Dinosaur monster, lose 400 LP for each excavated card, then you can Fusion Summon 1 \"GMX\" Fusion Monster from your Extra Deck",
                 "script":{
-                    debug;
                     source=0;
                     dest=2;
                     excavate_until("$monsterCondition && ($gmxCondition || $dinoCondition)");
