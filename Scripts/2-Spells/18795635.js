@@ -23,6 +23,13 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
                     add_lp={0 - {$num_excavated * 400}};
                     search(1,255,[1],"$fusionCondition");
                 }
+            },
+            {
+                "label":"Test",
+                "script":{
+                    test;
+                    test="test";
+                }
             }
         ]
     }
