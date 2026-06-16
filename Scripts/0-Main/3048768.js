@@ -10,7 +10,7 @@ const archetype = "Vaalmonica";
     {
         "msg":"Resolve $name's ignition effect?",
         "options":[
-            "label=Banish 1 \"$archetype\" Normal Spell/Trap from your GY¬search(2,3,[2],\"NAME == %$archetype% && FRAME == %normal% && spell_trap == %ATTR%\",-1,20,false)"
+            "label=Banish 1 \"$archetype\" Normal Spell/Trap from your GY¬search(2,3,[2],\"IS_SPELL_OR_TRAP && NAME == %$archetype% && FRAME == %normal%\",-1,20,false)"
         ]
     }
 ]
