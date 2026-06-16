@@ -1,6 +1,6 @@
-var archetype = "Radiant Typhoon";
-var mst = "Mystical Space Typhoon";
-var searchCondition = "(IS_MONSTER && NAME == %$archetype% && NAME != $name) || NAME == $mst";
+const archetype = "Radiant Typhoon";
+const mst = "Mystical Space Typhoon";
+const searchCondition = "(IS_MONSTER && NAME == %$archetype% && NAME != $name) || NAME == $mst";
 
 "commands":[
     {
