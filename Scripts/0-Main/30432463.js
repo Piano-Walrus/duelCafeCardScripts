@@ -2,7 +2,6 @@ const archetype = "Vaalmonica";
 
 "commands":[
     {
-        "msg":"Resolve $name's effect?",
         "trigger_range":[23,24],
         "options":[
             "label=Scale \"Angello $archetype\" in your other Pendulum Zone¬source=0¬dest={|{{$trigger-23}-1}|+23}¬target=3048768¬place=1"
