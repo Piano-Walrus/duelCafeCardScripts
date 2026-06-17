@@ -262,6 +262,16 @@ The expected parameters of this method are explained below:
 ## Ternary Conditional Operators
 You can also use ternaries to evaluate certain conditions/values throughout your script. I haven't tested these everywhere yet, but for now they should work in boolean expression strings, and anywhere in a given command string. Similarly to the aforementioned arithmetic syntax, to use this feature, simply surround your ternary expression in curly brackets. One example of this feature would be [Sky Striker Ace = Zero](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/1-Extra/76072561.js), where the majority of a ternary with a fairly complicated condition is stored in a variable called "ternaryLeftHalf", then that ternary is evaluated a couple times in the first command object's second `search()` call. A simpler example of this feature would be [Radiant Typhoon Krosea](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/16922142.js).
 
+## Alternate Option Syntax
+When writing a .js script file, you can use an alternate syntax for option button labels & command strings. Instead of providing an array of strings to the "options" property, you can instead provide an array of objects, each having the two properties outlined below:
+
+| Property | Type | Description |
+| :-- | :-- | :-- |
+| label | string | Just like with the "label=" variable outlined [here](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/README.md#variables), this property determines the text that is shown on its corresponding object's option button. |
+| script | ...object? | The series of functions/variables you'd normally put in a command string, but formatted like a script, with each command on a newline ending with a semicolon. |
+
+Note that the "object" provided to the `script` property isn't really a traditional "object"; its syntax is a bit wonky as far as JSON/JavaScript standards are concerned, so it may confuse IDE linting, but some prefer it nonetheless for readability, so I've implemented support for it despite this potential minor inconvenience. Also note that each command in the `script` object must end with a semicolon, and must being on a new line. There also shouldn't be any extra whitespace between lines. A good example of this syntax is [GMX Applied Experiment #55](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/18795635.js);
+
 ## Extra Notes & Tips
 1. Variables should always be declared BEFORE writing functions like `rand` or `add` in commands.
     - Example: `source=0¬dest=2¬rand=2` is ***GOOD***, but `rand=2¬source=0¬dest=2` is ***BAD*** and will result in an error.
