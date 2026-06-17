@@ -14,13 +14,13 @@ const isSynchro = "TYPES == synchro";
                     search(1,255,[1],"$isSynchro && DESC == \"% && DESC == %\" + %");
                     then;
                     $revealedCard=$name_searched;
+                    error("$revealedCard");
                     break_if("$num_searched != 1");
                     break_if("{count(0, \"$desc_searched == \\\"NAME\\\" + %\")} < 1");
                     search(0,255,[0,2],"$desc_searched == \"NAME\" + %");
                     then;
                     source=6;
                     dest=1;
-                    error("$revealedCard");
                     excavate_until("NAME == $revealedCard");
                 }
             }
