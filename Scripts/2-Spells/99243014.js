@@ -18,7 +18,7 @@ const isSynchro = "TYPES == synchro";
                     break_if("{count(0, \"$desc_searched == \\\"NAME\\\" + %\")} < 1");
                     search(0,255,[0,2],"$desc_searched == \"NAME\" + %");
                     then;
-                    source=4;
+                    source=1;
                     dest=1;
                     excavate_until("NAME == $revealedCard");
                 }
