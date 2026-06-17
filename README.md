@@ -227,7 +227,9 @@ While this feature can be used for organization, its main usage is to save on me
 ### Command Variables
 You can declare custom variables during a command's execution using a similar syntax to that which is used to declare custom properties. These variables live until a command finishes executing, and can be updated any number of times throughout the command's lifecycle simply by reusing that syntax with the same variable name each time.
 
-For example, say a card should add 500 LP, then inflict 1000 damage to the opponent. If you wanted to initialize an "lp" variable to 500 for this command, then change its value to -1000 before inflicting damage to the opponent, you could write `$lp=500¬add_lp=$lp¬$lp=-1000¬opp¬add_lp=$lp`. Note that this particular example wouldn't be the optimal way to code such an effect since a variable wouldn't be necessary here, this is just to show how to use this feature.
+For example, say a card should add 500 LP, then inflict 1000 damage to the opponent. If you wanted to initialize an "lp" variable to 500 for this command, then change its value to -1000 before inflicting damage to the opponent, you could write `$lp=500¬add_lp=$lp¬$lp=-1000¬opp¬add_lp=$lp`. Note that this particular example wouldn't be the optimal way to code such an effect since a variable wouldn't be necessary here, this is just to show how to use this feature. 
+
+A good example of this feature would be [Synchro Overtake](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/99243014.js).
 
 ***NOTE:** All variables declared in commands are stored as strings, much like the Custom Properties mentioned above. When referenced, they will simply be replaced with their string values, then the command will be evaluated accordingly.*
 
