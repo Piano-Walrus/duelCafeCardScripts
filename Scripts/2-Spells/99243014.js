@@ -12,6 +12,7 @@ const isSynchro = "TYPES == synchro";
                 "label":"Reveal 1 Synchro Monster in your Extra Deck, then add to your hand or Special Summon 1 of the Synchro Materials mentioned on it from your Deck or GY",
                 "script":{
                     search(1,255,[1],"$isSynchro && DESC == \"% && DESC == %\" + %");
+                    then;
                     $revealedCard="$name_searched";
                     break_if("$num_searched != 1");
                     break_if("{count(0, \"$desc_searched == \\\"NAME\\\" + %\")} < 1");
