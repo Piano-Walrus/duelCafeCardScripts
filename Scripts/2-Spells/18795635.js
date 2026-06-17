@@ -6,8 +6,17 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
 "commands":[
     {
         "conditions":{
-            "control_self":"$monsterCondition && ($gmxCondition || $dinoCondition)",
-            "zone":0
+            "AND":[
+                {
+                    "control_self":"$monsterCondition && $gmxCondition",
+                    "zone":0
+                },
+                {
+                    "control_self":"$monsterCondition && $dinoCondition",
+                    "zone":0
+                }
+            ]
+            
         },
         "trigger_range":[20,24],
         "options":[
@@ -19,6 +28,7 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
                     excavate_until("$monsterCondition && ($gmxCondition || $dinoCondition)");
                     excavate_until("$monsterCondition && {$types_searched == %Dinosaur% ? $gmxCondition : $dinoCondition}");
                     add_lp=-{{$num_excavated + 2} * 400};
+                    break_if("{count(\"$fusionCondition\")} < 1");
                     search(1,255,[1],"$fusionCondition");
                 }
             }
