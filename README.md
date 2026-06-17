@@ -262,7 +262,7 @@ The expected parameters of this method are explained below:
 ## Ternary Conditional Operators
 You can also use ternaries to evaluate certain conditions/values throughout your script. I haven't tested these everywhere yet, but for now they should work in boolean expression strings, and anywhere in a given command string. Similarly to the aforementioned arithmetic syntax, to use this feature, simply surround your ternary expression in curly brackets. One example of this feature would be [Sky Striker Ace = Zero](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/1-Extra/76072561.js), where the majority of a ternary with a fairly complicated condition is stored in a variable called "ternaryLeftHalf", then that ternary is evaluated a couple times in the first command object's second `search()` call. A simpler example of this feature would be [Radiant Typhoon Krosea](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/0-Main/16922142.js).
 
-## Alternate Option Syntax
+## Alternate Options Syntax
 When writing a .js script file, you can use an alternate syntax for option button labels & command strings. Instead of providing an array of strings to the "options" property, you can instead provide an array of objects, each having the two properties outlined below:
 
 | Property | Type | Description |
