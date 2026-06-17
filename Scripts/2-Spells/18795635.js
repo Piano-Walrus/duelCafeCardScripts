@@ -16,7 +16,6 @@ const fusionCondition = "$gmxCondition && $monsterCondition && TYPES == fusion";
                     "zone":0
                 }
             ]
-            
         },
         "trigger_range":[20,24],
         "options":[
