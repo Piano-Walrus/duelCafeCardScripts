@@ -1,6 +1,9 @@
 #ALWAYS_AUTOMATE
 "commands":[
     {
+        "conditions":{
+            "bool":"{count(0)} > {count(0, true)}"
+        },
         "trigger_range":[20,24],
         "msg":"Resolve $name's effect?",
         "options":[
