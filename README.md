@@ -254,6 +254,8 @@ Two good examples of this feature would be the scripts for [Dried Winds](https:/
 ### The Count Function
 In any mathematical expression, you can also use `count(ZONE_INDEX, ?CRITERIA, ?SHOULD_TARGET_OPPONENT)` (optional fields preceded with `?`) to count the number of cards present at the provided zone index that match the provided logical expression. For example, `{count(2, \"ATTR == spell\"), true}` counts the number of spell cards in the activating player's opponent's Graveyard, and `{count(0)}` counts the number of cards currently in the activating player's Main Deck. A good example of this feature would be [Sky Striker Mobilize - Engage!](https://github.com/Piano-Walrus/duelCafeCardScripts/blob/main/Scripts/2-Spells/63166095.json)
 
+***NOTE:** Nesting count() method calls is currently not possible. To work around this restriction, if nesting count() method calls would be required for whatever reason, consider utilizing [Command Variables](https://github.com/Piano-Walrus/duelCafeCardScripts/tree/main#command-variables) instead.*
+
 The expected parameters of this method are explained below:
 | Parameter | Type | Description |
 | :-- | :-- | :-- |
