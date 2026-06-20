@@ -9,7 +9,7 @@ const isFusion = "TYPES == fusion";
         "trigger_range":[20,24],
         "options":[
             {
-                "label":"Reveal 1 Fusion Monster in your Extra Deck, then add to your hand or Special Summon 1 of the Fusion Materials mentioned on it from your hand or Deck",
+                "label":"Reveal 1 Fusion Monster in your Extra Deck, then Special Summon 1 of the Fusion Materials mentioned on it from your hand or Deck",
                 "script":{
                     search(1,4,[1],"$isFusion && DESC == \"% && DESC == %\" + %");
                     then;
