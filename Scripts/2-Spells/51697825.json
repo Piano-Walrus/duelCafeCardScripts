@@ -1,0 +1,8 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "options":[
+            "label=Reveal 3 Level 1 monsters with different names from your Deck¬search(0,255,[0],\"IS_MONSTER && LVL == 1\")"
+        ]
+    }
+]
