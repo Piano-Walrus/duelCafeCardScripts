@@ -15,7 +15,7 @@ const isSynchro = "TYPES == synchro";
                     then;
                     $revealedCard=$name_searched;
                     break_if("$num_searched != 1");
-                    break_if("{count(0, \"IS_MONSTER && $desc_searched == \\\"NAME\\\" + %\")} < 1");
+                    break_if("{count(0, \"IS_MONSTER && $desc_searched == \\\"NAME\\\" + %\")} < 1 && {count(2, \"IS_MONSTER && $desc_searched == \\\"NAME\\\" + %\")} < 1");
                     search(0,255,[0,2],"IS_MONSTER && $desc_searched == \"NAME\" + %");
                     then;
                     source=4;
