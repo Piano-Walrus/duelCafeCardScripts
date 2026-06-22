@@ -18,6 +18,7 @@ const opponentFieldSpellZone = "{{{|{$player_index - 1}|}*100}+9}";
                     opp;
                     source=$opponentFieldSpellZone;
                     dest=2;
+                    up_to;
                     rand=75;
                     self;
                     rand=75;
