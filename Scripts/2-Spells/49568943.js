@@ -1,5 +1,5 @@
 const archetype = "Vaylantz";
-const searchCondition = "FRAME == %field_spell% && NAME == $archetype";
+const searchCondition = "FRAME == %field_spell% && NAME == $archetype && NAME != $name";
 const opponentFieldSpellZone = "{{{|{$player_index - 1}|}*100}+9}";
 
 "commands":[
