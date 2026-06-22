@@ -22,6 +22,7 @@ const opponentFieldSpellZone = "{{{|{$player_index - 1}|}*100}+9}";
                     rand=75;
                     self;
                     rand=75;
+                    opp;
                     search(0, $opponentFieldSpellZone, [0], "$searchCondition");
                 }
             }
