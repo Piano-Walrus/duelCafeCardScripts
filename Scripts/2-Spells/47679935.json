@@ -1,0 +1,11 @@
+{
+  "commands": [
+    {
+      "trigger": 22,
+      "msg": "Add 1 \"Aleister the Invoker\" from your Deck to your hand.",
+      "options": [
+        "source=0¬target=86120751¬add=1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "msg": "Resolve $name's effect?",
+  "commands": [
+    {
+      "options": [
+        "Your opponent gains 3000 LP¬opp¬add_lp=3000"
+      ]
+    }
+  ]
+}

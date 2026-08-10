@@ -1,0 +1,10 @@
+{
+  "msg": "Resolve $name's effect?",
+  "commands": [
+    {
+      "options": [
+        "Pay 2000 LP¬is_cost¬add_exact_lp=-2000"
+      ]
+    }
+  ]
+}
