@@ -1,10 +1,9 @@
-{
-  "commands": [
-    {
-      "msg": "Resolve $name's effect?",
-      "options": [
-        "label=Draw 2 Cards¬draw(2)"
-      ]
-    }
-  ]
-}
+"commands": [
+  {
+    "trigger_range":[20,24],
+    "msg": "Resolve $name's effect?",
+    "options": [
+      "label=Draw 2 cards¬draw(2)"
+    ]
+  }
+]

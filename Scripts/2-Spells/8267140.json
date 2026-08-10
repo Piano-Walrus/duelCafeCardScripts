@@ -2,7 +2,7 @@
   "commands": [
     {
       "trigger_range": [20,24],
-      "msg": "Pay the cost for Cosmic Cyclone's effect?",
+      "msg": "Pay the cost for $name's effect?",
       "options": [
         "label=Pay 1000 LP¬is_cost¬add_exact_lp=-1000"
       ]
