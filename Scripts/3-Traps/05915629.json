@@ -1,0 +1,10 @@
+{
+  "msg": "Resolve $name's effect?",
+  "commands": [
+    {
+      "options": [
+        "Your opponent draws 2 cards¬opp¬draw(2)"
+      ]
+    }
+  ]
+}

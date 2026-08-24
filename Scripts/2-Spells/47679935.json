@@ -1,0 +1,11 @@
+{
+  "commands": [
+    {
+      "trigger_list":[9,109],
+      "msg":"Resolve $name's activation effect?",
+      "options":[
+        "label=Add 1 \"Aleister the Invoker\" from your Deck to your hand¬source=0¬target=86120751¬add=1"
+      ]
+    }
+  ]
+}
