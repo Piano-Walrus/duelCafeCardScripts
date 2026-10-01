@@ -1,0 +1,9 @@
+"commands":[
+    {
+         "trigger_range":[10,14],
+         "msg":"Resolve $name's on-summon effect?",
+         "Options":[
+             "label= Send 1 Level 6 or higher Zombie Monster from your deck to the GY, except itself, then you can add 1 Level 6 or higher Zombie Monster from your GY to your Hand¬search(0,2,[0],\"(IS_MONSTER && TYPES == zombie && LVL => 6) & NAME != $name\")¬then¬break_if(\"$num_searched != 1\")¬search(2,255,[2],\"IS_MONSTER && TYPES == zombie && LVL => 6\")"
+         ]
+    }
+]

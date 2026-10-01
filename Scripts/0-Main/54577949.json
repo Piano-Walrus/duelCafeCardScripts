@@ -1,0 +1,9 @@
+"commands":[
+    {
+         "trigger_range":[10,14],
+         "msg":"Resolve $name's on-summon effect?",
+         "Options":[
+             "label= Place up to 3 Synchro Monsters with different names from your Extra Deck and/or GT in your Spell & Trap Zone as face-up Continuous Spell¬search(1,255[1,2]\"TYPES == synchro\")"
+         ]
+    }
+]

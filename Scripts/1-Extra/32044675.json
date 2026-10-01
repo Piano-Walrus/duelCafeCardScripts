@@ -1,0 +1,9 @@
+"commands":[
+    {
+         "trigger_range":[10,14],
+         "msg":"Resolve $name's on-Synchro-Summon effect?",
+         "Options":[
+             "label= Add 1 Level 8 or higher monster with 0 ATK¬search(0,255,[0],\"(LVL => 8 & ATK == 0\")"
+         ]
+    }
+]
