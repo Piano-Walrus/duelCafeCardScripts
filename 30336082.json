@@ -1,0 +1,8 @@
+"commands":[
+  {
+    "msg":"Resolve $name's ignition effect?",
+    "options":[
+      "label=Add 1 \"Tenpai Dragon\" monster from your Deck to your hand, then discard 1 card¬search(0, 255, [0], \"NAME == %tenpai dragon% && IS_MONSTER\")"
+    ]
+  }
+]
