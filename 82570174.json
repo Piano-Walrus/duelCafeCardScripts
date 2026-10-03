@@ -1,0 +1,9 @@
+"commands":[
+  {
+    "trigger_list":[8,10,11,12,13,14,108],
+    "msg":"Resolve $name's effect on summon?",
+    "options":[
+      "label=Target & Summon 1 FIRE Dragon monster from your GY¬search(2, 255, [2], \"ATTR == fire && TYPES == dragon\")"
+    ]
+  }
+]
