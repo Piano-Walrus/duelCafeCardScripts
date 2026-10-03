@@ -1,0 +1,8 @@
+"commands":[
+  {
+    "msg":"Resolve $name's effect at the start of the damage step?",
+    "options":[
+      "label=Special Summon 1 level 4 or lower FIRE Dragon monster from your Deck¬search(0, 255, [0], \"ATTR == fire && TYPES == dragon && LVL <= 4\")
+    ]
+  }
+]
