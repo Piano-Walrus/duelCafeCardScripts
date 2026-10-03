@@ -1,0 +1,15 @@
+"commands":[
+  {
+    "trigger_range":[10,14],
+    "msg":"Resolve $name's effect on summon?",
+    "options":[
+      "label=Target & Summon 1 level 4 or lower FIRE Dragon monster from your GY¬search(2, 255, [2], \"ATTR == fire && TYPES == dragon && LVL <= 4\")
+    ]
+  },
+  {
+    "msg":"Resolve $name's effect at the start of the damage step?",
+    "options":[
+      "label=Target & Summon 1 level 4 or lower FIRE Dragon monster from your GY¬search(2, 255, [2], \"ATTR == fire && TYPES == dragon && LVL <= 4\")
+    ]
+  }
+]
