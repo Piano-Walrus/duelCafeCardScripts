@@ -1,0 +1,9 @@
+"commands":[
+  {
+    "trigger_range":[10,14],
+    "msg":"Resolve $name's effect on summon?",
+    "options":[
+      "label=Add to your hand or set 1 \"Sangen\" Spell/Trap from your Deck¬search(0, 255, [0], \"NAME == %sangen% && IS_SPELL_OR_TRAP\")
+    ]
+  }
+]
