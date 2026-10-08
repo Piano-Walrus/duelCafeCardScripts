@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect when placed in the Spell/Trap Zone?",
+        "options":[
+            "label=Send 1 \"Angelechy\" Card from your Deck to the GY¬search(0, 2, [0], \"NAME == %Angelechy%\", -1, 2)"
+        ]
+    }
+]

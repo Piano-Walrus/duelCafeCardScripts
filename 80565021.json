@@ -1,0 +1,9 @@
+"commands":[
+  {
+    "trigger_range":[20,24],
+    "msg":"Resolve $name's effect?",
+    "options":[
+      "label=Place 1 \"Angelechy\" field spell from hand Deck or GY, Special Summon 1 Level 2 or 7 \"Angelechy\" from your ED to the EMZ, and place 1 \"Angelechy\" from your ED to the Spell/Trap Zone¬search(0, 255, [0,2], \"(name == %angelechy% && FRAME == field\")¬search(1,255,[1],\"NAME == %angelechy% && LVL == 2 || NAME == %angelechy% && LVL == 7\")¬then¬break_if(\"$num_searched != 1\")¬search(1,255,[1],\"NAME == %angelechy%\")"
+    ]
+  }
+]

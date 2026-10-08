@@ -1,0 +1,9 @@
+"commands":[
+    {
+        "trigger_range":[20,24],
+        "msg":"Resolve $name's effect when placed in the Spell/Trap Zone?",
+        "options":[
+            "label=place 1 \"Angelechy Shatranga\" from your Extra Deck in your Spell/Trap Zone as a face-up Continuous Spell¬source=1¬target=42410161¬add=1"
+        ]
+    }
+]

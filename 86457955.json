@@ -1,0 +1,19 @@
+"commands":[
+  {
+    "trigger_range":[20,24],
+    "msg":"Resolve $name's effect?",
+    "options":[
+      "label=Choose 2 \"Angelechy\" monsters in your ED, with different names than the cards in your Spell/Trap Zone, Special Summon 1 of them in your opponent's MMZ, and place the other in your Spell/Trap Zone¬search(1, 255, [1], \"NAME == %angelechy% \")"
+    ]
+  },
+  {
+    "conditions":{
+      "prev_zone:2
+    }
+    "trigger":3,
+    "msg":"Resolve $name's effect after banishing for cost?",
+    "options":[
+      "label=Shuffle up to 5 \"Angelechy\" cards except \"$name\" from your GY and/or Banishment into your Deck¬search(2, 0, [2,3], \"NAME == %angelechy% && NAME != $name\")¬then¬break_if(\"$num_searched == 5\")¬search(3, 0, [2,3], \"NAME == %angelechy% && NAME != $name \")"
+    ]
+  }
+]

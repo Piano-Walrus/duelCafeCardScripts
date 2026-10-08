@@ -1,0 +1,12 @@
+"commands":[
+  {
+    "conditions":{
+      "prev_zone":2
+    }
+    "trigger":3,
+    "msg":"Resolve $name's effect after banishing for cost?",
+    "options":[
+      "label=After sending 1 \"Angelechy\" card from your hand or face-up field to the GY, place 1 \"Angelechy\" monster from you ED to your Spell/Trap Zone with a different name than the others in your Spell/Trap Zone¬search(1, 255, [1], \"NAME == %angelechy%\")"
+    ]
+  }
+]
