@@ -1,0 +1,15 @@
+"commands":[
+    {
+         "trigger_range":[10,14],
+         "msg":"Resolve $name's effect upon being Synchro Summoned?",
+         "options":[
+             "label=Add 1 Level 8 or higher monster with 0 ATK from your Deck to your hand¬search(0,255,[0],\"(LVL >= 8 && ATK == 0\")"
+         ]
+    },
+    {
+        "msg":"Resolve $name's ignition effect?",
+        "options"[
+            "label=Special Summon 1 monster with 0 ATK from your GY¬search(2,255,[2],\"(ATK == 0\")"
+        ]
+    }
+]
