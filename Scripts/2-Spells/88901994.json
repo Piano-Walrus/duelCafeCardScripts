@@ -1,0 +1,8 @@
+"commands":[
+  {
+    "trigger_range": [20, 24],
+    "options": [
+      "label=Special Summon 1 Tuner or Level 7 or 8 Dragon Synchro from your GY¬search(2, 255, [2], \"TYPES == tuner || (TYPES == synchro && TYPES == dragon && (LVL == 7 || LVL == 8))\")"
+    ]
+  }
+]
