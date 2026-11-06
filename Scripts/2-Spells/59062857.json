@@ -1,0 +1,12 @@
+"commands":[
+  {
+    "conditions":{
+      "prev_zone":2
+    }
+    "trigger":3,
+    "msg":"Resolve $name's effect after banishing & paying cost?",
+    "options":[
+      "label=Special Summon 1 \"Angelechy\" monster from your ED¬search(1, 255, [1], \"NAME == %angelechy% \")"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+"commands":[
+  {
+    "conditions":{
+      "prev_zone":2
+    }
+    "trigger":3,
+    "msg":"Resolve $name's effect after banishing for cost?",
+    "options":[
+      "label=Add 1 \"Angelechy\" Spell/Trap from your Deck to your Hand except $name¬search(0, 255, [0], \"NAME == %angelechy% && IS_SPELL_OR_TRAP && NAME != $name\")"
+    ]
+  }
+]
