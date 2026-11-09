@@ -1,0 +1,12 @@
+"commands":[
+  {
+    "conditions":{
+      "prev_range":[10,14]
+    }
+    "trigger":2,
+    "msg":"Resolve $name's ignition effect?",
+    "options":[
+      "label=Special Summon 1 \"Tenpai Dragon\" monster from your Deck¬search(0, 255, [0], \"IS_MONSTER && NAME == %Tenpai Dragon%\")"
+    ]
+  }
+]
